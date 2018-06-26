@@ -1,6 +1,4 @@
 # Dynamic Process Tutorial / Emergency Room
-
-目次
 ====
 
 [<span class="underline">1</span> <span class="underline">目的</span>
