@@ -172,7 +172,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 作成した結果、以下のようにアクティビティが表示されているはずです。このうち、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image9.png" style="width:0.16654in;height:0.16654in" />はこのアクティビティが必須であること、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image10.png" style="width:0.16763in;height:0.17561in" />は必須項目が設定済みではあるものの、1個未設定の構成があることを表しています。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image11.png" style="width:2.60354in;height:0.95709in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image11.png" style="width:2.60354in;height:0.95709in" />
 
 1.  同様に、下表に従ってヒューマンタスク・アクティビティを作成します。
 
@@ -191,7 +191,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 1.  ステージ追加フィールドで名前を指定し、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image7.png" style="width:0.18056in;height:0.18056in" />をクリックしてステージを作成します。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image12.png" style="width:1.79167in;height:0.34722in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image12.png" style="width:1.79167in;height:0.34722in" />
 
 作成するステージの名前は下表に従います。
 
@@ -261,11 +261,11 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 画面左側のメニューで［フォーム］を選択し、画面右側に現れる［作成］をクリックし、名前をPatientForm（半角、空白を入れない）として［作成］をクリックします。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image16.png" style="width:2in;height:2in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image16.png" style="width:2in;height:2in" />
 
 初期状態では、プレゼンテーション名が“メイン”になっているはずです。この名前を“スタート”に変更します。プロパティ＞プレゼンテーション＞［名前］で“メイン”を“スタート”に書き換えます。この“スタート“プレゼンテーションでは、入院患者の氏名を記録するために使います。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image17.png" style="width:1.80556in;height:1.88889in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image17.png" style="width:1.80556in;height:1.88889in" />
 
 2個のテキストフィールドを貼り付けます。名前、ラベルは以下の通り設定します。バインドは名前を基に生成しますので、明示的に設定する必要はありません。
 
@@ -489,15 +489,15 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 EmergencyProcessタブで、ヒューマンタスク・アクティビティの“スクリーニング”をダブルクリックする、もしくはシングルクリックで現れる<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image29.png" style="width:0.20833in;height:0.22222in" />をクリックします。いずれの方法でも、アクティビティのプロパティ設定画面が現れます。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image30.png" style="width:1.94722in;height:0.64384in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image30.png" style="width:1.94722in;height:0.64384in" />
 
 プロパティ画面のGeneralタブ下方にあるImplementationのGeneralをクリックします。実装に関連するプロパティ設定画面が現れます。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image31.png" style="width:3.74173in;height:3.6in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image31.png" style="width:3.74173in;height:3.6in" />
 
 FormはPatientForm、Presentationはスクリーニングをそれぞれ選択します。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image32.png" style="width:1.86111in;height:0.98611in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image32.png" style="width:1.86111in;height:0.98611in" />
 
 TitleやTask Summaryを任意で設定します。ここで指定した内容は、実行時にフォームの最上部に表示されます。
 
@@ -517,17 +517,17 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 “スクリーニング“ヒューマンタスク・アクティビティをクリックし、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image33.png" style="width:0.23611in;height:0.23611in" />をクリックし、Data Association &gt; Inputを選択します。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image34.png" style="width:3.51389in;height:1.19444in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image34.png" style="width:3.51389in;height:1.19444in" />
 
 自動マッピング<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image35.png" style="width:0.27778in;height:0.25in" />をクリックします。これをクリックすると、データ型が同じものを自動的にマッピングします。もちろん、手作業でマッピングしてもかまいません。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image36.png" style="width:4.2748in;height:0.93504in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image36.png" style="width:4.2748in;height:0.93504in" />
 
 左上にある［出力］タブをクリックし、自動マッピングをクリックします。その後、［適用］をクリックします。もしoutcomeのデータ・アソシエーションが出る場合は、下図のように［削除］をクリックしてください。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image37.png" style="width:4.2748in;height:1.26929in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image37.png" style="width:4.2748in;height:1.26929in" />
 
-その他のヒューマンタスク・アクティビティ(処置、退院判定、手術の手続き、退院の手続き）も同様の設定をします。
+その他のヒューマンタスク・アクティビティ（処置、退院判定、手術の手続き、退院の手続き）も同様の設定をします。
 
 ### 
 
@@ -538,11 +538,11 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 右上にある［Roles］をクリックします。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image38.png" style="width:2.15278in;height:0.31944in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image38.png" style="width:2.15278in;height:0.31944in" />
 
 ［ロール］タブでは、動的プロセス用に定義されたロールを列挙しています。事前構成済みのデフォルトのロールとして、Process OwnerとProcess Viewerの2つが提供されています。今回はこれらのロールを、動的プロセスに適用します。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image39.png" style="width:2.06944in;height:1.27778in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image39.png" style="width:2.06944in;height:1.27778in" />
 
 鉛筆アイコンをクリックし、編集していきます。編集項目および編集内容は下表をご覧ください。権限を新たに作成する場合は、＋アイコンをクリックします。編集が完了したら［Save］をクリックします。
 
@@ -595,7 +595,7 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 </tbody>
 </table>
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image40.png" style="width:2.49173in;height:3.6in" />　　<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image41.png" style="width:2.49173in;height:3.59173in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image40.png" style="width:2.49173in;height:3.6in" />　　<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image41.png" style="width:2.49173in;height:3.59173in" />
 
  ヒューマンタスク・アクティビティへのユーザー割り当て
 -----------------------------------------------------
@@ -611,7 +611,7 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
  1. 現れたウィンドウの右上方にある＋をクリックして、Identity Type、Type、Valueを指定する。今回の場合は、Identity TypeはRole、TypeはLiteral、Valueは医師を設定する。
  1. 設定が完了したら、［Save］をクリック
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image43.png" style="width:4.16667in;height:2.91667in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image43.png" style="width:4.16667in;height:2.91667in" />
 
 その他のアクティビティに対しても、同様の手順でユーザーを割り当てていきます。割り当てる内容は下表をご覧ください。
 
@@ -704,17 +704,17 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 ### テストモードでのアクティブ化
 
 ［テスト］をクリックします。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image45.png" style="width:0.51389in;height:0.31944in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image45.png" style="width:0.51389in;height:0.31944in" />
 ［現在のアプリケーション検証に成功しました］が出ていることを確認し、［アクティブ化］をクリックします。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image46.png" style="width:4.34722in;height:3.02778in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image46.png" style="width:4.34722in;height:3.02778in" />
 ［自分を全てのロールに追加］にチェックが入っていることを確認し、［アクティブ化］をクリックします。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image47.png" style="width:2.93056in;height:1.30556in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image47.png" style="width:2.93056in;height:1.30556in" />
 
 ### テストモードでの実行
 
 アクティブ化が完了したら、［テスト・モードで試行］をクリックします。Testing ModeがOnの状態のブラウザが開きます。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image48.png" style="width:1.27778in;height:0.30556in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image48.png" style="width:1.27778in;height:0.30556in" />
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image49.png" style="width:5.87835in;height:3.67402in" />
 
