@@ -203,6 +203,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 各ステージに作成済みのアクティビティを下表に従い配置します。残ったアクティビティは、任意のステージで実施可能なアクティビティとして機能します。
 
 <table>
+<tbody>
 <tr class="odd">
 <th>ステージ</th>
 <td>スクリーニング</td>
