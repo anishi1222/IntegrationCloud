@@ -121,7 +121,7 @@ Mozilla FirefoxもしくはGoogle Chromeを使うことを推奨します。
 ----------------------
 
 このハンズオンは、すでにStatic
-Process（通常のProcess）での開発をしたことがある人を対象にしています。
+Process（通常のProcess）での開発経験がある人を対象にしています。
 
 演習手順
 ========
