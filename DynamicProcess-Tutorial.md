@@ -174,7 +174,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image11.png" style="width:2.60354in;height:0.95709in" />
 
-1.  同様に、下表に従ってヒューマンタスク・アクティビティを作成します。
+同様に、下表に従ってヒューマンタスク・アクティビティを作成します。
 
 | 名前           |
 |----------------|
@@ -189,7 +189,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 ※デフォルトでは、全てのステージが同時に利用可能です。
 
-1.  ステージ追加フィールドで名前を指定し、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image7.png" style="width:0.18056in;height:0.18056in" />をクリックしてステージを作成します。
+ステージ追加フィールドで名前を指定し、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image7.png" style="width:0.18056in;height:0.18056in" />をクリックしてステージを作成します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image12.png" style="width:1.79167in;height:0.34722in" />
 
@@ -205,7 +205,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image13.png" style="width:5.87835in;height:3.67402in" />
 
-1.  各ステージに作成済みのアクティビティを下表に従い配置します。残ったアクティビティは、任意のステージで実施可能なアクティビティとして機能します。
+各ステージに作成済みのアクティビティを下表に従い配置します。残ったアクティビティは、任意のステージで実施可能なアクティビティとして機能します。
 
 <table>
 <tr class="odd">
@@ -706,8 +706,10 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 ［テスト］をクリックします。
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image45.png" style="width:0.51389in;height:0.31944in" />
 ［現在のアプリケーション検証に成功しました］が出ていることを確認し、［アクティブ化］をクリックします。
+
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image46.png" style="width:4.34722in;height:3.02778in" />
 ［自分を全てのロールに追加］にチェックが入っていることを確認し、［アクティブ化］をクリックします。
+
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image47.png" style="width:2.93056in;height:1.30556in" />
 
 ### テストモードでの実行
