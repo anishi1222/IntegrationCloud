@@ -101,8 +101,7 @@ class="underline">本番モードでの実行</span>](#本番モードでの実�
 目的
 ====
 
-この演習では、動的プロセス（Dynamic
-Process）の基本的な動作を理解することを目的としています。
+この演習では、動的プロセス（Dynamic Process）の基本的な動作を理解することを目的としています。
 
 ユースケース
 ------------
@@ -112,17 +111,14 @@ Process）の基本的な動作を理解することを目的としています�
 ハンズオン動作確認環境
 ----------------------
 
-このハンズオンは、Oracle Integration Cloud (User Managed)
-18.2.5で動作確認しています。
-
-Mozilla FirefoxもしくはGoogle Chromeを使うことを推奨します。
+- このハンズオンは、Oracle Integration Cloud (User Managed)18.2.5で動作確認しています。
+- Mozilla FirefoxもしくはGoogle Chromeを使うことを推奨します。
 
 ハンズオン実施上の注意
 ----------------------
 
-このハンズオンは、すでにStatic
-Process（通常のProcess）での開発経験がある人を対象にしています。
-完成版をエクスポートしたものは［こちら](Emergency Process.exp)にあります。
+- このハンズオンは、すでにStatic Process（通常のProcess）での開発経験がある人を対象にしています。
+- 完成版をエクスポートしたものは［こちら](Emergency Process.exp)にあります。
 
 演習手順
 ========
@@ -130,9 +126,7 @@ Process（通常のProcess）での開発経験がある人を対象にしてい
 アプリケーションの作成
 ----------------------
 
-Process Builderでアプリケーションを作成します。
-
-Integration Cloudのホーム左側のProcess Builderをクリックします。
+Integration Cloudのホーム左側のProcess Builderをクリックし、Process Builderでアプリケーションを作成していきます。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image1.png" style="width:5.87835in;height:3.67402in" />
 
