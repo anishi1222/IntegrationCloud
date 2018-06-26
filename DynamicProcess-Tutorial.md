@@ -338,7 +338,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 <table>
 <tbody>
 <tr class="odd">
-<th>名前</th>
+<th>名前</th>
 <td>TreatmentDatetime</td>
 <td>Treatment</td>
 </tr>
