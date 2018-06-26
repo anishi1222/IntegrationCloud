@@ -770,9 +770,11 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 ［テスト］をクリックします。
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image45.png" style="width:0.51389in;height:0.31944in" />
+
 ［現在のアプリケーション検証に成功しました］が出ていることを確認し、［アクティブ化］をクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image46.png" style="width:4.34722in;height:3.02778in" />
+
 ［自分を全てのロールに追加］にチェックが入っていることを確認し、［アクティブ化］をクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image47.png" style="width:2.93056in;height:1.30556in" />
