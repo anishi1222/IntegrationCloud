@@ -14,7 +14,7 @@ class="underline">ハンズオン動作確認環境</span>](#ハンズオン動�
 class="underline">ハンズオン実施上の注意</span>](#ハンズオン実施上の注意)
 
 [<span class="underline">2</span> <span
-class="underline">演習手順</span>](#_Toc517805815)
+class="underline">演習手順</span>](#演習手順)
 
 [<span class="underline">2.1</span> <span
 class="underline">アプリケーションの作成</span>](#アプリケーションの作成)
