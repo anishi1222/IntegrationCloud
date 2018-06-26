@@ -651,7 +651,7 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image43.png" style="width:4.16667in;height:2.91667in" />
 
-その他のアクティビティに対しても、同様の手順でユーザーを割り当てていきます。割り当てる内容は下表をご覧ください。
+その他のアクティビティに対しても、下表の設定に従って、同様の手順でユーザーを割り当てていきます。
 
 <table>
 <tbody>
