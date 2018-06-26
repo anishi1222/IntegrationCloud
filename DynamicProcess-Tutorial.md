@@ -532,14 +532,13 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 <td>退院の手続き</td>
 </tr>
 <tr class="even">
-<th>From Title</th>
-<td>搬送者情報の登録</td>
-</tr>
-<tr class="odd">
 <th>Form</th>
 <td>PatientForm</td>
+<td>PatientForm</td>
+<td>PatientForm</td>
+<td>PatientForm</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <th>Presentation</th>
 <td>処置</td>
 <td>退院判定</td>
