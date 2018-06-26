@@ -26,7 +26,7 @@ class="underline">ステージ、マイルストン、ヒューマンタスク�
 class="underline">ヒューマン・タスク・アクティビティの作成</span>](#ヒューマン・タスク・アクティビティの作成)
 
 [<span class="underline">2.2.2</span> <span
-class="underline">ステージ（Stage）の作成</span>](#ステージstageの作成)
+class="underline">ステージ（Stage）の作成</span>](#ステージ（Stage）の作成)
 
 [<span class="underline">2.2.3</span> <span
 class="underline">マイルストンの作成</span>](#マイルストンの作成)
@@ -38,23 +38,23 @@ class="underline">フォームの作成</span>](#フォームの作成)
 class="underline">プロセス開始イベントの設定</span>](#プロセス開始イベントの設定)
 
 [<span class="underline">2.4</span> <span
-class="underline">ヒューマンタスク・アクティビティとフォームの関連付け</span>](#ヒューマンタスクアクティビティとフォームの関連付け)
+class="underline">ヒューマンタスク・アクティビティとフォームの関連付け</span>](#ヒューマンタスク・アクティビティとフォームの関連付け)
 
 [<span class="underline">2.5</span> <span
 class="underline">ヒューマンタスク・アクティビティへのデータ・アソシエーション</span>
-19](#ヒューマンタスクアクティビティへのデータアソシエーション)
+19](#ヒューマンタスク・アクティビティへのデータ・アソシエーション)
 
 [<span class="underline">2.6</span> <span
 class="underline">ロールと権限の設定</span>](#ロールと権限の設定)
 
 [<span class="underline">2.7</span> <span
-class="underline">ヒューマンタスク・アクティビティへのユーザー割り当て</span>](#ヒューマンタスクアクティビティへのユーザー割り当て)
+class="underline">ヒューマンタスク・アクティビティへのユーザー割当て</span>](#ヒューマンタスク・アクティビティへのユーザー割当て)
 
 [<span class="underline">2.8</span> <span
-class="underline">ステージやアクティビティの開始・終了条件設定</span>](#ステージやアクティビティの開始終了条件設定)
+class="underline">ステージやアクティビティの開始・終了条件設定</span>](#ステージやアクティビティの開始・終了条件設定)
 
 [<span class="underline">2.8.1</span> <span
-class="underline">スクリーニング・ステージ</span>](#スクリーニングステージ)
+class="underline">スクリーニング・ステージ</span>](#スクリーニング・ステージ)
 
 [<span class="underline">2.8.2</span> <span
 class="underline">処置ステージ</span>](#処置ステージ)
@@ -87,7 +87,7 @@ class="underline">テストモードでのアクティブ化</span>](#テスト�
 class="underline">テストモードでの実行</span>](#テストモードでの実行)
 
 [<span class="underline">2.10</span> <span
-class="underline">本番モードでの実行</span>](#本番モードでの実行)
+class="underline">本番モードでの動作確認</span>](#本番モードでの動作確認)
 
 [<span class="underline">2.10.1</span> <span
 class="underline">アプリケーションの公開</span>](#アプリケーションの公開)
@@ -96,7 +96,7 @@ class="underline">アプリケーションの公開</span>](#アプリケーシ�
 class="underline">本番モードへのアクティブ化</span>](#本番モードへのアクティブ化)
 
 [<span class="underline">2.10.3</span> <span
-class="underline">本番モードでの実行</span>](#本番モードでの実行-1)
+class="underline">本番モードでの実行</span>](#本番モードでの実行)
 
 目的
 ====
@@ -597,7 +597,7 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image40.png" style="width:2.49173in;height:3.6in" />　　<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image41.png" style="width:2.49173in;height:3.59173in" />
 
- ヒューマンタスク・アクティビティへのユーザー割り当て
+ ヒューマンタスク・アクティビティへのユーザー割当て
 -----------------------------------------------------
 
 各ヒューマンタスクにはユーザーやグループ、ロールを割り当てる必要があります。
@@ -761,7 +761,7 @@ Submit（送信）が完了すると、Emergency Processインスタンスが作
 
 ### 
 
-本番モードでの実行
+本番モードでの動作確認
 ------------------
 
 テストモードでの動作確認が終了したら、アクティブ化した上で、本番モードで実行します。アクティブ化対象のアプリケーションは、データベースに永続化（公開）したものです。そのため、まだ公開していない場合は事前に公開する必要があります。
