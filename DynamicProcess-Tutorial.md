@@ -216,14 +216,14 @@ Process Builderでアプリケーションを作成します。
 <thead>
 <tr class="header">
 <th>ステージ</th>
-<th>スクリーニング</th>
-<th>処置</th>
-<th>退院</th>
+<td>スクリーニング</td>
+<td>処置</td>
+<td>退院</td>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>アクティビティ</td>
+<th>アクティビティ</th>
 <td>スクリーニング</td>
 <td><p>処置</p>
 <p>退院判定</p></td>
