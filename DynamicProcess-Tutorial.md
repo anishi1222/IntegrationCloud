@@ -23,7 +23,7 @@ class="underline">アプリケーションの作成</span>](#アプリケーシ�
 class="underline">ステージ、マイルストン、ヒューマンタスク・アクティビティの作成</span>](#ステージ、マイルストン、ヒューマンタスク・アクティビティの作成)
 
 [<span class="underline">2.2.1</span> <span
-class="underline">ヒューマン・タスク・アクティビティの作成</span>](#ヒューマンタスクアクティビティの作成)
+class="underline">ヒューマン・タスク・アクティビティの作成</span>](#ヒューマン・タスク・アクティビティの作成)
 
 [<span class="underline">2.2.2</span> <span
 class="underline">ステージ（Stage）の作成</span>](#ステージstageの作成)
@@ -164,11 +164,9 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 アクティビティ追加フィールドで以下の操作をしてヒューマンタスク・アクティビティを作成します。
 
-    -   Human Task Activityを選択
-
-    -   名前は「処置」
-
-    -   <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image7.png" style="width:0.18056in;height:0.18056in" />アイコンをクリックしてアクティビティを作成
+- Human Task Activityを選択
+- 名前は「処置」
+- <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image7.png" style="width:0.18056in;height:0.18056in" />アイコンをクリックしてアクティビティを作成
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image8.png" style="width:2.51389in;height:0.94444in" />
 
