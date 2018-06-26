@@ -474,13 +474,30 @@ Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 プロセス名の左側にある<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image28.png" style="width:0.20833in;height:0.23611in" />をクリックすると、動的プロセスの開始条件を設定できます。下表に従って条件を設定し、［Define］をクリックします。
 
-|                    |                  |
-|--------------------|------------------|
-| 起動条件           | With Form Only   |
-| From Title         | 搬送者情報の登録 |
-| Form               | PatientForm      |
-| Presentation       | スタート         |
-| Interface Argument | formArg          |
+<table>
+<tbody>
+<tr class="odd">
+<th>起動条件</th>
+<td>ith Form Only</td>
+</tr>
+<tr class="even">
+<th>From Title</th>
+<td>搬送者情報の登録</td>
+</tr>
+<tr class="odd">
+<th>Form</th>
+<td>PatientForm</td>
+</tr>
+<tr class="even">
+<th>Presentation</th>
+<td>スタート</td>
+</tr>
+<tr class="odd">
+<th>Interface Argument</th>
+<td>formArg</td>
+</tr>
+</tbody>
+</table>
 
  ヒューマンタスク・アクティビティとフォームの関連付け
 -----------------------------------------------------
@@ -505,10 +522,32 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
  その他のヒューマンタスク・アクティビティについても同様に設定していきます。設定内容は下表をご覧ください。
 
-| アクティビティ | 処置        | 退院判定 | 手術の手続き | 退院の手続き |
-|----------------|-------------|----------|--------------|--------------|
-| Form           | PatientForm |          |              |              |
-| Presentation   | 処置        | 退院判定 | 手術の手続き | 退院の手続き |
+<table>
+<tbody>
+<tr class="odd">
+<th>アクティビティ</th>
+<td>処置</td>
+<td>退院判定</td>
+<td>手術の手続き</td>
+<td>退院の手続き</td>
+</tr>
+<tr class="even">
+<th>From Title</th>
+<td>搬送者情報の登録</td>
+</tr>
+<tr class="odd">
+<th>Form</th>
+<td>PatientForm</td>
+</tr>
+<tr class="even">
+<th>Presentation</th>
+<td>処置</td>
+<td>退院判定</td>
+<td>手術の手続き</td>
+<td>退院の手続き</td>
+</tr>
+</tbody>
+</table>
 
 ヒューマンタスク・アクティビティへのデータ・アソシエーション
 ------------------------------------------------------------
