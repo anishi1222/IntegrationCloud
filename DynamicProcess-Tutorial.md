@@ -781,9 +781,7 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 ### テストモードでの実行
 
-アクティブ化が完了したら、［テスト・モードで試行］をクリックします。Testing ModeがOnの状態のブラウザが開きます。
-
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image48.png" style="width:1.27778in;height:0.30556in" />
+アクティブ化が完了したら、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image48.png" style="width:1.27778in;height:0.30556in" />をクリックします。Testing ModeがOnの状態のブラウザが開きます。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image49.png" style="width:5.87835in;height:3.67402in" />
 
