@@ -1,4 +1,4 @@
-# Dynamic Process Tutorial / Emergency Room
+Dynamic Process Tutorial / Emergency Room
 ====
 
 [<span class="underline">1</span> <span class="underline">目的</span>
