@@ -175,7 +175,7 @@ Process Builderでアプリケーションを作成します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image8.png" style="width:2.51389in;height:0.94444in" />
 
-作成した結果、以下のようにアクティビティが表示されているはずです。このうち、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image9.tiff" style="width:0.16654in;height:0.16654in" />はこのアクティビティが必須であること、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image10.tiff" style="width:0.16763in;height:0.17561in" />は必須項目が設定済みではあるものの、1個未設定の構成があることを表しています。
+作成した結果、以下のようにアクティビティが表示されているはずです。このうち、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image9.png" style="width:0.16654in;height:0.16654in" />はこのアクティビティが必須であること、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image10.png" style="width:0.16763in;height:0.17561in" />は必須項目が設定済みではあるものの、1個未設定の構成があることを表しています。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image11.png" style="width:2.60354in;height:0.95709in" />
 
@@ -403,7 +403,7 @@ Process Builderでアプリケーションを作成します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image27.png" style="width:2.80556in;height:0.68056in" />
 
-1.  プロセス名の左側にある<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image28.tiff" style="width:0.20833in;height:0.23611in" />をクリックすると、動的プロセスの開始条件を設定できます。下表に従って条件を設定し、［Define］をクリックします。
+1.  プロセス名の左側にある<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image28.png" style="width:0.20833in;height:0.23611in" />をクリックすると、動的プロセスの開始条件を設定できます。下表に従って条件を設定し、［Define］をクリックします。
 
 |                    |                  |
 |--------------------|------------------|
@@ -418,7 +418,7 @@ Process Builderでアプリケーションを作成します。
 
 ヒューマンタスク・アクティビティに先ほど作成したフォームのプレゼンテーションを関連付けます。
 
-1.  EmergencyProcessタブで、ヒューマンタスク・アクティビティの“スクリーニング”をダブルクリックする、もしくはシングルクリックで現れる<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image29.tiff" style="width:0.20833in;height:0.22222in" />をクリックします。いずれの方法でも、アクティビティのプロパティ設定画面が現れます。
+1.  EmergencyProcessタブで、ヒューマンタスク・アクティビティの“スクリーニング”をダブルクリックする、もしくはシングルクリックで現れる<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image29.png" style="width:0.20833in;height:0.22222in" />をクリックします。いずれの方法でも、アクティビティのプロパティ設定画面が現れます。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image30.png" style="width:1.94722in;height:0.64384in" />
 
@@ -447,7 +447,7 @@ Process Builderでアプリケーションを作成します。
 
 各ヒューマンタスク・アクティビティでは、データ・アソシエーション（データ・マッピング）を使って、データ入出力を定義する必要があります。データ・アソシエーションは、フロー要素間で渡される情報を定義します。
 
-1.  “スクリーニング“ヒューマンタスク・アクティビティをクリックし、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image33.tiff" style="width:0.23611in;height:0.23611in" />をクリックし、Data
+1.  “スクリーニング“ヒューマンタスク・アクティビティをクリックし、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image33.png" style="width:0.23611in;height:0.23611in" />をクリックし、Data
     Association &gt; Inputを選択します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image34.png" style="width:3.51389in;height:1.19444in" />
@@ -539,7 +539,7 @@ Process Builderでアプリケーションを作成します。
 
 1.  “医師”ロールを“処置”アクティビティに割り当てます。
 
-    1.  “処置”アクティビティをダブルクリックもしくはシングルクリックで<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image29.tiff" style="width:0.20833in;height:0.22222in" />をクリック
+    1.  “処置”アクティビティをダブルクリックもしくはシングルクリックで<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image29.png" style="width:0.20833in;height:0.22222in" />をクリック
 
     2.  プロパティ画面のGeneralタブ下方にあるImplementationのGeneralをクリック
 
