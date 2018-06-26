@@ -250,9 +250,22 @@ Process Builderでアプリケーションを作成します。
 
 同様の操作で、下表に従い、各ステージにマイルストンを作成します。
 
-| ステージ       | 処置   | 退院   |
-|----------------|--------|--------|
-| アクティビティ | 処置済 | 退院済 |
+<table>
+<thead>
+<tr class="header">
+<th>ステージ</th>
+<td>処置</td>
+<td>退院</td>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th>アクティビティ</th>
+<td>処置済</td>
+<td>退院済</td>
+</tr>
+</tbody>
+</table>
 
 作成が完了すると、下図のようになっているはずです。
 
@@ -274,11 +287,23 @@ Process Builderでアプリケーションを作成します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image18.png" style="width:4.02778in;height:1.29167in" />
 
-|              |          |           |
-|--------------|----------|-----------|
-| 名前         | LastName | FirstName |
-| ラベル       | 姓       | 名        |
-| （バインド） | lastName | firstName |
+<table>
+<tr class="odd">
+<th>名前</th>
+<td>LastName</td>
+<td>FirstName</td>
+</tr>
+<tr class="odd">
+<th>ラベル</th>
+<td>姓</td>
+<td>名</td>
+</tr>
+<tr class="odd">
+<th>（バインド）</th>
+<td>lastName</td>
+<td>firstName</td>
+</tr>
+</table>
 
 1.  “スタート“をベースにして、新たにプレゼンテーションを作成します。プロパティ＞フォーム＞プレゼンテーションの＋をクリックし、名前は”スクリーニング“、基準は”スタート“を選択し、［作成］をクリックします。
 
