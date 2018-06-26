@@ -122,6 +122,7 @@ Mozilla FirefoxもしくはGoogle Chromeを使うことを推奨します。
 
 このハンズオンは、すでにStatic
 Process（通常のProcess）での開発経験がある人を対象にしています。
+完成版をエクスポートしたものは［こちら](Emergency Process.exp)にあります。
 
 演習手順
 ========
