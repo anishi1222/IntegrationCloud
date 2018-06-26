@@ -653,11 +653,38 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 その他のアクティビティに対しても、同様の手順でユーザーを割り当てていきます。割り当てる内容は下表をご覧ください。
 
-| アクティビティ名 | スクリーニング | 手術の手続き | 退院判定 | 退院の手続き |
-|------------------|----------------|--------------|----------|--------------|
-| Identity Type    | Role           | Role         | Role     | Role         |
-| Type             | Literal        | Literal      | Literal  | Literal      |
-| Value            | 看護師         | 医師         | 医師     | 看護師       |
+<table>
+<tbody>
+<tr class="odd">
+<th>アクティビティ名</th>
+<td>スクリーニング</td>
+<td>手術の手続き</td>
+<td>退院判定</td>
+<td>退院の手続き</td>
+</tr>
+<tr class="even">
+<th>Identity Type</th>
+<td>Role</td>
+<td>Role</td>
+<td>Role</td>
+<td>Role</td>
+</tr>
+<tr class="odd">
+<th>Type</th>
+<td>Literal</td>
+<td>Literal</td>
+<td>Literal</td>
+<td>Literal</td>
+</tr>
+<tr class="even">
+<th>Value</th>
+<td>看護師</td>
+<td>医師</td>
+<td>医師</td>
+<td>看護師</td>
+</tr>
+</tbody>
+</table>
 
  ステージやアクティビティの開始・終了条件設定
 ---------------------------------------------
