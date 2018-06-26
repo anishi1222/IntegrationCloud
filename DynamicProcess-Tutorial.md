@@ -20,7 +20,7 @@ class="underline">演習手順</span>](#_Toc517805815)
 class="underline">アプリケーションの作成</span>](#アプリケーションの作成)
 
 [<span class="underline">2.2</span> <span
-class="underline">ステージ、マイルストン、ヒューマンタスク・アクティビティの作成</span>](#ステージマイルストンヒューマンタスクアクティビティの作成)
+class="underline">ステージ、マイルストン、ヒューマンタスク・アクティビティの作成</span>](#ステージ、マイルストン、ヒューマンタスク・アクティビティの作成)
 
 [<span class="underline">2.2.1</span> <span
 class="underline">ヒューマン・タスク・アクティビティの作成</span>](#ヒューマンタスクアクティビティの作成)
@@ -131,41 +131,38 @@ Process（通常のProcess）での開発をしたことがある人を対象に
 
 Process Builderでアプリケーションを作成します。
 
-1.  Integration Cloudのホーム左側のProcess Builderをクリックします。
+Integration Cloudのホーム左側のProcess Builderをクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image1.png" style="width:5.87835in;height:3.67402in" />
 
-1.  右上の［作成］をクリックし、メニューから［新規アプリケーション］を選択します。
+右上の［作成］をクリックし、メニューから［新規アプリケーション］を選択します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image2.png" style="width:1.91451in;height:1.72464in" />
 
-1.  アプリケーション名はEmergency
-    Processとし、［作成］をクリックします。スペースは［スペースの新規作成］を選択し、スペース名として［Dynamic
-    Process］を指定します。
+アプリケーション名はEmergency Processとし、［作成］をクリックします。スペースは［スペースの新規作成］を選択し、スペース名として［Dynamic Process］を指定します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image3.png" style="width:2.46698in;height:3.0963in" />
 
-1.  右側の［作成］をクリックし、［新規動的プロセス］を選択します。
+右側の［作成］をクリックし、［新規動的プロセス］を選択します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image4.png" style="width:1.23611in;height:0.83333in" />
 
-1.  名前はEmergency
-    Process、パターンは［None］を選択し、［Create］をクリックします。
+名前はEmergency Process、パターンは［None］を選択し、［Create］をクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image5.png" style="width:4.80568in;height:2.71015in" />
 
-1.  以下のような初期画面が現れるはずです。この画面でステージ（フェーズ）、マイルストン、アクティビティなどを追加していきます。
+以下のような初期画面が現れるはずです。この画面でステージ（フェーズ）、マイルストン、アクティビティなどを追加していきます。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image6.png" style="width:5.3437in;height:4.2752in" />
 
 ステージ、マイルストン、ヒューマンタスク・アクティビティの作成
---------------------------------------------------------------
+----------------------
 
 続いて、アクティビティを作成します。動的プロセスでは、ヒューマン・タスクもしくはBPMNプロセスをアクティビティにすることができます。ヒューマンタスク・アクティビティはプロセスが無くても単独でアクティビティにすることができます。BPMNプロセス・アクティビティには任意のBPMNアクティビティを含めることができます。
 
 ### ヒューマン・タスク・アクティビティの作成
 
-1.  アクティビティ追加フィールドで以下の操作をしてヒューマンタスク・アクティビティを作成します。
+アクティビティ追加フィールドで以下の操作をしてヒューマンタスク・アクティビティを作成します。
 
     -   Human Task Activityを選択
 
@@ -233,11 +230,9 @@ Process Builderでアプリケーションを作成します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image14.png" style="width:5.8777in;height:3.5885in" />
 
-### 
-
 ### マイルストンの作成
 
-1.  “スクリーニング”ステージのアクティビティ追加フィールドで以下の操作をしてマイルストンを作成します。
+“スクリーニング”ステージのアクティビティ追加フィールドで以下の操作をしてマイルストンを作成します。
 
     -   Milestoneを選択
 
@@ -268,15 +263,15 @@ Process Builderでアプリケーションを作成します。
 
 ヒューマンタスク・アクティビティで利用するフォームを作成します。
 
-1.  画面左側のメニューで［フォーム］を選択し、画面右側に現れる［作成］をクリックし、名前をPatientForm（半角、空白を入れない）として［作成］をクリックします。
+画面左側のメニューで［フォーム］を選択し、画面右側に現れる［作成］をクリックし、名前をPatientForm（半角、空白を入れない）として［作成］をクリックします。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image16.png" style="width:2in;height:2in" />
 
-1.  初期状態では、プレゼンテーション名が“メイン”になっているはずです。この名前を“スタート”に変更します。プロパティ＞プレゼンテーション＞［名前］で“メイン”を“スタート”に書き換えます。この“スタート“プレゼンテーションでは、入院患者の氏名を記録するために使います。
+初期状態では、プレゼンテーション名が“メイン”になっているはずです。この名前を“スタート”に変更します。プロパティ＞プレゼンテーション＞［名前］で“メイン”を“スタート”に書き換えます。この“スタート“プレゼンテーションでは、入院患者の氏名を記録するために使います。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image17.png" style="width:1.80556in;height:1.88889in" />
 
-1.  2個のテキストフィールドを貼り付けます。名前、ラベルは以下の通り設定します。バインドは名前を基に生成しますので、明示的に設定する必要はありません。
+2個のテキストフィールドを貼り付けます。名前、ラベルは以下の通り設定します。バインドは名前を基に生成しますので、明示的に設定する必要はありません。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image18.png" style="width:4.02778in;height:1.29167in" />
 
@@ -303,11 +298,11 @@ Process Builderでアプリケーションを作成します。
 </tr>
 </table>
 
-1.  “スタート“をベースにして、新たにプレゼンテーションを作成します。プロパティ＞フォーム＞プレゼンテーションの＋をクリックし、名前は”スクリーニング“、基準は”スタート“を選択し、［作成］をクリックします。
+“スタート“をベースにして、新たにプレゼンテーションを作成します。プロパティ＞フォーム＞プレゼンテーションの＋をクリックし、名前は”スクリーニング“、基準は”スタート“を選択し、［作成］をクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image19.png" style="width:3.06965in;height:2.40594in" />
 
-1.  スクリーニングでは、テキスト領域を追加し、下表に従ってプロパティを設定します。
+スクリーニングでは、テキスト領域を追加し、下表に従ってプロパティを設定します。
 
 <table>
 <tr class="odd">
@@ -332,7 +327,7 @@ Process Builderでアプリケーションを作成します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image20.png" style="width:5.87756in;height:3.67323in" />
 
-1.  “処置“プレゼンテーションを作成します。スクリーニングと同じように、既存のプレゼンテーションを基に作成しますが、今回の場合は”スクリーニング“を基に作成します。作成したプレゼンテーションの”状態“の下に、繰返し可能セクションを追加します。
+“処置“プレゼンテーションを作成します。スクリーニングと同じように、既存のプレゼンテーションを基に作成しますが、今回の場合は”スクリーニング“を基に作成します。作成したプレゼンテーションの”状態“の下に、繰返し可能セクションを追加します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image21.png" style="width:5.87756in;height:3.67323in" />
 
@@ -340,43 +335,43 @@ Process Builderでアプリケーションを作成します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image22.png" style="width:2.08396in;height:1.72085in" />
 
-1.  繰返しセクション内に日時とテキスト領域を追加し、下表に従ってプロパティを設定します。
+繰返しセクション内に日時とテキスト領域を追加し、下表に従ってプロパティを設定します。
 
 <table>
 <tbody>
 <tr class="odd">
-<td>名前</td>
+<th>名前</th>
 <td>TreatmentDatetime</td>
 <td>Treatment</td>
 </tr>
 <tr class="even">
-<td>ラベル</td>
+<th>ラベル</th>
 <td>処置日時</td>
 <td>処置</td>
 </tr>
 <tr class="odd">
-<td>（バインド）</td>
+<th>（バインド）</th>
 <td>treatmentDatetime</td>
 <td>Treatment</td>
 </tr>
 <tr class="even">
-<td>計算された値</td>
+<th>計算された値</th>
 <td><p>True</p>
 <p>［編集］をクリックし、タイプは“ファンクション”、ファンクションは“現在の日時”を選択</p></td>
 <td>N/A</td>
 </tr>
 <tr class="odd">
-<td>形式</td>
+<th>形式</th>
 <td>yyyy-MM-dd</td>
 <td>N/A</td>
 </tr>
 <tr class="even">
-<td>読取り専用</td>
+<th>読取り専用</th>
 <td>True</td>
 <td>False</td>
 </tr>
 <tr class="odd">
-<td>コンポーネント</td>
+<th>コンポーネント</th>
 <td>日時</td>
 <td>テキスト領域</td>
 </tr>
