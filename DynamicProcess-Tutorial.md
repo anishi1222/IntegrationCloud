@@ -213,16 +213,13 @@ Process Builderでアプリケーションを作成します。
 1.  各ステージに作成済みのアクティビティを下表に従い配置します。残ったアクティビティは、任意のステージで実施可能なアクティビティとして機能します。
 
 <table>
-<thead>
-<tr class="header">
+<tr class="odd">
 <th>ステージ</th>
 <td>スクリーニング</td>
 <td>処置</td>
 <td>退院</td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr class="even">
 <th>アクティビティ</th>
 <td>スクリーニング</td>
 <td><p>処置</p>
@@ -251,20 +248,16 @@ Process Builderでアプリケーションを作成します。
 同様の操作で、下表に従い、各ステージにマイルストンを作成します。
 
 <table>
-<thead>
-<tr class="header">
+<tr class="odd">
 <th>ステージ</th>
 <td>処置</td>
 <td>退院</td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th>アクティビティ</th>
+<tr class="even">
+<th>マイルストン</th>
 <td>処置済</td>
 <td>退院済</td>
 </tr>
-</tbody>
 </table>
 
 作成が完了すると、下図のようになっているはずです。
@@ -293,7 +286,7 @@ Process Builderでアプリケーションを作成します。
 <td>LastName</td>
 <td>FirstName</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <th>ラベル</th>
 <td>姓</td>
 <td>名</td>
@@ -303,6 +296,11 @@ Process Builderでアプリケーションを作成します。
 <td>lastName</td>
 <td>firstName</td>
 </tr>
+<tr class="even">
+<th>コンポーネント</th>
+<td>テキスト</td>
+<td>テキスト</td>
+</tr>
 </table>
 
 1.  “スタート“をベースにして、新たにプレゼンテーションを作成します。プロパティ＞フォーム＞プレゼンテーションの＋をクリックし、名前は”スクリーニング“、基準は”スタート“を選択し、［作成］をクリックします。
@@ -311,12 +309,24 @@ Process Builderでアプリケーションを作成します。
 
 1.  スクリーニングでは、テキスト領域を追加し、下表に従ってプロパティを設定します。
 
-|                |              |
-|----------------|--------------|
-| 名前           | Symptoms     |
-| ラベル         | 状態         |
-| （バインド）   | Symptoms     |
-| コンポーネント | テキスト領域 |
+<table>
+<tr class="odd">
+<th>名前</th>
+<td>Symptoms</td>
+</tr>
+<tr class="even">
+<th>ラベル</th>
+<td>状態</td>
+</tr>
+<tr class="odd">
+<th>（バインド）</th>
+<td>Symptoms</td>
+</tr>
+<tr class="even">
+<th>コンポーネント</th>
+<td>テキスト領域</td>
+</tr>
+</table>
 
 作成したプレゼンテーションは以下のようになっているはずです。姓、名は読み取り専用にしておきます。
 
