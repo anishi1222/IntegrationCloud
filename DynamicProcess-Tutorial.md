@@ -177,7 +177,7 @@ Process Builderでアプリケーションを作成します。
 
 作成した結果、以下のようにアクティビティが表示されているはずです。このうち、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image9.png" style="width:0.16654in;height:0.16654in" />はこのアクティビティが必須であること、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image10.png" style="width:0.16763in;height:0.17561in" />は必須項目が設定済みではあるものの、1個未設定の構成があることを表しています。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image11.png" style="width:2.60354in;height:0.95709in" />
+> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image11.png" style="width:2.60354in;height:0.95709in" />
 
 1.  同様に、下表に従ってヒューマンタスク・アクティビティを作成します。
 
@@ -197,8 +197,8 @@ Process Builderでアプリケーションを作成します。
 1.  ステージ追加フィールドで名前を指定し、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image7.png" style="width:0.18056in;height:0.18056in" />をクリックしてステージを作成します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image12.png" style="width:1.79167in;height:0.34722in" />
->
-> 作成するステージの名前は下表に従います。
+
+作成するステージの名前は下表に従います。
 
 | 名前           |
 |----------------|
@@ -206,7 +206,7 @@ Process Builderでアプリケーションを作成します。
 | 処置           |
 | 退院           |
 
-> 作成が完了すると、以下のような構成になっているはずです。
+作成が完了すると、以下のような構成になっているはずです。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image13.png" style="width:5.87835in;height:3.67402in" />
 
@@ -232,7 +232,7 @@ Process Builderでアプリケーションを作成します。
 </tbody>
 </table>
 
-> この結果、下図のような表示になっているはずです。
+この結果、下図のような表示になっているはずです。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image14.png" style="width:5.8777in;height:3.5885in" />
 
@@ -293,7 +293,7 @@ Process Builderでアプリケーションを作成します。
 | （バインド）   | Symptoms     |
 | コンポーネント | テキスト領域 |
 
-> 作成したプレゼンテーションは以下のようになっているはずです。姓、名は読み取り専用にしておきます。
+作成したプレゼンテーションは以下のようになっているはずです。姓、名は読み取り専用にしておきます。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image20.png" style="width:5.87756in;height:3.67323in" />
 
@@ -361,7 +361,7 @@ Process Builderでアプリケーションを作成します。
 | （バインド）   | isConcented        |
 | コンポーネント | チェック・ボックス |
 
-> 作成したプレゼンテーションは以下のようになっているはずです。
+作成したプレゼンテーションは以下のようになっているはずです。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image24.png" style="width:5.87835in;height:3.67402in" />
 
@@ -375,7 +375,7 @@ Process Builderでアプリケーションを作成します。
 | （バインド）   | isTreatmentCompleted |
 | コンポーネント | チェック・ボックス   |
 
-> 作成したプレゼンテーションは以下のようになっているはずです。
+作成したプレゼンテーションは以下のようになっているはずです。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image25.png" style="width:5.87835in;height:3.67402in" />
 
@@ -388,7 +388,7 @@ Process Builderでアプリケーションを作成します。
 | （バインド）   | isReadyForDischage |
 | コンポーネント | チェック・ボックス |
 
-> 作成したプレゼンテーションは以下のようになっているはずです。
+作成したプレゼンテーションは以下のようになっているはずです。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image26.png" style="width:5.87835in;height:3.67402in" />
 
@@ -401,7 +401,7 @@ Process Builderでアプリケーションを作成します。
 
 1.  動的プロセスを構成するため、EmergencyProcessタブをクリックします。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image27.png" style="width:2.80556in;height:0.68056in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image27.png" style="width:2.80556in;height:0.68056in" />
 
 1.  プロセス名の左側にある<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image28.png" style="width:0.20833in;height:0.23611in" />をクリックすると、動的プロセスの開始条件を設定できます。下表に従って条件を設定し、［Define］をクリックします。
 
@@ -430,12 +430,12 @@ Process Builderでアプリケーションを作成します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image32.png" style="width:1.86111in;height:0.98611in" />
 
-1.  TitleやTask
+2.  TitleやTask
     Summaryを任意で設定します。ここで指定した内容は、実行時にフォームの最上部に表示されます。
 
-2.  ［Close］をクリックします。
+3.  ［Close］をクリックします。
 
-3.  その他のヒューマンタスク・アクティビティについても同様に設定していきます。設定内容は下表をご覧ください。
+4.  その他のヒューマンタスク・アクティビティについても同様に設定していきます。設定内容は下表をご覧ください。
 
 | アクティビティ | 処置        | 退院判定 | 手術の手続き | 退院の手続き |
 |----------------|-------------|----------|--------------|--------------|
@@ -452,15 +452,15 @@ Process Builderでアプリケーションを作成します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image34.png" style="width:3.51389in;height:1.19444in" />
 
-1.  自動マッピング<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image35.png" style="width:0.27778in;height:0.25in" />をクリックします。これをクリックすると、データ型が同じものを自動的にマッピングします。もちろん、手作業でマッピングしてもかまいません。
+2.  自動マッピング<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image35.png" style="width:0.27778in;height:0.25in" />をクリックします。これをクリックすると、データ型が同じものを自動的にマッピングします。もちろん、手作業でマッピングしてもかまいません。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image36.png" style="width:4.2748in;height:0.93504in" />
 
-1.  左上にある［出力］タブをクリックし、自動マッピングをクリックします。その後、［適用］をクリックします。もしoutcomeのデータ・アソシエーションが出る場合は、下図のように［削除］をクリックしてください。
+3.  左上にある［出力］タブをクリックし、自動マッピングをクリックします。その後、［適用］をクリックします。もしoutcomeのデータ・アソシエーションが出る場合は、下図のように［削除］をクリックしてください。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image37.png" style="width:4.2748in;height:1.26929in" />
 
-1.  その他のヒューマンタスク・アクティビティ(処置、退院判定、手術の手続き、退院の手続き）も同様の設定をします。
+4.  その他のヒューマンタスク・アクティビティ(処置、退院判定、手術の手続き、退院の手続き）も同様の設定をします。
 
 ### 
 
@@ -472,14 +472,12 @@ Process Builderでアプリケーションを作成します。
 1.  右上にある［Roles］をクリックします。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image38.png" style="width:2.15278in;height:0.31944in" />
->
-> ［ロール］タブでは、動的プロセス用に定義されたロールを列挙しています。事前構成済みのデフォルトのロールとして、Process
-> OwnerとProcess
-> Viewerの2つが提供されています。今回はこれらのロールを、動的プロセスに適用します。
->
+
+［ロール］タブでは、動的プロセス用に定義されたロールを列挙しています。事前構成済みのデフォルトのロールとして、Process OwnerとProcess Viewerの2つが提供されています。今回はこれらのロールを、動的プロセスに適用します。
+
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image39.png" style="width:2.06944in;height:1.27778in" />
 
-1.  鉛筆アイコンをクリックし、編集していきます。編集項目および編集内容は下表をご覧ください。権限を新たに作成する場合は、＋アイコンをクリックします。編集が完了したら［Save］をクリックします。
+2.  鉛筆アイコンをクリックし、編集していきます。編集項目および編集内容は下表をご覧ください。権限を新たに作成する場合は、＋アイコンをクリックします。編集が完了したら［Save］をクリックします。
 
 <table>
 <thead>
@@ -554,7 +552,7 @@ Process Builderでアプリケーションを作成します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image43.png" style="width:4.16667in;height:2.91667in" />
 
-1.  その他のアクティビティに対しても、同様の手順でユーザーを割り当てていきます。割り当てる内容は下表をご覧ください。
+2.  その他のアクティビティに対しても、同様の手順でユーザーを割り当てていきます。割り当てる内容は下表をご覧ください。
 
 | アクティビティ名 | スクリーニング | 手術の手続き | 退院判定 | 退院の手続き |
 |------------------|----------------|--------------|----------|--------------|
@@ -738,11 +736,11 @@ Process Builderでアプリケーションを作成します。
 
 1.  上部メニューの［公開］をクリックします。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image58.png" style="width:3.3189in;height:0.37559in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image58.png" style="width:3.3189in;height:0.37559in" />
 
 1.  下図のようなウィンドウが開きますので、コメントを入れて［公開］をクリックします。このタイミングで、スナップショットを採取することもできます。公開が完了すると、本番モードでアクティブ化できる準備が整います。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image59.png" style="width:3.93346in;height:4.54173in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image59.png" style="width:3.93346in;height:4.54173in" />
 
 ### 本番モードへのアクティブ化
 
@@ -797,7 +795,7 @@ Workspaceでアプリケーションを操作していきます。注意点は�
 
 1.  左のメニューにある［自分のアプリ］をクリックします。
 
-> 下図では［管理］を選択できるようになっていますが、これはユーザーに割り当てたロールに依存します。
+下図では［管理］を選択できるようになっていますが、これはユーザーに割り当てたロールに依存します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image70.png" style="width:1.74301in;height:2.29831in" />
 
