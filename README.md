@@ -3,4 +3,4 @@
 Tutorials and Samples for Oracle Integration Cloud
 
 ## Process
-- [Dynamic Process Tutorial](DynamicProcess_tutorial.md)
+- [Dynamic Process Tutorial](DynamicProcess-Tutorial.md)
