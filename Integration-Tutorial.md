@@ -149,8 +149,8 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 </tr>
 <tr class="odd">
 <td>接続URL</td>
-<td><p><span class="underline">OICのURL</span></p>
-<p>ブラウザのURLをそのまま利用します</p></td>
+<td><p><span class="underline">https://OICのホスト名</span></p>
+<p>ブラウザに現れるOICのホスト名をそのまま利用します</p></td>
 </tr>
 </tbody>
 </table>
@@ -210,12 +210,14 @@ JSONレスポンス・ペイロードの取得
 
 8. **SEND**ボタンを押すと、認証情報を求めるポップアップが現れます。下表の通り設定し、**ACCEPT** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image16.png" style="width:2.71875in;height:2.68829in" />
+
 | **フィールド** | **入力値**                        |
 |----------------|-----------------------------------|
 | Username       | &lt;OICのログイン・ユーザー&gt;   |
 | Password       | &lt;OICのログイン・パスワード&gt; |
 9. レスポンスのペイロードをダウンロードし、JSONファイルとして保存しておきます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image17.png" style="width:7.06535in;height:4.41584in" />
+
 
 統合の作成
 ----------
