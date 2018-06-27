@@ -149,8 +149,8 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 </tr>
 <tr class="odd">
 <td>接続URL</td>
-<td><p><span class="underline">https://&lt;OICのホスト名&gt;</span></p>
-<p>ブラウザのURLのホスト名をそのまま利用します</p></td>
+<td><p><span class="underline">OICのURL</span></p>
+<p>ブラウザのURLをそのまま利用します</p></td>
 </tr>
 </tbody>
 </table>
@@ -328,7 +328,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 3. **検証**を押し、問題ないことを確認後、 **閉じる** をクリックします。
 4. **レスポンス・マッピング**のアイコンをクリックし、**＋**アイコンを押してデータ・マッパーを起動します。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image24.png" style="width:7.08386in;height:1.4378in" />
+> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image24.png" />
 
 5. 次のソース・フィールドを対応するターゲット・フィールドへマッピングします。
 
@@ -408,7 +408,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image34.png" style="width:3.71287in;height:1.23762in" />
 
 6. **Monitoring** ボタンをクリックして、詳細を確認します。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image35.png" style="width:7.07961in;height:2.48515in" />
+> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image35.png"/>
 
 7. 先ほどテストで実行したメッセージの結果を確認するには、メニューで **トラッキング** をクリックします。
 
