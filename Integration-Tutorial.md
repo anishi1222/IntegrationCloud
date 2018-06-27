@@ -1,35 +1,34 @@
-Integration Tutorial / REST Integration
-====
+# Integration Tutorial / REST Integration
 
-[<span class="underline">はじめに</span>](#はじめに)
+[<span class="underline">1. はじめに</span>](#はじめに)
 
-[<span class="underline">目的</span>](#目的)
+[<span class="underline">1.1 目的</span>](#目的)
 
-[<span class="underline">最終構成</span>](#最終構成)
+[<span class="underline">1.2 最終構成</span>](#最終構成)
 
-[<span class="underline">前提</span>](#前提)
+[<span class="underline">1.3 前提</span>](#前提)
 
-[<span class="underline">OICの運用・管理用APIについて</span>](#OICの運用・管理用APIについて)
+[<span class="underline">1.4 OICの運用・管理用APIについて</span>](#OICの運用・管理用APIについて)
 
-[<span class="underline">テスト・ツールの用意</span>](#テストツールの用意)
+[<span class="underline">1.5 テスト・ツールの用意</span>](#テスト・ツールの用意)
 
-[<span class="underline">REST接続の作成</span>](#rest接続の作成)
+[<span class="underline">2. REST接続の作成</span>](#rest接続の作成)
 
-[<span class="underline">連携フローの定義–OICの統合メタデータを取得</span>](#連携フローの定義–OICの統合メタデータを取得)
+[<span class="underline">3. 連携フローの定義–OICの統合メタデータを取得</span>](#連携フローの定義–OICの統合メタデータを取得)
 
-[<span class="underline">JSON形式のレスポンス・ペイロードの取得</span>](#JSON形式のレスポンス・ペイロードの取得)
+[<span class="underline">3.1 JSON形式のレスポンス・ペイロードの取得</span>](#JSON形式のレスポンス・ペイロードの取得)
 
-[<span class="underline">統合の作成</span>](#統合の作成)
+[<span class="underline">3.2 統合の作成</span>](#統合の作成)
 
-[<span class="underline">データ・マッピングとアクティベーション</span>](#データ・マッピングとアクティベーション)
+[<span class="underline">3.3 データ・マッピングとアクティブ化</span>](#データ・マッピングとアクティブ化)
 
-[<span class="underline">統合のテストとモニタリング</span>](#統合のテストとモニタリング)
+[<span class="underline">3.4 統合のテストとモニタリング</span>](#統合のテストとモニタリング)
 
-はじめに
-========
+------
 
-目的
---------
+## はじめに
+
+### 目的
 
 本ハンズオンでは、既存のREST APIに対して、OICで新たなRESTエンドポイントを構成・公開するために、REST to RESTの連携フローを実装します。
 このハンズオンを通じて以下のポイントを理解することができます。
@@ -41,8 +40,9 @@ Integration Tutorial / REST Integration
 
 なお本ハンズオンでは、既存のREST APIとして、OICが運用・管理用途で公開しているREST API（Integrationのメタデータを取得するAPI）を利用します。
 
-最終構成
---------
+------
+
+### 最終構成
 
 本ハンズオンの最終構成を以下に示します。
 
@@ -52,14 +52,13 @@ Integration Tutorial / REST Integration
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image3.png" style="width:7.05941in;height:1.37985in" />
 
-前提
-----
+------
+### 前提
 
 - 本ハンズオンでは、OICの統合のメタデータを取得するAPIを使用します。
 - 本ハンズオンを実施する前に、アクティブな統合を用意する必要があります。
 
-OICの運用・管理用APIについて
----------------------------------
+### OICの運用・管理用APIについて
 
 OICでは運用・管理を目的としたREST APIを提供しています。OICの運用・管理用のREST APIの一覧は、以下のドキュメントをご覧ください。
 
@@ -69,15 +68,16 @@ OICでは運用・管理を目的としたREST APIを提供しています。OIC
 - Integration Cloud (User managed)
 > [<span class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html</span>](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html)
 
-テスト・ツールの用意
---------------------
+------
+
+### テスト・ツールの用意
 
 動作確認を簡単にするため、REST APIを呼び出すためのツール（REST APIテストクライアント）を用意してください。
 本ハンズオンでは、以下のツールを使用した手順を掲載していますが、既にREST APIテストクライアントをお持ちであれば、特にインストールする必要はありません。
 
 ツール名： **Advanced REST client**
 
-__インストール方法__
+インストール方法
 
 1. Google Chromeを開き、以下のURLへアクセスします。
 > [<span
@@ -89,8 +89,9 @@ __インストール方法__
 4. **ARC**のアイコンをすると、Advanced REST Clientアプリを起動できます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image6.png" />
 
-REST接続の作成
-==============
+------
+
+## REST接続の作成
 
 RESTアダプタを使用して、REST接続を定義します。
 RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接続できるようになります。
@@ -168,11 +169,11 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 
 - **保存** をクリックして接続を保存し、**閉じる** をクリックして接続の編集画面を閉じます。
 
-連携フローの定義–OICの統合メタデータを取得
-============================================
+------
 
-JSON形式のレスポンス・ペイロードの取得
---------------------------------
+## 連携フローの定義–OICの統合メタデータを取得
+
+### JSON形式のレスポンス・ペイロードの取得
 
 連携フローを開発するために、REST APIを呼び出した際のレスポンス・ペイロードを収集しておく必要があります。今回はOICの統合メタデータを取得するREST APIを利用しますので、このAPIのレスポンス・ペイロードを取得しておきます。
 
@@ -192,6 +193,14 @@ JSON形式のレスポンス・ペイロードの取得
    ```
    [OIC URL]/ic/api/integration/v1/integrations/{id}
    ```
+
+| **Name** | **Value**                        |
+|----------------|-----------------------------------|
+| id       | &lt;確認した統合の識別子&gt;|&lt;確認した統合のバージョン番号&gt; |
+
+例えば、識別子がHELLO_WORLD、バージョンが01.02.0000の場合は、idはHELLO_WORLD|01.02.0000
+
+
 <table>
 <thead>
 <tr class="header">
@@ -219,9 +228,9 @@ JSON形式のレスポンス・ペイロードの取得
 - レスポンスのペイロードをダウンロードし、JSONファイルとして保存しておきます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image17.png" style="width:7.06535in;height:4.41584in" />
 
+------
 
-統合の作成
-----------
+### 統合の作成
 
 - メニューで **統合** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image18.png" style="width:2.70833in;height:2.01951in" />
@@ -308,7 +317,8 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 | id       | string       |
 
 - **レスポンス・ペイロード書式を選択** にて、レスポンス・ペイロード・ファイルとして **JSONサンプル** を選択します。**サンプルの場所を指定**、もしくは **enter sample JSON** が表示されるので、**enter sample JSON** の右にある **&lt;&lt;&lt;inline&gt;&gt;&gt;** をクリックして、以下のJSONメッセージを貼り付けます。
-```
+
+```javascript
 {
   "code": "HELLO_WORLD",
   "compatible": true,
@@ -318,6 +328,7 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
   "endPointURI": "https://<host>:<port>/flows/rest/HELLO_WORLD/1.0/metadata"
 }
 ```
+
 - ダイアログ画面で **次 >** をクリックすると、以下のようなサマリー画面に到達しますので、 **完了** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image21.png" style="width:6.0865in;height:4.57953in" />
 - 呼び出し側も同様に、先ほど作成したREST接続を **呼出しのドラッグ・アンド・ドロップ** へドラッグします。
@@ -338,9 +349,9 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 - レスポンス・ペイロードの設定画面ではレスポンス・ペイロード・ファイルとして **JSONサンプル** を選択し、**ファイルを選択** をクリックして、JSONレスポンス・ペイロードの取得の項で保存したJSONファイルを選択します。取り込みが完了したら **次 &gt;** をクリックします。
 - サマリーの画面で **完了** をクリックします。
 
+------
 
-データ・マッピングとアクティブ化
---------------------------------
+### データ・マッピングとアクティブ化
 
 REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すときのデータ・マッピングと、RetrieveMetadataからREST-Proxyにレスポンスデータを受け渡すときのデータ・マッピングを、それぞれ定義します。
 
@@ -382,9 +393,9 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image28.png" style="width:6.75551in;height:1.22953in" />
 11. 確認のダイアログでは何も設定せず、そのまま、**アクティブ化**をクリックします。アクティベーションのプロセスが完了するのを待ちます。
 
+------
 
-統合のテストとモニタリング
---------------------------
+### 統合のテストとモニタリング
 
 - 歯車のアイコンをクリックして **エンドポイントURL** のリンクをクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image29.png" style="width:6.75472in;height:1.21339in" />
@@ -453,5 +464,6 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 >
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image39.png" style="width:7.0396in;height:1.33296in" />
 
------
+------
+
 以上でIntegrationのチュートリアルは終了です。
