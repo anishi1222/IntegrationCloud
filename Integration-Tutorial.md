@@ -4,9 +4,7 @@
   - [目的](#目的)
   - [最終構成](#最終構成)
   - [前提](#前提)
-  - [OICの運用管理APIについて](#OICの運用管理APIについて)
-  - [テストクライアントの用意](#テストクライアントの用意)
-- [REST接続の作成](#REST接続の作成)
+- [接続の作成](#接続の作成)
 - [連携フローの定義](#連携フローの定義)
   - [サンプルのレスポンスペイロードの取得](#サンプルのレスポンスペイロードの取得)
 - [統合の作成](#統合の作成)
@@ -46,28 +44,19 @@
 ------
 ### 前提
 
-- 本ハンズオンでは、OICの統合のメタデータを取得するAPIを使用します。
+- OICでは運用・管理を目的としたREST APIを提供しており、本ハンズオンでは、その中のOICの統合のメタデータを取得するAPIを使用します。OICの運用・管理用のREST APIの一覧は、以下のドキュメントをご覧ください。
+  - Autonomous Integration Cloud
+  > [https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html](https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html)
+
+  - Integration Cloud (User managed)
+  > [https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html)
+
 - 本ハンズオンを実施する前に、アクティブな統合を用意する必要があります。
-
-### OICの運用・管理用APIについて
-
-OICでは運用・管理を目的としたREST APIを提供しています。OICの運用・管理用のREST APIの一覧は、以下のドキュメントをご覧ください。
-
-- Autonomous Integration Cloud
-> [https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html](https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html)
-
-- Integration Cloud (User managed)
-> [https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html)
+- 動作確認を簡単にするため、REST APIを呼び出すためのツール（REST APIテストクライアント）を用意してください。
 
 ------
 
-### テスト・ツールの用意
-
-動作確認を簡単にするため、REST APIを呼び出すためのツール（REST APIテストクライアント）を用意してください。
-
-------
-
-## REST接続の作成
+## 接続の作成
 
 RESTアダプタを使用して、REST接続を定義します。
 RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接続できるようになります。
@@ -175,7 +164,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image15.png" style="width:3.78125in;height:2.00234in" />
 
 - **閉じる** をクリックします。
-- REST APIテストクライアントを起動します（本ハンズオンでは、Advanced REST Clientを利用した手順を記載します）。
+- REST APIテストクライアントを起動します。
 - Request URLに次の通りURIを入力します。
   ```
    https://OICのホスト名/ic/api/integration/v1/integrations/{id}
@@ -197,9 +186,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 </tbody>
 </table>
 
-- **SEND**ボタンを押すと、認証情報を求めるポップアップが現れます。下表の通り設定し、**ACCEPT** をクリックします。
-
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image16.png" style="width:2.71875in;height:2.68829in" />
+- このAPIは基本認証が必要なので、OICのログインに利用するユーザー、パスワードを指定しておきます。
 
 | **フィールド** | **入力値**                        |
 |----------------|-----------------------------------|
@@ -344,7 +331,7 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 
 ------
 
-### データ・マッピングとアクティブ化
+### マッピングとアクティブ化
 
 REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すときのデータ・マッピングと、RetrieveMetadataからREST-Proxyにレスポンスデータを受け渡すときのデータ・マッピングを、それぞれ定義します。
 
