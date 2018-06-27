@@ -263,6 +263,7 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 5. 画面右側の接続一覧から、先ほど作成した接続を選択し、**トリガーのドラッグ・アンド・ドロップ**へドラッグします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image20.png" style="width:6.94943in;height:4.08298in" />
 6. 基本情報の設定画面で次の通りに入力し **次 &gt;** をクリックします。
+
 | **フィールド**                           | **入力値**            |
 |------------------------------------------|-----------------------|
 | エンドポイントにどのような名前をつけるか | REST-Proxy            |
@@ -294,6 +295,7 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 4. 呼び出し側も同様に、先ほど作成したREST接続を **呼出しのドラッグ・アンド・ドロップ** へドラッグします。
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image22.png" style="width:6.72277in;height:3.97098in" />
 5. 基本情報の設定画面で例えば次のように入力し **次 &gt;** をクリックします。
+
 | **フィールド**                           | **入力値**                               |
 |------------------------------------------|------------------------------------------|
 | エンドポイントにどのような名前をつけるか | RetrieveMetadata                         |
@@ -345,71 +347,47 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 >
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image25.png" style="width:6.9375in;height:2.9555in" />
 
-1. **［検証］**をクリックし、問題ないことを確認後、**［閉じる］**をクリックします。
-
-2. 最後にメッセージ・トラッキングの設定をします。画面右上のメニューを開き、**［トラッキング］**をクリックします。
-
+1. **検証** をクリックし、問題ないことを確認後、**閉じる** をクリックします。
+2. 最後にメッセージ・トラッキングの設定をします。画面右上のメニューを開き、 **トラッキング** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image26.png" style="width:2.75in;height:2.0113in" />
 
-1. ソースのフィールド一覧から**id**をドラッグし、**［トラッキング・フィールド］**へドロップします。
-
+3. ソースのフィールド一覧から **id** をドラッグし、 **トラッキング・フィールド** へドロップします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image27.png" style="width:5.26339in;height:2.32126in" />
 
-1. これで統合の設定が完了です。
-
-> 右上の**インジケータ**が100%になっていることを確認し、**［保存］**、**［閉じる］**をクリックします。
-
-1. 統合の設定が100%完了すると、統合をアクティブにするためのトグル・ボタンが表示されます。
-
-> **トグル・ボタン**をクリックし、統合をアクティブ化します。
->
+4. これで統合の設定が完了です。右上の **インジケータ** が100%になっていることを確認し、**保存**、**閉じる**をクリックします。
+5. 統合の設定が100%完了すると、統合をアクティブにするためのトグル・ボタンが表示されます。**トグル・ボタン**をクリックし、統合をアクティブ化します。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image28.png" style="width:6.75551in;height:1.22953in" />
-
-1. 確認のダイアログでは何も設定せず、そのまま、［**アクティブ化］**をクリックします。
-
-> アクティベーションのプロセスが完了するのを待ちます。
+6. 確認のダイアログでは何も設定せず、そのまま、**アクティブ化**をクリックします。アクティベーションのプロセスが完了するのを待ちます。
 
 統合のテストとモニタリング
 --------------------------
 
-1. 歯車のアイコンをクリックして**エンドポイントURL**のリンクをクリックします。
-
+1. 歯車のアイコンをクリックして **エンドポイントURL** のリンクをクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image29.png" style="width:6.75472in;height:1.21339in" />
 
-1. 新しいタブが開きます。（認証を求められる場合はOICへのログイン情報を入力します。）
-
+2. 新しいタブが開きます。（認証を求められる場合はOICへのログイン情報を入力します。）
 > このページでは、リソース・エンドポイントやメソッド、必要なパラメータ情報などを確認できます。
->
-> トリガー側への設定が、このREST
-> APIの起動方法に反映されていることを確認してください。
->
+> トリガー側への設定が、このREST APIの起動方法に反映されていることを確認してください。
 > またレスポンス・ペイロードとしてアップロードしたJSONファイルが、サンプル・ペイロードとして使われていることを確認してください。
 
-1. 開いたブラウザ・タブのURLの末尾に、パス**/swagger**を付加すると、メタデータをOpenAPI
-    2.0（Swagger）形式で取得できます。
-
+3. 開いたブラウザ・タブのURLの末尾に、パス**/swagger**を付加すると、メタデータをOpenAPI 2.0（Swagger）形式で取得できます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image30.png" style="width:6.62008in;height:3.92283in" />
 
-1. エンドポイントを、RESTメッセージの送信できるアプリケーションでテストします。
-
+4. エンドポイントを、RESTメッセージの送信できるアプリケーションでテストします。
 **<span class="underline">Advanced REST clientを使った手順:</span>**
 
 > エンドポイントのURLをコピーし、Request URLに貼り付けします。
->
 > このとき、以下のようにパラメータの記載を変更してください。
->
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image31.png" style="width:6.84667in;height:3.98958in" />
 
 | **変更前** | **変更後** |
 |------------|------------|
 | \[id\]     | ${id}      |
 
-> **Variables**タブの**［ADD VARIABLE］**をクリックします。
->
+> **Variables**タブの **ADD VARIABLE** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image32.png" alt="C:\Users\ANISHIKA\AppData\Local\Microsoft\Windows\INetCache\Content.Word\スクリーンショット 2018-06-12 18.58.11.png" style="width:6.94252in;height:4.33858in" />
 >
 > リクエスト・パラメータを次の通り設定します。
-
 <table>
 <thead>
 <tr class="header">
@@ -426,8 +404,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 </tbody>
 </table>
 
-> **［SEND］**をクリックして作成したREST APIを呼び出します。
->
+> **SEND** をクリックして作成したREST APIを呼び出します。
 > JSON形式で期待するレスポンスを受け取っていることを確認してください。
 >
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image33.png" alt="C:\Users\ANISHIKA\AppData\Local\Microsoft\Windows\INetCache\Content.Word\スクリーンショット 2018-06-12 19.13.08.png" style="width:6.89583in;height:4.3099in" />
@@ -436,11 +413,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image34.png" style="width:3.71287in;height:1.23762in" />
 
-**  
-**
-
-1. **［Monitoring］**ボタンをクリックして、詳細を確認します。
-
+1. **Monitoring** ボタンをクリックして、詳細を確認します。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image35.png" style="width:7.07961in;height:2.48515in" />
 
 1. 先ほどテストで実行したメッセージの結果を確認するには、メニューで**［トラッキング］**をクリックします。
