@@ -75,7 +75,7 @@ class="underline">退院済マイルストン</span>](#退院済マイルスト�
 class="underline">手術の手続きアクティビティ</span>](#手術の手続きアクティビティ)
 
 [<span class="underline">2.8.8</span> <span
-class="underline">処置アクティビティ</span> 24](#処置アクティビティ)
+class="underline">処置アクティビティ</span>](#処置アクティビティ)
 
 [<span class="underline">2.9</span> <span
 class="underline">テストモードでの動作確認</span>](#テストモードでの動作確認)
