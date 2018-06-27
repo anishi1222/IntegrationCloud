@@ -467,11 +467,11 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 3. PurchaseRequisitionUIが現れますので、適宜入力します。以下は入力例です。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image66.png" style="width:6.76875in;height:6.17292in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image66.png" style="width:6.76875in;height:6.17292in" />
 
 4. 入力が完了したら、 **送信** を押します。
 
-5.  **My Tasks** をクリックします。
+5. **My Tasks** をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image67.png" style="width:1.7633in;height:2.17021in" />
 
@@ -479,7 +479,7 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image68.png" style="width:6.76875in;height:1.61042in" />
 
-7. 入力した内容が正しく表示されていることを確認します。その上で、APPROVE/REJECTのいずれかを選択し、クリックします。APPROVEすると、プロセスは終了します。REJECTすると、再送信アクティビティに遷移します。今回はAPPROVEを選択します。
+7. 入力した内容が正しく表示されていることを確認します。その上で、APPROVE/REJECTのいずれかを選択し、クリックします。 **APPROVE** すると、プロセスは終了します。REJECTすると、再送信アクティビティに遷移します。今回は **APPROVE** を選択します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image69.png" style="width:5.54374in;height:5.43056in" />
 
@@ -503,9 +503,9 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image74.png" style="width:5.97708in;height:4.82177in" />
 
-12.  **ツリー・ビュー** にすると、各アクティビティでのデータの出入りがわかります。
+12. **ツリー・ビュー** にすると、各アクティビティでのデータの出入りがわかります。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image75.png" style="width:6.76875in;height:5.16806in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image75.png" style="width:6.76875in;height:5.16806in" />
 
 13. 例えば、 **Approve Request** の **Instance entered the
     activity** をクリックすると、XML形式でどのようなデータが流れてきて、フォームに入るのかがわかります
@@ -551,55 +551,53 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 ### 本番モードでのアプリケーション実行
 
-Process Workspaceを開き、Integration Cloudのトップページから **My Tasks** をクリックします。
+1. Process Workspaceを開き、Integration Cloudのトップページから **My Tasks** をクリックします。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image2.png" style="width:6.76875in;height:3.50625in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image2.png" style="width:6.76875in;height:3.50625in" />
 
- **Workspace** をクリックします。
+2. **Workspace** をクリックします。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image83.png" style="width:3.11927in;height:1.04511in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image83.png" style="width:3.11927in;height:1.04511in" />
 
-テストモードとは異なり、本番モードでは、この時点では、ユーザーやグループがスイムレーンに割り付けられていません。そのため、スイムレーン（＝ロール）にユーザーやグループを割り付ける必要があります。
+3. テストモードとは異なり、本番モードでは、この時点では、ユーザーやグループがスイムレーンに割り付けられていません。そのため、スイムレーン（＝ロール）にユーザーやグループを割り付ける必要があります。
 
-1. 画面左のメニューから **管理** を選択します。
+    1. 画面左のメニューから **管理** を選択します。
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image84.png" style="width:2.51948in;height:3.40179in" />
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image84.png" style="width:2.51948in;height:3.40179in" />
 
-2. 検索ボックスに **PurchaseRequisition** を入力し、設定したいロールのみを表示します。
+    2. 検索ボックスに **PurchaseRequisition** を入力し、設定したいロールのみを表示します。
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image85.png" style="width:3.9375in;height:1.36005in" />
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image85.png" style="width:3.9375in;height:1.36005in" />
 
-    今回ロールにユーザーもしくはグループを割り付ける対象のロールと割り付けるユーザーは以下の通りです。
+    3. 今回ロールにユーザーもしくはグループを割り付ける対象のロールと割り付けるユーザーは以下の通りです。
 
-    | ロール                              | 割り当てるユーザーもしくはグループ |
-    |-------------------------------------|------------------------------------|
-    | PurchaseRequisition.Deputy Manager  | ご自身のユーザーアカウント         |
-    | PurchaseRequisition.General Foreman | ご自身のユーザーアカウント         |
+        | ロール                              | 割り当てるユーザーもしくはグループ |
+        |-------------------------------------|------------------------------------|
+        | PurchaseRequisition.Deputy Manager  | ご自身のユーザーアカウント         |
+        | PurchaseRequisition.General Foreman | ご自身のユーザーアカウント         |
 
-ユーザーやグループの割り付け方法は以下の通りです。
+4. ユーザーやグループの割り付け方法は以下の通りです。
 
-1. ユーザーやグループを割り付けたいロールを選択した状態で、 **メンバーの追加** をクリック
+    1. ユーザーやグループを割り付けたいロールを選択した状態で、 **メンバーの追加** をクリック
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image86.png" style="width:5.50089in;height:2.97309in" />
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image86.png" style="width:5.50089in;height:2.97309in" />
 
-2. ユーザー、もしくはグループを検索し、割り付けたいユーザーもしくはグループにチェックを入れ、選択済として表示されていることを確認してから、 **OK** をクリック（複数ユーザーやグループを追加することもできる）。
+    2. ユーザー、もしくはグループを検索し、割り付けたいユーザーもしくはグループにチェックを入れ、選択済として表示されていることを確認してから、 **OK** をクリック（複数ユーザーやグループを追加することもできる）。
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image87.png" style="width:4.70625in;height:2.71743in" />
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image87.png" style="width:4.70625in;height:2.71743in" />
 
-3.  **保存** をクリック
+    3. **保存** をクリック
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image88.png" style="width:5.57083in;height:2.99089in" />
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image88.png" style="width:5.57083in;height:2.99089in" />
 
-<!-- -->
-
-1. 左のメニューからWorkspaceのホーム画面に戻ります。
+5. 左のメニューからWorkspaceのホーム画面に戻ります。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image89.png" style="width:2.04464in;height:2.00067in" />
 
-2. 左のメニューから **自分のアプリ** をクリックします。
+6. 左のメニューから **自分のアプリ** をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image90.png" style="width:1.92857in;height:2.50998in" />
 
-3. テストモードの場合と同様、丸囲みのPRを確認できるはずです。これをクリックして、プロセスを開始します。以後はテストモードの場合と同様です。
+7. テストモードの場合と同様、丸囲みのPRを確認できるはずです。これをクリックして、プロセスを開始します。以後はテストモードの場合と同様です。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image91.png" style="width:2.75893in;height:2.42708in" />
