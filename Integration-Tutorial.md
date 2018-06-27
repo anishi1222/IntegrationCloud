@@ -247,7 +247,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 
 - 次の情報を入力して、**作成** をクリックします。
 
-<table>
+<table>
 <thead>
 <tr class="header">
 <th><strong>フィールド</strong></th>
@@ -262,13 +262,13 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 <tr class="even">
 <td>識別子</td>
 <td><p><em>入力不要</em></p>
-<p>Integration Nameから自動的に導出されます:<br />
+<p>Integration Nameから自動的に導出:<br />
 GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 </tr>
 <tr class="odd">
 <td>バージョン</td>
 <td><p><em>入力不要</em></p>
-<p>デフォルト値を使用します: 01.00.0000</p></td>
+<p>デフォルト値を使用: 01.00.0000</p></td>
 </tr>
 <tr class="even">
 <td>パッケージ名</td>
