@@ -4,7 +4,7 @@ Oracle Integration Cloudの日本語のチュートリアルやサンプルを�
 
 ## Integration
 
-Integrationの基本を理解するための、RESTサービスを呼び出すチュートリアルです。
+Integrationの基本を理解するための、RESTサービスを呼び出すチュートリアルです。
 
 - [Integration (REST integration) Tutorial](Integration-Tutorial.md)
 
@@ -12,7 +12,9 @@ Integrationの基本を理解するための、RESTサービスを呼び出す�
 
 ### Static Process
 
-BPMN 2.0に基づいてプロセスを記述し、DMN 1.1に基づいたデシジョンサービスを利用する基本を理解するためのチュートリアルです。
+DMN 1.1に基づいたデシジョンサービスを利用するプロセスを、BPMN 2.0に基づいてプロセスを記述します。
+
+Process Builderの基本を理解するためのチュートリアルです。
 
 - [Static Process Tutorial 1（基礎編）](StaticProcess-Tutorial1.md)
 - [Static Process Tutorial 2（DMNの利用）](StaticProcess-Tutorial2.md)
@@ -20,6 +22,6 @@ BPMN 2.0に基づいてプロセスを記述し、DMN 1.1に基づいたデシ�
 
 ### Dynamic Process （動的プロセス）
 
-Case Managementを実現するための動的プロセスを基本を理解するためのチュートリアルです。
+動的プロセスの基本を理解するためのチュートリアルです。
 
 - [Dynamic Process Tutorial](DynamicProcess-Tutorial.md)
