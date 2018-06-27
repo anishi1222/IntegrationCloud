@@ -309,30 +309,28 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 7. レスポンス・ペイロードの設定画面ではレスポンス・ペイロード・ファイルとして **JSONサンプル** を選択し、**ファイルを選択** をクリックして、JSONレスポンス・ペイロードの取得の項で保存したJSONファイルを選択します。取り込みが完了したら **次 &gt;** をクリックします。
 8. サマリーの画面で **完了** をクリックします。
 
+
 データ・マッピングとアクティブ化
 --------------------------------
 
 REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すときのデータ・マッピングと、RetrieveMetadataからREST-Proxyにレスポンスデータを受け渡すときのデータ・マッピングを、それぞれ定義します。
 
-1. **リクエスト・マッピング**のアイコンをクリックし、**＋**アイコンを押してデータ・マッパーを起動します。
+1. **リクエスト・マッピング** のアイコンをクリックし、**＋**アイコンを押してデータ・マッパーを起動します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image23.png" style="width:7.05796in;height:3.31636in" />
 
-1. 次のソース・フィールドを対応するターゲット・フィールドへマッピングします。
+2. 次のソース・フィールドを対応するターゲット・フィールドへマッピングします。ソース・フィールドをドラッグして、ターゲット・フィールドのテキストと重なるように調整します。
 
 | **ソース・フィールド**               | **ターゲット・フィールド**              |
 |--------------------------------------|-----------------------------------------|
 | execute &gt; QueryParameters &gt; id | execute &gt; TemplateParameters &gt; id |
 
-> ソース・フィールドをドラッグして、ターゲット・フィールドのテキストと重なるように調整します。
-
-1. **［検証］**を押し、問題ないことを確認後、**［閉じる］**をクリックします。
-
-2. **レスポンス・マッピング**のアイコンをクリックし、**＋**アイコンを押してデータ・マッパーを起動します。
+3. **検証**を押し、問題ないことを確認後、 **閉じる** をクリックします。
+4. **レスポンス・マッピング**のアイコンをクリックし、**＋**アイコンを押してデータ・マッパーを起動します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image24.png" style="width:7.08386in;height:1.4378in" />
 
-1. 次のソース・フィールドを対応するターゲット・フィールドへマッピングします。
+5. 次のソース・フィールドを対応するターゲット・フィールドへマッピングします。
 
 | **ソース・フィールド**                                 | **ターゲット・フィールド**                             |
 |--------------------------------------------------------|--------------------------------------------------------|
@@ -343,11 +341,10 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 | executeResponse &gt; response-wrapper &gt; description | executeResponse &gt; response-wrapper &gt; description |
 | executeResponse &gt; response-wrapper &gt; endPointURI | executeResponse &gt; response-wrapper &gt; endPointURI |
 
-> マッピングが完了すると、画面が次のようになります。
->
+マッピングが完了すると、画面が次のようになります。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image25.png" style="width:6.9375in;height:2.9555in" />
 
-1. **検証** をクリックし、問題ないことを確認後、**閉じる** をクリックします。
+6. **検証** をクリックし、問題ないことを確認後、**閉じる** をクリックします。
 2. 最後にメッセージ・トラッキングの設定をします。画面右上のメニューを開き、 **トラッキング** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image26.png" style="width:2.75in;height:2.0113in" />
 
