@@ -161,8 +161,8 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 | **フィールド**         | **入力値**                        |
 |------------------------|-----------------------------------|
 | セキュリティ・ポリシー | Basic Authentication              |
-| Username               | &lt;OICのログイン・ユーザー&gt;   |
-| Password               | &lt;OICのログイン・パスワード&gt; |
+| Username               | OICのログイン・ユーザー   |
+| Password               | OICのログイン・パスワード |
 
 - 接続できることを検証するため、**テスト** ボタンをクリックします。画面上部に "正常にテストされました。"のメッセージが表示され、インジケータが100%になっていれば、接続の構成は完了です。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image11.png" style="width:7.0297in;height:0.86114in" />
@@ -191,7 +191,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 - REST APIテストクライアントを起動します（本ハンズオンでは、Advanced REST Clientを利用した手順を記載します）。
 - Request URLに次の通りURIを入力します。
    ```
-   [OIC URL]/ic/api/integration/v1/integrations/{id}
+   https://OICのホスト名/ic/api/integration/v1/integrations/{id}
    ```
 
 <table>
@@ -215,8 +215,8 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 
 | **フィールド** | **入力値**                        |
 |----------------|-----------------------------------|
-| Username       | &lt;OICのログイン・ユーザー&gt;   |
-| Password       | &lt;OICのログイン・パスワード&gt; |
+| Username       | OICのログイン・ユーザー   |
+| Password       | OICのログイン・パスワード |
 
 - レスポンスのペイロードをダウンロードし、JSONファイルとして保存しておきます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image17.png" style="width:7.06535in;height:4.41584in" />
