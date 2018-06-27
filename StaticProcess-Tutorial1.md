@@ -35,7 +35,7 @@
 
 ## 最終構成
 
-このハンズオンでは、General ForemanがWebの入力画面から入力した内容を、Deputy Managerが確認し、承認を行うプロセスを作成します。
+このチュートリアルでは、General ForemanがWebの入力画面から入力した内容を、Deputy Managerが確認し、承認を行うプロセスを作成します。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image1.png" style="width:6.76875in;height:2.55625in" />
 
@@ -159,6 +159,7 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 1. **Submit Request** をダブルクリックし、タイトルを購買申請に変更します。  
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image25.png" style="width:1.44985in;height:1.08989in" />
+
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image26.png" style="width:0.98027in;height:0.82023in" />
 
 2. **購買申請** のアイコンをダブルクリックします。  
@@ -266,7 +267,6 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
       - コントロール
         - 操作対象のコンポーネントを設定できます。
-        
       - その他
         - **タイプ**で設定できる項目の詳細は、以下のガイドを参照してください。
 
@@ -516,7 +516,7 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 ### 本番モードへのアプリケーションアクティブ化
 
-テストにて、作成したプロセスに問題がないことを確認後、プロセスを本番環境へアクティブ化します。
+作成したプロセスをテストモードで実行して問題がないことを確認後、本番環境へアクティブ化します。
 
 1. Processの編集画面に戻ります。
 
@@ -561,15 +561,15 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 3. テストモードとは異なり、本番モードでは、この時点では、ユーザーやグループがスイムレーンに割り付けられていません。そのため、スイムレーン（＝ロール）にユーザーやグループを割り付ける必要があります。
 
-    1. 画面左のメニューから **管理** を選択します。
+    - 画面左のメニューから **管理** を選択します。
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image84.png" style="width:2.51948in;height:3.40179in" />
 
-    2. 検索ボックスに **PurchaseRequisition** を入力し、設定したいロールのみを表示します。
+    - 検索ボックスに **PurchaseRequisition** を入力し、設定したいロールのみを表示します。
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image85.png" style="width:3.9375in;height:1.36005in" />
 
-    3. 今回ロールにユーザーもしくはグループを割り付ける対象のロールと割り付けるユーザーは以下の通りです。
+    - 今回ロールにユーザーもしくはグループを割り付ける対象のロールと割り付けるユーザーは以下の通りです。
 
         | ロール                              | 割り当てるユーザーもしくはグループ |
         |-------------------------------------|------------------------------------|
@@ -578,15 +578,15 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 4. ユーザーやグループの割り付け方法は以下の通りです。
 
-    1. ユーザーやグループを割り付けたいロールを選択した状態で、 **メンバーの追加** をクリック
+    - ユーザーやグループを割り付けたいロールを選択した状態で、 **メンバーの追加** をクリック
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image86.png" style="width:5.50089in;height:2.97309in" />
 
-    2. ユーザー、もしくはグループを検索し、割り付けたいユーザーもしくはグループにチェックを入れ、選択済として表示されていることを確認してから、 **OK** をクリック（複数ユーザーやグループを追加することもできる）。
+    - ユーザー、もしくはグループを検索し、割り付けたいユーザーもしくはグループにチェックを入れ、選択済として表示されていることを確認してから、 **OK** をクリック（複数ユーザーやグループを追加することもできる）。
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image87.png" style="width:4.70625in;height:2.71743in" />
 
-    3. **保存** をクリック
+    - **保存** をクリック
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image88.png" style="width:5.57083in;height:2.99089in" />
 
