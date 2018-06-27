@@ -246,6 +246,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image19.png" style="width:4.25151in;height:4.5625in" />
 
 - 次の情報を入力して、**作成** をクリックします。
+
 <table>
 <thead>
 <tr class="header">
