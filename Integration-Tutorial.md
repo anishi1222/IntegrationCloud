@@ -395,24 +395,8 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image30.png" style="width:6.62008in;height:3.92283in" />
 
-- エンドポイントを、RESTメッセージの送信できるアプリケーションでテストします。
-
-**Advanced REST clientを使った手順:**
-
-エンドポイントのURLをコピーし、Request URLに貼り付けします。
-このとき、以下のようにパラメータの記載を変更してください。
-
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image31.png" style="width:6.84667in;height:3.98958in" />
-
-| **変更前** | **変更後** |
-|------------|------------|
-| \[id\]     | ${id}      |
-
-**Variables**タブの **ADD VARIABLE** をクリックします。
-
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image32.png" alt="C:\Users\ANISHIKA\AppData\Local\Microsoft\Windows\INetCache\Content.Word\スクリーンショット 2018-06-12 18.58.11.png" style="width:6.94252in;height:4.33858in" />
-
-リクエスト・パラメータを次の通り設定します。
+- エンドポイントを、RESTメッセージの送信できるアプリケーションでテストします。エンドポイントのURLをコピーし、Request URLとして貼り付けます。下表に従いQuery Parameterの値を設定し、REST APIを呼び出します。
+  
 <table>
 <thead>
 <tr class="header">
@@ -429,8 +413,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 </tbody>
 </table>
 
-**SEND** をクリックして作成したREST APIを呼び出します。JSON形式で期待するレスポンスを受け取っていることを確認してください。
-
+- JSON形式で期待するレスポンスを受け取っていることを確認してください。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image33.png" alt="C:\Users\ANISHIKA\AppData\Local\Microsoft\Windows\INetCache\Content.Word\スクリーンショット 2018-06-12 19.13.08.png" style="width:6.89583in;height:4.3099in" />
 
 - モニタリング画面から統合の成功を確認します。OICのホーム画面に移動し、下方にスクロールすると、OIC全体のモニタリング結果を確認できます。
