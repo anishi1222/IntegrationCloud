@@ -102,7 +102,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 3. **作成** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image9.png" style="width:7.0297in;height:0.8683in" />
 4. **REST**アダプタを選択します。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image10.png" style="width:5.15625in;height:3.0625in" />
+> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image10.png" />
 5. 次の接続情報を入力します。
 <table>
 <thead>
@@ -274,6 +274,7 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 | エンドポイントを構成してレスポンスを受信 | チェック              |
 
 7. リクエスト・パラメータの設定画面で次のパラメータを追加し**［次 &gt;］**をクリックします。
+
 | **名前** | **データ型** |
 |----------|--------------|
 | id       | string       |
