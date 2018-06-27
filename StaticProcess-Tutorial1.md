@@ -173,7 +173,7 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 5. フォーム名として **PurchaseRequisitionUI** を入力し、 **作成** をクリックします。  
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image28.png" style="width:3.42739in;height:3.41573in" />
 
-> **注意** : こまめに **保存** ボタンをクリックしておくことをおすすめします。
+**注意** : こまめに **保存** ボタンをクリックしておくことをおすすめします。
 
 ------
 
@@ -489,7 +489,7 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 9. フィルターアイコンをクリックします。
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image71.png" style="width:3.59708in;height:1.20833in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image71.png" />
 
 10. 左側のステータスから、 **Completed** にチェックを入れます。
 
