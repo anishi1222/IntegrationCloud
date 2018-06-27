@@ -219,7 +219,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 <tbody>
 <tr class="odd">
 <td>TreatmentDatetime</td><td>処置日時</td><td>treatmentDatetime</td><td><p>True</p>
-<p>**編集** をクリックし、タイプは **ファンクション** 、ファンクションは **現在の日時** を選択</p></td><td>yyyy-MM-dd</td><td>True</td><td>日時</td></tr>
+<p><b>編集</b> をクリックし、タイプは <b>ファンクション</b> 、ファンクションは <b>現在の日時</b> を選択</p></td><td>yyyy-MM-dd</td><td>True</td><td>日時</td></tr>
 <tr class="even">
 <td>Treatment</td>
 <td>処置</td>
@@ -445,7 +445,7 @@ Actions: <b>Update</b></td>
 #### 退院ステージ
 
 1. **退院** ステージのプロパティを開きます。
-1. Conditionsタブに移動し、開始条件（Activation）の右にある**＋**をクリックして条件を追加します。Eventsの右にある**＋**をクリックし、 **処置** ステージの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
+1. Conditionsタブに移動し、開始条件（Activation）の右にある**＋**をクリックして条件を追加します。Eventsの右にある**＋**をクリックし、 **処置** ステージの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 1. 同様に、終了条件（Termination）の右にある**＋**をクリックして条件を追加します。Eventsの右にある**＋**をクリックし、 **退院の手続き** アクティビティの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 
 #### スクリーニング済マイルストン
