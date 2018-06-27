@@ -148,6 +148,12 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image14.png" style="width:5.8777in;height:3.5885in" />
 
+>- **ヒューマンタスクについて**
+>   - ヒューマンタスクは、送信、もしくは承認アクティビティのいずれかを取り得ます
+>   - 各ヒューマンタスク・アクティビティは、フォームに関連付けられている必要があります
+>   - 各ヒューマンタスク・アクティビティには、ユーザー、ロール、もしくはグループを割り当てる必要があります
+>   - 各ヒューマンタスク・アクティビティにはデータの入出力があります
+
 #### マイルストンの作成
 
 **スクリーニング** ステージのアクティビティ追加フィールドで以下の操作をしてマイルストンを作成します。
@@ -388,6 +394,10 @@ Actions: <b>Update</b></td>
 </table>
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image40.png" style="width:2.49173in;height:3.6in" /> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image41.png" style="width:2.49173in;height:3.59173in" />
+
+>- ロールと権限について
+>   - 設計時のロールを実行時に一時的にオーバーライドできます。
+>   - ただし、設計時にロールとアクセス権限を設定すると、すべてのデプロイメントでそれらが保持されます。
 
 ------
 
