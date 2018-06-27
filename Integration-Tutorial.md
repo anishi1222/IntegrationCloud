@@ -83,11 +83,11 @@ OICでは運用・管理を目的としたREST APIを提供しています。OIC
 > [<span
 > class="underline">https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo</span>](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
 2. **Chromeに追加** をクリックします。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image4.png" style="width:6.72917in;height:2.72594in" />
+> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image4.png" />
 3.  Google Chromeの右上にある **アプリ** をクリックします。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image5.png" style="width:1.85372in;height:1.19792in" />
+> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image5.png" />
 4.  **ARC**のアイコンをすると、Advanced REST Clientアプリを起動できます。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image6.png" style="width:1.1364in;height:1.41584in" />
+> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image6.png" />
 
 REST接続の作成
 ==============
