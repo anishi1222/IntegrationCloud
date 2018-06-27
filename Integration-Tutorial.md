@@ -372,18 +372,18 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 <span class="underline">**Advanced REST clientを使った手順:**</span>
 
-> エンドポイントのURLをコピーし、Request URLに貼り付けします。
-> このとき、以下のようにパラメータの記載を変更してください。
+エンドポイントのURLをコピーし、Request URLに貼り付けします。
+このとき、以下のようにパラメータの記載を変更してください。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image31.png" style="width:6.84667in;height:3.98958in" />
 
 | **変更前** | **変更後** |
 |------------|------------|
 | \[id\]     | ${id}      |
 
-> **Variables**タブの **ADD VARIABLE** をクリックします。
+**Variables**タブの **ADD VARIABLE** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image32.png" alt="C:\Users\ANISHIKA\AppData\Local\Microsoft\Windows\INetCache\Content.Word\スクリーンショット 2018-06-12 18.58.11.png" style="width:6.94252in;height:4.33858in" />
->
-> リクエスト・パラメータを次の通り設定します。
+
+リクエスト・パラメータを次の通り設定します。
 <table>
 <thead>
 <tr class="header">
@@ -400,27 +400,25 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 </tbody>
 </table>
 
-> **SEND** をクリックして作成したREST APIを呼び出します。
-> JSON形式で期待するレスポンスを受け取っていることを確認してください。
->
+**SEND** をクリックして作成したREST APIを呼び出します。JSON形式で期待するレスポンスを受け取っていることを確認してください。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image33.png" alt="C:\Users\ANISHIKA\AppData\Local\Microsoft\Windows\INetCache\Content.Word\スクリーンショット 2018-06-12 19.13.08.png" style="width:6.89583in;height:4.3099in" />
 
-1. モニタリング画面から統合の成功を確認します。OICのホーム画面に移動し、下方にスクロールすると、OIC全体のモニタリング結果を確認できます。
+5. モニタリング画面から統合の成功を確認します。OICのホーム画面に移動し、下方にスクロールすると、OIC全体のモニタリング結果を確認できます。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image34.png" style="width:3.71287in;height:1.23762in" />
 
-1. **Monitoring** ボタンをクリックして、詳細を確認します。
+6. **Monitoring** ボタンをクリックして、詳細を確認します。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image35.png" style="width:7.07961in;height:2.48515in" />
 
-1. 先ほどテストで実行したメッセージの結果を確認するには、メニューで**［トラッキング］**をクリックします。
+7. 先ほどテストで実行したメッセージの結果を確認するには、メニューで **トラッキング** をクリックします。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image36.png" style="width:7.06535in;height:4.41584in" />
 
-1. 統合が正常に完了していることを確認します。このとき、メッセージ・トラッキングとして設定したフィールド（id）の値が表示されていることを確認します。
+8. 統合が正常に完了していることを確認します。このとき、メッセージ・トラッキングとして設定したフィールド（id）の値が表示されていることを確認します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image37.png" style="width:7.05941in;height:1.05826in" />
 
-1. トラッキング・ペイロードのリンクをクリックすると、連携の実行結果を確認できます。エラーが発生した場合には発生個所の特定に利用できます。
+9. トラッキング・ペイロードのリンクをクリックすると、連携の実行結果を確認できます。エラーが発生した場合には発生個所の特定に利用できます。
 
 > **<span class="underline">成功した場合</span>**
 >
