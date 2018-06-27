@@ -634,7 +634,7 @@ My Tasksの右に現れる **Workspace** をクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image70.png" style="width:1.74301in;height:2.29831in" />
 
-下図のようなEPという文字が入ったアイコンが現れるはずです（背景色はランダムです）。アプリケーションの起動はこのアイコンをクリックします。以後はテストモードと同じです。
+下図のようなEPという文字が入ったアイコンが現れるはずです（背景色はランダム）。アプリケーションの起動はこのアイコンをクリックします。以後はテストモードと同じです。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image71.png" style="width:5.87835in;height:3.67402in" />
 
