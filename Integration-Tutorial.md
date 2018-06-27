@@ -262,19 +262,43 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 </tr>
 </tbody>
 </table>
-
 5. 画面右側の接続一覧から、先ほど作成した接続を選択し、**トリガーのドラッグ・アンド・ドロップ**へドラッグします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image20.png" style="width:6.94943in;height:4.08298in" />
 6. 基本情報の設定画面で次の通りに入力し **次 &gt;** をクリックします。
-
-| **フィールド**                           | **入力値**            |
-|------------------------------------------|-----------------------|
-| エンドポイントにどのような名前をつけるか | REST-Proxy            |
-| エンドポイントで何が行われるか           | *任意の値*            |
-| エンドポイントの相対リソースURL          | /integration-metadata |
-| エンドポイントが実行するアクション       | GET                   |
-| エンドポイントのパラメータを追加して確認 | チェック              |
-| エンドポイントを構成してレスポンスを受信 | チェック              |
+<table>
+<thead>
+<tr class="header">
+<th><strong>フィールド</strong></th>
+<th><strong>入力値</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>エンドポイントにどのような名前をつけるか</td>
+<td>REST-Proxy</td>
+</tr>
+<tr class="even">
+<td>エンドポイントで何が行われるか</td>
+<td><i>任意の値</i></td>
+</tr>
+<tr class="odd">
+<td>エンドポイントの相対リソースURL</td>
+<td>/integration-metadata</td>
+</tr>
+<tr class="even">
+<td>エンドポイントが実行するアクション</td>
+<td><em>GET</em></td>
+</tr>
+<tr class="odd">
+<td>エンドポイントのパラメータを追加して確認</td>
+<td><em>チェック</em></td>
+</tr>
+<tr class="even">
+<td>エンドポイントを構成してレスポンスを受信</td>
+<td><em>チェック</em></td>
+</tr>
+</tbody>
+</table>
 
 7. リクエスト・パラメータの設定画面で次のパラメータを追加し**［次 &gt;］**をクリックします。
 
@@ -366,7 +390,6 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 1. 歯車のアイコンをクリックして **エンドポイントURL** のリンクをクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image29.png" style="width:6.75472in;height:1.21339in" />
-
 2. 新しいタブが開きます。（認証を求められる場合はOICへのログイン情報を入力します。）このページでは、リソース・エンドポイントやメソッド、必要なパラメータ情報などを確認できます。トリガー側への設定が、このREST APIの起動方法に反映されていることを確認してください。また、レスポンス・ペイロードとしてアップロードしたJSONファイルが、サンプル・ペイロードとして使われていることを確認してください。
 
 3. 開いたブラウザ・タブのURLの末尾に、 **/swagger** を付加すると、メタデータをOpenAPI 2.0（Swagger）形式で取得できます。
