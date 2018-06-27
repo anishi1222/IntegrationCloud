@@ -127,7 +127,6 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 </tr>
 </tbody>
 </table>
-
 6. **作成** をクリックします。
 7. （オプション）電子メール・アドレス に管理者用の E-Mail アドレスを入力します。例: [<span class="underline">admin@tenant.com</span>](mailto:admin@tenant.com)
 8. **接続の構成** をクリックし、次の接続プロパティを設定します。
