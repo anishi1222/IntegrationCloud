@@ -485,7 +485,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 **成功した場合**
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image38.png" style="width:7.04951in;height:1.37792in" />
->
+
 **失敗した場合**
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image39.png" style="width:7.0396in;height:1.33296in" />
 
