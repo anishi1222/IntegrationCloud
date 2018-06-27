@@ -4,11 +4,11 @@
   - [目的](#目的)
   - [最終構成](#最終構成)
   - [前提](#前提)
-  - [OICの運用・管理用APIについて](#OICの運用・管理用APIについて)
+  - [OICの運用・管理用APIについて](#OICの運用・管理用apiについて)
   - [テスト・ツールの用意](#テスト・ツールの用意)
 - [REST接続の作成](#rest接続の作成)
 - [連携フローの定義](#連携フローの定義)
-  - [JSON形式のレスポンス・ペイロードの取得](#JSON形式のレスポンス・ペイロードの取得)
+  - [JSON形式のレスポンス・ペイロードの取得](#json形式のレスポンス・ペイロードの取得)
 - [統合の作成](#統合の作成)
   - [データ・マッピングとアクティブ化](#データ・マッピングとアクティブ化)
   - [統合のテストとモニタリング](#統合のテストとモニタリング)
@@ -468,7 +468,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image38.png" style="width:7.04951in;height:1.37792in" />
 
-- **失敗した場合** 
+- **失敗した場合**
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image39.png" style="width:7.0396in;height:1.33296in" />
 
