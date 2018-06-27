@@ -1,6 +1,6 @@
 # IntegrationCloud
 
-日本語のチュートリアルやサンプルを提供しています。
+日本語のチュートリアルやサンプルを提供しています。
 
 ## Integration
 - [Integration (REST integration) Tutorial](Integration-Tutorial.md)
