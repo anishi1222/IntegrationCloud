@@ -1,130 +1,63 @@
-Dynamic Process Tutorial / Emergency Room
-====
+# Dynamic Process Tutorial / Emergency Room
 
-[<span class="underline">1</span> <span class="underline">目的</span>
-](#目的)
+- [目的](#目的)
+  - [ユースケース](#ユースケース)
+  - [ハンズオン動作確認環境](#ハンズオン動作確認環境)
+  - [ハンズオン実施上の注意](#ハンズオン実施上の注意)
+- [演習手順](#演習手順)
+  - [アプリケーションの作成](#アプリケーションの作成)
+  - [ステージ、マイルストン、ヒューマンタスク・アクティビティの作成](#ステージ、マイルストン、ヒューマンタスク・アクティビティの作成)
+    - [ヒューマン・タスク・アクティビティの作成](#ヒューマン・タスク・アクティビティの作成)
+    - [ステージ（Stage）の作成](#ステージ（Stage）の作成)
+    - [マイルストンの作成](#マイルストンの作成)
+    - [フォームの作成](#フォームの作成)
+  - [プロセス開始イベントの設定](#プロセス開始イベントの設定)
+  - [ヒューマンタスク・アクティビティとフォームの関連付け](#ヒューマンタスク・アクティビティとフォームの関連付け)
+  - [ヒューマンタスク・アクティビティへのデータ・アソシエーション](#ヒューマンタスク・アクティビティへのデータ・アソシエーション)
+  - [ロールと権限の設定](#ロールと権限の設定)
+  - [ヒューマンタスク・アクティビティへのユーザー割当て](#ヒューマンタスク・アクティビティへのユーザー割当て)
+  - [ステージやアクティビティの開始・終了条件設定](#ステージやアクティビティの開始・終了条件設定)
+    - [スクリーニング・ステージ](#スクリーニング・ステージ)
+    - [処置ステージ](#処置ステージ)
+    - [退院ステージ](#退院ステージ)
+    - [スクリーニング済マイルストン](#スクリーニング済マイルストン)
+    - [処置済マイルストン](#処置済マイルストン)
+    - [退院済マイルストン](#退院済マイルストン)
+    - [手術の手続きアクティビティ](#手術の手続きアクティビティ)
+    - [処置アクティビティ](#処置アクティビティ)
+  - [テストモードでの動作確認](#テストモードでの動作確認)
+    - [テストモードでのアクティブ化](#テストモードでのアクティブ化)
+    - [テストモードでの実行](#テストモードでの実行)
+  - [本番モードでの動作確認](#本番モードでの動作確認)
+    - [アプリケーションの公開](#アプリケーションの公開)
+    - [本番モードへのアクティブ化](#本番モードへのアクティブ化)
+    - [本番モードでの実行](#本番モードでの実行)
 
-[<span class="underline">1.1</span> <span
-class="underline">ユースケース</span>](#ユースケース)
+------
 
-[<span class="underline">1.2</span> <span
-class="underline">ハンズオン動作確認環境</span>](#ハンズオン動作確認環境)
-
-[<span class="underline">1.3</span> <span
-class="underline">ハンズオン実施上の注意</span>](#ハンズオン実施上の注意)
-
-[<span class="underline">2</span> <span
-class="underline">演習手順</span>](#演習手順)
-
-[<span class="underline">2.1</span> <span
-class="underline">アプリケーションの作成</span>](#アプリケーションの作成)
-
-[<span class="underline">2.2</span> <span
-class="underline">ステージ、マイルストン、ヒューマンタスク・アクティビティの作成</span>](#ステージ、マイルストン、ヒューマンタスク・アクティビティの作成)
-
-[<span class="underline">2.2.1</span> <span
-class="underline">ヒューマン・タスク・アクティビティの作成</span>](#ヒューマン・タスク・アクティビティの作成)
-
-[<span class="underline">2.2.2</span> <span
-class="underline">ステージ（Stage）の作成</span>](#ステージ（Stage）の作成)
-
-[<span class="underline">2.2.3</span> <span
-class="underline">マイルストンの作成</span>](#マイルストンの作成)
-
-[<span class="underline">2.2.4</span> <span
-class="underline">フォームの作成</span>](#フォームの作成)
-
-[<span class="underline">2.3</span> <span
-class="underline">プロセス開始イベントの設定</span>](#プロセス開始イベントの設定)
-
-[<span class="underline">2.4</span> <span
-class="underline">ヒューマンタスク・アクティビティとフォームの関連付け</span>](#ヒューマンタスク・アクティビティとフォームの関連付け)
-
-[<span class="underline">2.5</span> <span
-class="underline">ヒューマンタスク・アクティビティへのデータ・アソシエーション</span>
-19](#ヒューマンタスク・アクティビティへのデータ・アソシエーション)
-
-[<span class="underline">2.6</span> <span
-class="underline">ロールと権限の設定</span>](#ロールと権限の設定)
-
-[<span class="underline">2.7</span> <span
-class="underline">ヒューマンタスク・アクティビティへのユーザー割当て</span>](#ヒューマンタスク・アクティビティへのユーザー割当て)
-
-[<span class="underline">2.8</span> <span
-class="underline">ステージやアクティビティの開始・終了条件設定</span>](#ステージやアクティビティの開始・終了条件設定)
-
-[<span class="underline">2.8.1</span> <span
-class="underline">スクリーニング・ステージ</span>](#スクリーニング・ステージ)
-
-[<span class="underline">2.8.2</span> <span
-class="underline">処置ステージ</span>](#処置ステージ)
-
-[<span class="underline">2.8.3</span> <span
-class="underline">退院ステージ</span>](#退院ステージ)
-
-[<span class="underline">2.8.4</span> <span
-class="underline">スクリーニング済マイルストン</span>](#スクリーニング済マイルストン)
-
-[<span class="underline">2.8.5</span> <span
-class="underline">処置済マイルストン</span>](#処置済マイルストン)
-
-[<span class="underline">2.8.6</span> <span
-class="underline">退院済マイルストン</span>](#退院済マイルストン)
-
-[<span class="underline">2.8.7</span> <span
-class="underline">手術の手続きアクティビティ</span>](#手術の手続きアクティビティ)
-
-[<span class="underline">2.8.8</span> <span
-class="underline">処置アクティビティ</span>](#処置アクティビティ)
-
-[<span class="underline">2.9</span> <span
-class="underline">テストモードでの動作確認</span>](#テストモードでの動作確認)
-
-[<span class="underline">2.9.1</span> <span
-class="underline">テストモードでのアクティブ化</span>](#テストモードでのアクティブ化)
-
-[<span class="underline">2.9.2</span> <span
-class="underline">テストモードでの実行</span>](#テストモードでの実行)
-
-[<span class="underline">2.10</span> <span
-class="underline">本番モードでの動作確認</span>](#本番モードでの動作確認)
-
-[<span class="underline">2.10.1</span> <span
-class="underline">アプリケーションの公開</span>](#アプリケーションの公開)
-
-[<span class="underline">2.10.2</span> <span
-class="underline">本番モードへのアクティブ化</span>](#本番モードへのアクティブ化)
-
-[<span class="underline">2.10.3</span> <span
-class="underline">本番モードでの実行</span>](#本番モードでの実行)
-
-目的
-====
+## 目的
 
 この演習では、動的プロセス（Dynamic Process）の基本的な動作を理解することを目的としています。
 
-ユースケース
-------------
+### ユースケース
 
 救急病院の患者受け入れをモデルとして、搬送から退院までの流れをモデルにした、簡単な動的プロセス・アプリケーションを作成します。
 
-ハンズオン動作確認環境
-----------------------
+### ハンズオン動作確認環境
 
 - このハンズオンは、Oracle Integration Cloud (User Managed)18.2.5で動作確認しています。
 - Mozilla FirefoxもしくはGoogle Chromeを使うことを推奨します。
 
-ハンズオン実施上の注意
-----------------------
+### ハンズオン実施上の注意
 
 - このハンズオンは、すでにStatic Process（通常のProcess）での開発経験がある人を対象にしています。
 - 完成版をエクスポートしたものは[こちら](EmergencyProcess.exp)にあります。
 
-演習手順
-========
+------
 
-アプリケーションの作成
-----------------------
+## 演習手順
+
+### アプリケーションの作成
 
 Integration Cloudのホーム左側のProcess Builderをクリックし、Process Builderでアプリケーションを作成していきます。
 
@@ -150,12 +83,13 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image6.png" style="width:5.3437in;height:4.2752in" />
 
-ステージ、マイルストン、ヒューマンタスク・アクティビティの作成
-----------------------
+------
+
+### ステージ、マイルストン、ヒューマンタスク・アクティビティの作成
 
 続いて、アクティビティを作成します。動的プロセスでは、ヒューマン・タスクもしくはBPMNプロセスをアクティビティにすることができます。ヒューマンタスク・アクティビティはプロセスが無くても単独でアクティビティにすることができます。BPMNプロセス・アクティビティには任意のBPMNアクティビティを含めることができます。
 
-### ヒューマン・タスク・アクティビティの作成
+#### ヒューマン・タスク・アクティビティの作成
 
 アクティビティ追加フィールドで以下の操作をしてヒューマンタスク・アクティビティを作成します。
 
@@ -178,7 +112,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 | 手術の手続き   |
 | 退院判定       |
 
-### ステージ（Stage）の作成
+#### ステージ（Stage）の作成
 
 続いて、ステージを作成します。ステージはフェーズと置き換えて考えていただくとわかりやすいかもしれません。ステージを使って、フェーズ内のアクティビティを編成します。ステージは直列（一つずつステージが進む）、並列（複数のステージが同時並行に進む）のいずれかを選択できます。
 
@@ -224,7 +158,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image14.png" style="width:5.8777in;height:3.5885in" />
 
-### マイルストンの作成
+#### マイルストンの作成
 
 “スクリーニング”ステージのアクティビティ追加フィールドで以下の操作をしてマイルストンを作成します。
 
@@ -251,7 +185,7 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image15.png" style="width:5.87835in;height:3.67402in" />
 
-### フォームの作成
+#### フォームの作成
 
 ヒューマンタスク・アクティビティで利用するフォームを作成します。
 
@@ -457,10 +391,9 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image26.png" style="width:5.87835in;height:3.67402in" />
 
-### 
+------
 
-プロセス開始イベントの設定
---------------------------
+### プロセス開始イベントの設定
 
 各動的プロセスは、フォームまたはデータ入力によって開始されます。動的プロセスのためのフォーム入力とプレゼンテーション入力を設定します。
 
@@ -495,8 +428,9 @@ Integration Cloudのホーム左側のProcess Builderをクリックし、Proces
 </tbody>
 </table>
 
- ヒューマンタスク・アクティビティとフォームの関連付け
------------------------------------------------------
+------
+
+### ヒューマンタスク・アクティビティとフォームの関連付け
 
 ヒューマンタスク・アクティビティに先ほど作成したフォームのプレゼンテーションを関連付けます。
 
@@ -544,8 +478,9 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 </tbody>
 </table>
 
-ヒューマンタスク・アクティビティへのデータ・アソシエーション
-------------------------------------------------------------
+------
+
+### ヒューマンタスク・アクティビティへのデータ・アソシエーション
 
 各ヒューマンタスク・アクティビティでは、データ・アソシエーション（データ・マッピング）を使って、データ入出力を定義する必要があります。データ・アソシエーションは、フロー要素間で渡される情報を定義します。
 
@@ -563,10 +498,9 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 その他のヒューマンタスク・アクティビティ（処置、退院判定、手術の手続き、退院の手続き）も同様の設定をします。
 
-### 
+------
 
-ロールと権限の設定
-------------------
+### ロールと権限の設定
 
 動的プロセスの柔軟性は、動的プロセスのロールがもたらします。ロールを作成し、そのロールを適用するプロセス要素、そして付与する権限を定義します。
 
@@ -631,8 +565,9 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image40.png" style="width:2.49173in;height:3.6in" />　　<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image41.png" style="width:2.49173in;height:3.59173in" />
 
- ヒューマンタスク・アクティビティへのユーザー割当て
------------------------------------------------------
+------
+
+### ヒューマンタスク・アクティビティへのユーザー割当て
 
 各ヒューマンタスクにはユーザーやグループ、ロールを割り当てる必要があります。
 
@@ -682,8 +617,9 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 </tbody>
 </table>
 
- ステージやアクティビティの開始・終了条件設定
----------------------------------------------
+------
+
+### ステージやアクティビティの開始・終了条件設定
 
 ここまでで動作可能な動的プロセスを作成できていますが、実際の運用を想定し、条件に応じたステージやアクティビティの有効化・無効化を実現するための設定をしていきます。
 
@@ -698,44 +634,44 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 上記の流れを意識して、各アクティビティの開始・終了条件を設定します。
 
-### スクリーニング・ステージ
+#### スクリーニング・ステージ
 
 “スクリーニング“ステージは1回のみ実行しますので、現状の設定のままでかまいません。
 
-### 処置ステージ
+#### 処置ステージ
 
 1. “処置“ステージのプロパティを開きます。
 1. Conditionsタブに移動し、開始条件（Activation）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“スクリーニング”ステージの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 1. 同様に、終了条件（Termination）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“退院判定”アクティビティの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 
-### 退院ステージ
+#### 退院ステージ
 
 1. “退院“ステージのプロパティを開きます。
 1. Conditionsタブに移動し、開始条件（Activation）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“処置”ステージの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 1. 同様に、終了条件（Termination）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“退院の手続き”アクティビティの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 
-### スクリーニング済マイルストン
+#### スクリーニング済マイルストン
 
 スクリーニング・アクティビティが完了すると、自動的に到達しますが、明示的に設定するには以下のようにします。
 
 1. “スクリーニング済“マイルストンのプロパティを開きます。
 1. Conditionsタブに移動し、完了条件（Completion）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“スクリーニング”アクティビティの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 
-### 処置済マイルストン
+#### 処置済マイルストン
 
 退院判定アクティビティが完了すると、自動的に到達しますが、明示的に設定するには以下のようにします。
 
 1. “処置済“マイルストンのプロパティを開きます。
 2. Conditionsタブに移動し、完了条件（Completion）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“退院判定”アクティビティの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 
-### 退院済マイルストン
+#### 退院済マイルストン
 
 退院の手続きアクティビティが完了すると、自動的に到達しますが、明示的に設定するには以下のようにします。
 
 1. “退院済“マイルストンのプロパティを開きます。
 2. Conditionsタブに移動し、完了条件（Completion）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“退院の手続き”アクティビティの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 
-### 手術の手続きアクティビティ
+#### 手術の手続きアクティビティ
 
 手術の手続きアクティビティは、処置ステージでのみ利用できるようにします。
 
@@ -743,7 +679,7 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 2. Conditionsタブに移動し、開始条件（Activation）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“スクリーニング”アクティビティの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 3. 同様に、終了条件（Termination）の右にある＋をクリックして条件を追加します。ここでは、Eventsの右にある＋をクリックし、“処置”ステージの完了（Complete）を条件として設定します。設定後、下部のCreateをクリックしてください。Labelは適宜変更してかまいません。
 
-### 処置アクティビティ
+#### 処置アクティビティ
 
 処置アクティビティは、処置ステージで任意の回数利用できるようにします。
 
@@ -755,14 +691,15 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image44.png" style="width:5.87835in;height:3.67402in" />
 
-テストモードでの動作確認
-------------------------
+------
+
+### テストモードでの動作確認
 
 テスト機能を使うと、アプリケーションを検証し、テストモードでアクティブ化し、利用できるようになります。準備が整うまで、アプリケーションを本番モードでアクティブ化しないことをお奨めします。
 
 すでに基本的な動的プロセスは構成済みなので、このタイミングで作成した動的プロセスがどのように機能するかを確認してみましょう。変更の結果を表示したいときにはいつでもすぐにアプリケーションをテストできます。
 
-### テストモードでのアクティブ化
+#### テストモードでのアクティブ化
 
 ［テスト］をクリックします。
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image45.png" style="width:0.51389in;height:0.31944in" />
@@ -775,7 +712,7 @@ TitleやTask Summaryを任意で設定します。ここで指定した内容は
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image47.png" style="width:2.93056in;height:1.30556in" />
 
-### テストモードでの実行
+#### テストモードでの実行
 
 アクティブ化が完了したら、<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image48.png" style="width:1.27778in;height:0.30556in" />をクリックします。Testing ModeがOnの状態のブラウザが開きます。
 
@@ -820,14 +757,13 @@ Submit（送信）が完了すると、Emergency Processインスタンスが作
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image57.png" style="width:5.87835in;height:3.67402in" />
 
-### 
+------
 
-本番モードでの動作確認
-------------------
+### 本番モードでの動作確認
 
 テストモードでの動作確認が終了したら、アクティブ化した上で、本番モードで実行します。アクティブ化対象のアプリケーションは、データベースに永続化（公開）したものです。そのため、まだ公開していない場合は事前に公開する必要があります。
 
-### アプリケーションの公開
+#### アプリケーションの公開
 
 上部メニューの［公開］をクリックします。
 
@@ -837,7 +773,7 @@ Submit（送信）が完了すると、Emergency Processインスタンスが作
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image59.png" style="width:3.93346in;height:4.54173in" />
 
-### 本番モードへのアクティブ化
+#### 本番モードへのアクティブ化
 
 上部メニューの［アクティブ化］をクリックします。
 
@@ -870,7 +806,7 @@ Submit（送信）が完了すると、Emergency Processインスタンスが作
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image66.png" style="width:5.87835in;height:3.67402in" />
 
-### 本番モードでの実行
+#### 本番モードでの実行
 
 Workspaceでアプリケーションを操作していきます。注意点は、テストモードとは異なり、各アクティビティを実行するユーザーは、各アクティビティに割り当てたユーザーもしくはグループ、アプリケーション・ロールに含まれるユーザーである必要があります。
 
