@@ -174,39 +174,24 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 JSONレスポンス・ペイロードの取得
 --------------------------------
 
-連携フローを開発するために、REST
-APIを呼び出した際のレスポンス・ペイロードを収集しておく必要があります。今回はOICの統合メタデータを取得するREST
-APIを利用しますので、このAPIのレスポンス・ペイロードを取得しておきます。
+連携フローを開発するために、REST APIを呼び出した際のレスポンス・ペイロードを収集しておく必要があります。今回はOICの統合メタデータを取得するREST APIを利用しますので、このAPIのレスポンス・ペイロードを取得しておきます。
 
-あわせて、OICが提供する運用向けREST
-APIの利用方法についても理解してください。
+あわせて、OICが提供する運用向けREST APIの利用方法についても理解してください。
 
-1. メニューで**［統合］**をクリックします。
-
+1. メニューで **統合** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image12.png" style="width:2.13861in;height:1.75545in" />
-
-1. 右のトグル・ボタンがチェックされている統合を１つ（何でも良い）選び、統合名をクリックします。以下ではHello
-    worldという統合を例に説明します。
-
+2. 右のトグル・ボタンがチェックされている統合を１つ（何でも良い）選び、統合名をクリックします。以下ではHello worldという統合を例に説明します。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image13.png" style="width:7.04951in;height:1.04176in" />
-
-1. 画面右のメニューアイコンをクリック、**プライマリ情報**のリンクをクリックします。
-
+3. 画面右のメニューアイコンをクリック、**プライマリ情報** のリンクをクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image14.png" style="width:2.86012in;height:2.15842in" />
-
-1. **識別子**と**バージョン**情報をメモしておきます。
-
+4. **識別子** と **バージョン** 情報をメモしておきます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image15.png" style="width:3.78125in;height:2.00234in" />
-
-1. **［閉じる］**をクリックします。
-
-2. REST APIテストクライアントを起動します（本ハンズオンでは、Advanced
-    REST Clientを利用した手順を記載します）。
-
-3. Request URLに次の通りURIを入力します。
-
-https://&lt;OICホスト名&gt;/ic/api/integration/v1/integrations/{id}
-
+5. **閉じる** をクリックします。
+6. REST APIテストクライアントを起動します（本ハンズオンでは、Advanced REST Clientを利用した手順を記載します）。
+7. Request URLに次の通りURIを入力します。
+   ```
+   [OIC URL]/ic/api/integration/v1/integrations/{id}
+   ```
 <table>
 <thead>
 <tr class="header">
@@ -223,17 +208,13 @@ https://&lt;OICホスト名&gt;/ic/api/integration/v1/integrations/{id}
 </tbody>
 </table>
 
-1. **［SEND］**ボタンを押すと、認証情報を求めるポップアップが現れます。下表の通り設定し、**［ACCEPT］**をクリックします。
-
+8. **SEND**ボタンを押すと、認証情報を求めるポップアップが現れます。下表の通り設定し、**ACCEPT** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image16.png" style="width:2.71875in;height:2.68829in" />
-
 | **フィールド** | **入力値**                        |
 |----------------|-----------------------------------|
 | Username       | &lt;OICのログイン・ユーザー&gt;   |
 | Password       | &lt;OICのログイン・パスワード&gt; |
-
-1. レスポンスのペイロードをダウンロードし、JSONファイルとして保存しておきます。
-
+9. レスポンスのペイロードをダウンロードし、JSONファイルとして保存しておきます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image17.png" style="width:7.06535in;height:4.41584in" />
 
 統合の作成
