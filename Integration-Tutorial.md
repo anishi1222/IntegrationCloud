@@ -194,13 +194,6 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
    [OIC URL]/ic/api/integration/v1/integrations/{id}
    ```
 
-| **Name** | **Value**                        |
-|----------------|-----------------------------------|
-| id       | &lt;確認した統合の識別子&gt;|&lt;確認した統合のバージョン番号&gt; |
-
-例えば、識別子がHELLO_WORLD、バージョンが01.02.0000の場合は、idはHELLO_WORLD|01.02.0000
-
-
 <table>
 <thead>
 <tr class="header">
