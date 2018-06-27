@@ -430,3 +430,6 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 > **<span class="underline">失敗した場合</span>**
 >
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image39.png" style="width:7.0396in;height:1.33296in" />
+
+-----
+以上でIntegrationのチュートリアルは終了です。
