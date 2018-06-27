@@ -1,4 +1,4 @@
-# Dynamic Process Tutorial / Emergency Room
+# Dynamic Process Tutorial
 
 - [目的](#目的)
   - [ユースケース](#ユースケース)

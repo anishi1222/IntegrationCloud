@@ -1,4 +1,4 @@
-# Integration Tutorial / REST Integration
+# Integration Tutorial
 
 - [はじめに](#はじめに)
   - [目的](#目的)
@@ -18,6 +18,7 @@
 ### 目的
 
 本ハンズオンでは、既存のREST APIに対して、Oracle Integration Cloud（以下、OIC）で新たなRESTエンドポイントを構成・公開するために、REST to RESTの連携フローを実装します。
+
 このハンズオンを通じて以下のポイントを理解することができます。
 
 - Source側RESTの実装: REST/JSONでエンドポイントを構成して公開する方法
