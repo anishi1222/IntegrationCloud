@@ -215,6 +215,7 @@ JSONレスポンス・ペイロードの取得
 |----------------|-----------------------------------|
 | Username       | &lt;OICのログイン・ユーザー&gt;   |
 | Password       | &lt;OICのログイン・パスワード&gt; |
+
 9. レスポンスのペイロードをダウンロードし、JSONファイルとして保存しておきます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image17.png" style="width:7.06535in;height:4.41584in" />
 
