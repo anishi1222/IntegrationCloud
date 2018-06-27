@@ -16,7 +16,7 @@
   - [再送信アクティビティの設定](#再送信アクティビティの設定)
   - [履行アクティビティの設定](#履行アクティビティの設定)
   - [承認ゲートウェイの実装](#承認ゲートウェイの実装)
-  - [データ・アソシエーション](#データアソシエーション)
+  - [データアソシエーション](#データアソシエーション)
   - [テストモードへのアプリケーションのアクティブ化](#テストモードへのアプリケーションのアクティブ化)
   - [テストモードでのアプリケーション実行](#テストモードでのアプリケーション実行)
   - [本番モードへのアプリケーションアクティブ化](#本番モードへのアプリケーションアクティブ化)
@@ -213,12 +213,12 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image31.png" style="width:6.47138in;height:4.68539in" />
 
 4. 画面コンポーネントの設定を変更します。
-    1. **プロジェクト開始日、終了予定日、申請日付**
+    - プロジェクト開始日、終了予定日、申請日付
       - プロパティ＞形式で、yyyy-mm-ddに変更  
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image32.png" style="width:3.11256in;height:2.92135in" />
 
-    2. 購買申請品目リスト
+    - 購買申請品目リスト
       - プロパティ＞列の＋アイコンをクリックして4列にし、以下のように列名を設定  
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image33.png" style="width:2.9375in;height:2.08333in" />
@@ -236,7 +236,7 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image34.png" style="width:2.6875in;height:0.3125in" />
 
-    3. 単価
+    - 単価
       - プロパティ＞一般＞通貨で日本円 (JPY) を選択
       - **変更時** イベントを追加
 
@@ -244,72 +244,71 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image36.png" style="width:2.90625in;height:2.35417in" />
 
-        - 鉛筆アイコンをクリック
-        - **アクション** をクリック
+      - 鉛筆アイコンをクリック
+      - **アクション** をクリック
+
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image37.png" style="width:5.24235in;height:1.95506in" />
 
-        - 値が変更された時点で小計を更新する仕組みを追加するため、以下のようにアクションを設定します。終了後、 **OK** をクリック。
-        - ファンクション
+      - 値が変更された時点で小計を更新する仕組みを追加するため、下図のようにアクションを設定します。終了後、 **OK** をクリックします。
+
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image38.png" style="width:7.16683in;height:3.79775in" />
+
+
+      - ファンクション
         - 指定した値に対する操作を設定できます。たとえば、2つの値を加算したり、2つの文字列を連結したり、テーブル行にある項目を合計したりできます。
         - 詳細は以下のドキュメントをご覧ください。
-        - **Oracle Integration Cloud**
+
+            **Oracle Integration Cloud**
             > <https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/adding-dynamic-behaviors-form.html#GUID-CE7E708C-C663-45B6-A734-72DC29DB406B>
-        - **Autonomous Integration Cloud**
+
+            **Autonomous Integration Cloud**
             > <https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/adding-dynamic-behaviors-form.html\#GUID-CE7E708C-C663-45B6-A734-72DC29DB406B>
 
-        - コントロール
+      - コントロール
         - 操作対象のコンポーネントを設定できます。
+        
+      - その他
+        - **タイプ**で設定できる項目の詳細は、以下のガイドを参照してください。
 
-その他、「タイプ」にて設定できる項目の詳細は、以下のガイドを参照してください。
+            **Oracle Integration Cloud**
+            > <https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/adding-dynamic-behaviors-form.html#GUID-2CCBD7FF-BFE4-4C76-81BF-3050385C886C>
 
-- **Oracle Integration Cloud**
-> <https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/adding-dynamic-behaviors-form.html#GUID-2CCBD7FF-BFE4-4C76-81BF-3050385C886C>
+            **Autonomous Integration Cloud**
+            > <https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/adding-dynamic-behaviors-form.html#GUID-2CCBD7FF-BFE4-4C76-81BF-3050385C886C>
 
-- **Autonomous Integration Cloud**
-> <https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/adding-dynamic-behaviors-form.html#GUID-2CCBD7FF-BFE4-4C76-81BF-3050385C886C>
+            **参考：ポーランド記法**
+            > <https://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E8%A8%98%E6%B3%95>
 
-> 参考：ポーランド記法
-  > <https://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E8%A8%98%E6%B3%95>
+    - 数量
+      - プロパティ＞最小で、0を指定
+      - **変更時** イベントを追加し、単価で追加したアクションと同じものを設定
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image38.png" style="width:7.16683in;height:3.79775in" />
+    - 小計
+      - プロパティ＞通貨で日本円 (JPY) を選択
+      - **読取り専用** にチェック
+      - **変更時** イベントを追加
+      - 鉛筆アイコンをクリック
+      - 小計の変更時に合計金額が更新されるよう、以下のようにアクションを設定し、終了後、 **OK** をクリック
 
-1. 数量
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image39.png" style="width:6.76875in;height:2.97639in" />
 
-  - プロパティ＞最小で、0を指定
-  - **変更時** イベントを追加し、単価で追加したアクションと同じものを設定
+    - 合計金額
+      - プロパティ＞通貨で日本円 (JPY) を選択
+      - **読取り専用** にチェック
 
-2. 小計
-  - プロパティ＞通貨で日本円 (JPY) を選択
+        <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image40.png" style="width:6.76875in;height:4.89861in" />
 
-  -  **読取り専用** にチェック
-
-  -  **変更時** イベントを追加
-
-  - 鉛筆アイコンをクリック
-
-  - 小計の変更時に合計金額が更新されるよう、以下のようにアクションを設定する。終了後、 **OK** をクリック
-
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image39.png" style="width:6.76875in;height:2.97639in" />
-
-1. 合計金額
-
-  - プロパティ＞通貨で日本円 (JPY) を選択
-
-  -  **読取り専用** にチェック
-
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image40.png" style="width:6.76875in;height:4.89861in" />
-
-1. 「プレビュー」ボタンを押すと、作成したフォームの動作を確認できます。
+5. （オプション）「プレビュー」ボタンを押すと、作成したフォームの動作を確認できます。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image41.png" style="width:6.76875in;height:1.45764in" />
 
-アクティビティの名称変更
-------------------------
+------
+
+### アクティビティの名称変更
 
 アクティビティ名を変更します。
 
-1. Approve
-    Requestアクティビティをクリックし、「リクエストの承認」アクティビティへ名前を変更します。
+1. Approve Requestアクティビティをクリックし、「リクエストの承認」アクティビティへ名前を変更します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image42.png" style="width:1.76659in;height:1.29213in" />
     ➡︎
@@ -327,8 +326,9 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
     ➡︎
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image47.png" style="width:1.39326in;height:1.04494in" />
 
-リクエストの承認アクティビティの設定
-------------------------------------
+------
+
+### リクエストの承認アクティビティの設定
 
 アクティビティと、先ほど作成したWebフォームを紐づけます。
 
@@ -344,17 +344,19 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image50.png" style="width:4.04494in;height:2.87874in" />
 
-再送信アクティビティの設定
---------------------------
+------
+
+### 再送信アクティビティの設定
 
 1. リクエストの承認アクティビティと同様に、 **再送信** アクティイビティにて、作成したPurchaseRequisitionUIを指定します。
 
-履行アクティビティの設定
-------------------------
+------
+
+### 履行アクティビティの設定
 
 このハンズオンでは、「履行」のアクティビティをドラフトとして取り扱います。
 
-ドラフトを使用することで、すべてのアクティビティの定義が完了していなくても、プロセスの一部をテストできます。
+ドラフトを使うと、すべてのアクティビティの定義が完了していなくても、プロセスの一部をテスト・実行できます。
 
 1. プロパティを開きます。
 
@@ -368,8 +370,9 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 4. ここまで作成した内容を保存しておきます。
 
-承認ゲートウェイの実装
-----------------------
+------
+
+### 承認ゲートウェイの実装
 
 ゲートウェイを定義することによって、フローを分岐および統合させることが出来ます。
 
@@ -377,11 +380,11 @@ OICのホーム画面左のメニューから **ProcessBuilder** をクリック
 
 その他のゲートウェイの種類については、以下ガイドを参照してください。
 
-Oracle Integration Cloud : [<span
-class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html\#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB</span>](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB)
+  **Oracle Integration Cloud**
+  > <https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB>
 
-Autonomous Integration Cloud : [<span
-class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/controlling-process-flow-using-gateways.html\#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB</span>](https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/controlling-process-flow-using-gateways.html#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB)
+  **Autonomous Integration Cloud**
+  > <https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/controlling-process-flow-using-gateways.html#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB>
 
 1. 「リクエストの承認」アクティビティをクリックします。
 
@@ -389,28 +392,29 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
     「リクエストの承認」アクティビティは『APPROVE』または『REJECT』を返却します。
 
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image54.png" style="width:6.76875in;height:4.26319in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image54.png" style="width:6.76875in;height:4.26319in" />
 
-1. ゲートウェイからの分岐 **No**  をクリックします。
+2. ゲートウェイからの分岐 **No**  をクリックします。
 
-<!-- -->
-
-1.  **条件** の鉛筆アイコンをクリックします。  
+3.  **条件** の鉛筆アイコンをクリックします。  
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image55.png" style="width:5.75319in;height:5.32584in" />
 
-2. 式エディタに、TaskOutcomeDataObject !=
-    "APPROVE"と設定します。TaskOutcomeDataObjectは変数リストで選択し、 **式に挿入** すると追加できます。  
+4. 式エディタに、
+    ```
+    TaskOutcomeDataObject != "APPROVE"
+    ```
+   と設定します。TaskOutcomeDataObjectは変数リストで選択し、 **式に挿入** をクリックします（直接記述することもできます）。  
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image56.png" style="width:5.13483in;height:7.86709in" />
 
 3.  **検証** をクリックして、式が構文上問題ないことを確認します。
 
 4. OKをクリックします。
 
-データ・アソシエーション
-------------------------
+------
 
-購買申請、リクエストの承認、再送信の各アクティビティでフォームとプロセス・データ・オブジェクト間でデータをマッピングします。この作業をOracle
-Integration Cloud - Processではデータ・アソシエーションと呼びます。
+### データアソシエーション
+
+購買申請、リクエストの承認、再送信の各アクティビティでフォームとプロセス・データ・オブジェクト間でデータをマッピングします。この作業をデータ・アソシエーションと呼びます。
 
 このハンズオンでは、アクティビティとフォームを紐付けたことで、自動的にデータ・アソシエーションが完了しています。そのため、設定内容を確認するだけにとどめます。
 
@@ -426,8 +430,9 @@ Integration Cloud - Processではデータ・アソシエーションと呼び�
 
 4. 他のアクティビティでも既にデータ・アソシエーションが完了していることを確認してください。
 
-テストモードへのアプリケーションのアクティブ化
-----------------------------------------------
+------
+
+### テストモードへのアプリケーションのアクティブ化
 
 では、作成したプロセスを検証してみましょう。
 
@@ -437,63 +442,60 @@ Integration Cloud - Processではデータ・アソシエーションと呼び�
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image60.png" style="width:5.71667in;height:2.66215in" />
 
-<!-- -->
-
-1.  **アクティブ化** をクリックします。  
+2.  **アクティブ化** をクリックします。  
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image61.png" style="width:1.52792in;height:1.10112in" />
 
-2. クリック後、 **テスト用にアクティブ化** というダイアログが出ます。この中で、 **自分を全てのロールに追加** というチェックボックスが出てきますが、このチェックは外さずに、 **アクティブ化** をクリックしてください。この設定を有効化しておくと、テストモードでは、各スイムレーンにアクティブ化時に操作しているユーザーを割り当てるため、ユーザーの切り替えの手間を省くことができます。
+3. クリック後、 **テスト用にアクティブ化** というダイアログが出ます。この中で、 **自分を全てのロールに追加** というチェックボックスが出てきますが、このチェックは外さずに、 **アクティブ化** をクリックしてください。この設定を有効化しておくと、テストモードでは、各スイムレーンにアクティブ化時に操作しているユーザーを割り当てるため、ユーザーの切り替えの手間を省くことができます。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image62.png" style="width:4.40449in;height:2.02173in" />
 
-3. アプリケーションのアクティブ化が成功することを確認してください。
+4. アプリケーションのアクティブ化が成功することを確認してください。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image63.png" style="width:4.5in;height:1.69444in" />
 
-テストモードでのアプリケーション実行
-------------------------------------
+------
+
+### テストモードでのアプリケーション実行
 
 1. アクティブ化完了後、 **テスト・モードで試行** をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image64.png" style="width:5.95506in;height:0.8138in" />
 
-<!-- -->
-
-1. PRというアイコンが存在するので、このアイコンをクリックします（背景色は環境によって変わります）。
+2. PRというアイコンが存在するので、このアイコンをクリックします（背景色は環境によって変わります）。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image65.png" style="width:2.29056in;height:2in" />
 
-2. PurchaseRequisitionUIが現れますので、適宜入力します。以下は入力例です。
+3. PurchaseRequisitionUIが現れますので、適宜入力します。以下は入力例です。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image66.png" style="width:6.76875in;height:6.17292in" />
 
-1. 入力が完了したら、 **送信** を押します。
+4. 入力が完了したら、 **送信** を押します。
 
-2.  **My Tasks** をクリックします。
+5.  **My Tasks** をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image67.png" style="width:1.7633in;height:2.17021in" />
 
-3. 先ほど送信したPurchaseRequisitionが1個表示されているはずです。これをクリックします。
+6. 先ほど送信したPurchaseRequisitionが1個表示されているはずです。これをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image68.png" style="width:6.76875in;height:1.61042in" />
 
-4. 入力した内容が正しく表示されていることを確認します。その上で、APPROVE/REJECTのいずれかを選択し、クリックします。APPROVEすると、プロセスは終了します。REJECTすると、再送信アクティビティに遷移します。今回はAPPROVEを選択します。
+7. 入力した内容が正しく表示されていることを確認します。その上で、APPROVE/REJECTのいずれかを選択し、クリックします。APPROVEすると、プロセスは終了します。REJECTすると、再送信アクティビティに遷移します。今回はAPPROVEを選択します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image69.png" style="width:5.54374in;height:5.43056in" />
 
-5. 先ほど実行したプロセスインスタンスの状況を確認するため、 **Processes** をクリックします。
+8. 先ほど実行したプロセスインスタンスの状況を確認するため、 **Processes** をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image70.png" style="width:2.4871in;height:3in" />
 
-6. フィルターアイコンをクリックします。
+9. フィルターアイコンをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image71.png" style="width:3.59708in;height:1.20833in" />
 
-7. 左側のステータスから、 **Completed** にチェックを入れます。
+10. 左側のステータスから、 **Completed** にチェックを入れます。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image72.png" style="width:2.875in;height:2.79167in" />
 
-8. 先ほど完了したプロセスインスタンス（PurchaseRequisition）が現れるので、この行をクリックします。
+11. 先ほど完了したプロセスインスタンス（PurchaseRequisition）が現れるので、この行をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image73.png" style="width:5.36597in;height:0.89901in" />
 
@@ -501,17 +503,18 @@ Integration Cloud - Processではデータ・アソシエーションと呼び�
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image74.png" style="width:5.97708in;height:4.82177in" />
 
-9.  **ツリー・ビュー** にすると、各アクティビティでのデータの出入りがわかります。
+12.  **ツリー・ビュー** にすると、各アクティビティでのデータの出入りがわかります。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image75.png" style="width:6.76875in;height:5.16806in" />
 
-1. 例えば、 **Approve Request** の **Instance entered the
+13. 例えば、 **Approve Request** の **Instance entered the
     activity** をクリックすると、XML形式でどのようなデータが流れてきて、フォームに入るのかがわかります
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image76.png" style="width:5.72222in;height:4.13888in" />
 
-本番モードへのアプリケーションアクティブ化
-------------------------------------------
+------
+
+### 本番モードへのアプリケーションアクティブ化
 
 テストにて、作成したプロセスに問題がないことを確認後、プロセスを本番環境へアクティブ化します。
 
@@ -535,24 +538,20 @@ Integration Cloud - Processではデータ・アソシエーションと呼び�
 
 6. ウィザードに従ってアクティブ化を進めます。
 
-    1.  **バージョンの選択** スナップショットは最終公開バージョン
-
-    2.  **アプリケーションは正常に検証されました** が表示されたことを確認し、 **オプション** をクリック
-
-    3. リビジョンIDは1.0、オーバーライド、デフォルトを強制使用にチェックを入れて、 **アクティブ化** をクリック
+    - **バージョンの選択** スナップショットは最終公開バージョン
+    - **アプリケーションは正常に検証されました** が表示されたことを確認し、 **オプション** をクリック
+    - リビジョンIDは1.0、オーバーライド、デフォルトを強制使用にチェックを入れて、 **アクティブ化** をクリック
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image81.png" style="width:5.10151in;height:5.36111in" />
-
-    4.  **アプリケーションは正常にアクティブ化されました** が表示されたことを確認し、 **終了** をクリック
+    - **アプリケーションは正常にアクティブ化されました** が表示されたことを確認し、 **終了** をクリック
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image82.png" style="width:5.37495in;height:5.66667in" />
 
-本番モードでのアプリケーション実行
-----------------------------------
+------
 
-Process Workspaceを開きます。
+### 本番モードでのアプリケーション実行
 
-Integration Cloudのトップページから **My Tasks** をクリックします。
+Process Workspaceを開き、Integration Cloudのトップページから **My Tasks** をクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image2.png" style="width:6.76875in;height:3.50625in" />
 
@@ -566,20 +565,18 @@ Integration Cloudのトップページから **My Tasks** をクリックしま�
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image84.png" style="width:2.51948in;height:3.40179in" />
 
-<!-- -->
-
-1. 検索ボックスに **PurchaseRequisition** を入力し、設定したいロールのみを表示します。
+2. 検索ボックスに **PurchaseRequisition** を入力し、設定したいロールのみを表示します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial1/image85.png" style="width:3.9375in;height:1.36005in" />
 
     今回ロールにユーザーもしくはグループを割り付ける対象のロールと割り付けるユーザーは以下の通りです。
 
-| ロール                              | 割り当てるユーザーもしくはグループ |
-|-------------------------------------|------------------------------------|
-| PurchaseRequisition.Deputy Manager  | ご自身のユーザーアカウント         |
-| PurchaseRequisition.General Foreman | ご自身のユーザーアカウント         |
+    | ロール                              | 割り当てるユーザーもしくはグループ |
+    |-------------------------------------|------------------------------------|
+    | PurchaseRequisition.Deputy Manager  | ご自身のユーザーアカウント         |
+    | PurchaseRequisition.General Foreman | ご自身のユーザーアカウント         |
 
-> ユーザーやグループの割り付け方法は以下の通りです。
+ユーザーやグループの割り付け方法は以下の通りです。
 
 1. ユーザーやグループを割り付けたいロールを選択した状態で、 **メンバーの追加** をクリック
 
