@@ -19,7 +19,7 @@
 
 ### 目的
 
-本ハンズオンでは、既存のREST APIに対して、OICで新たなRESTエンドポイントを構成・公開するために、REST to RESTの連携フローを実装します。
+本ハンズオンでは、既存のREST APIに対して、Oracle Integration Cloud（以下、OIC）で新たなRESTエンドポイントを構成・公開するために、REST to RESTの連携フローを実装します。
 このハンズオンを通じて以下のポイントを理解することができます。
 
 - Source側RESTの実装: REST/JSONでエンドポイントを構成して公開する方法
@@ -54,31 +54,16 @@
 OICでは運用・管理を目的としたREST APIを提供しています。OICの運用・管理用のREST APIの一覧は、以下のドキュメントをご覧ください。
 
 - Autonomous Integration Cloud
-> [<span class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html</span>](https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html)
+> [https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html](https://docs.oracle.com/en/cloud/paas/integration-cloud/rest-api/index.html)
 
 - Integration Cloud (User managed)
-> [<span class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html</span>](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html)
+> [https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/rest-api-um/index.html)
 
 ------
 
 ### テスト・ツールの用意
 
 動作確認を簡単にするため、REST APIを呼び出すためのツール（REST APIテストクライアント）を用意してください。
-本ハンズオンでは、以下のツールを使用した手順を掲載していますが、既にREST APIテストクライアントをお持ちであれば、特にインストールする必要はありません。
-
-ツール名： **Advanced REST client**
-
-インストール方法
-
-1. Google Chromeを開き、以下のURLへアクセスします。
-> [<span
-> class="underline">https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo</span>](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
-2. **Chromeに追加** をクリックします。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image4.png" />
-3. Google Chromeの右上にある **アプリ** をクリックします。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image5.png" />
-4. **ARC**のアイコンをすると、Advanced REST Clientアプリを起動できます。
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image6.png" />
 
 ------
 
@@ -96,6 +81,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 - **REST**アダプタを選択します。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image10.png" />
 - 次の接続情報を入力します。
+
 <table>
 <thead>
 <tr class="header">
@@ -123,6 +109,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 - **作成** をクリックします。
   - （オプション）電子メール・アドレス に管理者用の E-Mailアドレスを入力します（例：admin@foo.bar.com）
 - **接続の構成** をクリックし、次の接続プロパティを設定します。
+
 <table>
 <thead>
 <tr class="header">
@@ -141,7 +128,7 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 </tr>
 <tr class="odd">
 <td>接続URL</td>
-<td><p><span class="underline">https://OICのホスト名</span></p>
+<td><p>https://OICのホスト名</p>
 <p>ブラウザに現れるOICのホスト名をそのまま利用します</p></td>
 </tr>
 </tbody>
@@ -190,9 +177,9 @@ RESTアダプタでAPIのURLや認証情報を登録すると、REST APIへ接�
 - **閉じる** をクリックします。
 - REST APIテストクライアントを起動します（本ハンズオンでは、Advanced REST Clientを利用した手順を記載します）。
 - Request URLに次の通りURIを入力します。
-   ```
+  ```
    https://OICのホスト名/ic/api/integration/v1/integrations/{id}
-   ```
+  ```
 
 <table>
 <thead>
@@ -277,6 +264,7 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image20.png" style="width:6.94943in;height:4.08298in" />
 
 - 基本情報の設定画面で次の通りに入力し **次 &gt;** をクリックします。
+
 <table>
 <thead>
 <tr class="header">
@@ -403,7 +391,8 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 - 統合の設定が100%完了すると、統合をアクティブにするためのトグル・ボタンが表示されます。**トグル・ボタン**をクリックし、統合をアクティブ化します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image28.png" style="width:6.75551in;height:1.22953in" />
-11. 確認のダイアログでは何も設定せず、そのまま、**アクティブ化**をクリックします。アクティベーションのプロセスが完了するのを待ちます。
+
+- 確認のダイアログでは何も設定せず、そのまま、**アクティブ化**をクリックします。アクティベーションのプロセスが完了するのを待ちます。
 
 ------
 
@@ -421,7 +410,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 - エンドポイントを、RESTメッセージの送信できるアプリケーションでテストします。
 
-<span class="underline">**Advanced REST clientを使った手順:**</span>
+**Advanced REST clientを使った手順:**
 
 エンドポイントのURLをコピーし、Request URLに貼り付けします。
 このとき、以下のようにパラメータの記載を変更してください。
@@ -475,10 +464,12 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 
 - トラッキング・ペイロードのリンクをクリックすると、連携の実行結果を確認できます。エラーが発生した場合には発生個所の特定に利用できます。
 
-**成功した場合**
+- **成功した場合**
+
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image38.png" style="width:7.04951in;height:1.37792in" />
 
-**失敗した場合**
+- **失敗した場合**
+
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image39.png" style="width:7.0396in;height:1.33296in" />
 
 ------
