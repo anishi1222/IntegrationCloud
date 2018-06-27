@@ -1,28 +1,17 @@
 # Integration Tutorial / REST Integration
 
-[<span class="underline">1. はじめに</span>](#はじめに)
-
-[<span class="underline">1.1 目的</span>](#目的)
-
-[<span class="underline">1.2 最終構成</span>](#最終構成)
-
-[<span class="underline">1.3 前提</span>](#前提)
-
-[<span class="underline">1.4 OICの運用・管理用APIについて</span>](#OICの運用・管理用APIについて)
-
-[<span class="underline">1.5 テスト・ツールの用意</span>](#テスト・ツールの用意)
-
-[<span class="underline">2. REST接続の作成</span>](#rest接続の作成)
-
-[<span class="underline">3. 連携フローの定義–OICの統合メタデータを取得</span>](#連携フローの定義–OICの統合メタデータを取得)
-
-[<span class="underline">3.1 JSON形式のレスポンス・ペイロードの取得</span>](#JSON形式のレスポンス・ペイロードの取得)
-
-[<span class="underline">3.2 統合の作成</span>](#統合の作成)
-
-[<span class="underline">3.3 データ・マッピングとアクティブ化</span>](#データ・マッピングとアクティブ化)
-
-[<span class="underline">3.4 統合のテストとモニタリング</span>](#統合のテストとモニタリング)
+- [はじめに](#はじめに)
+  - [目的](#目的)
+  - [最終構成](#最終構成)
+  - [前提](#前提)
+  - [OICの運用・管理用APIについて](#OICの運用・管理用APIについて)
+  - [テスト・ツールの用意](#テスト・ツールの用意)
+- [REST接続の作成](#rest接続の作成)
+- [連携フローの定義–OICの統合メタデータを取得](#連携フローの定義–OICの統合メタデータを取得)
+  - [JSON形式のレスポンス・ペイロードの取得](#JSON形式のレスポンス・ペイロードの取得)
+  - [統合の作成](#統合の作成)
+  - [データ・マッピングとアクティブ化](#データ・マッピングとアクティブ化)
+  - [統合のテストとモニタリング](#統合のテストとモニタリング)
 
 ------
 
