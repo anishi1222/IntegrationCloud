@@ -322,6 +322,7 @@ GET_INTEGRAT_METADATA_&lt;USER NAME&gt;</p></td>
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image21.png" style="width:6.0865in;height:4.57953in" />
 - 呼び出し側も同様に、先ほど作成したREST接続を **呼出しのドラッグ・アンド・ドロップ** へドラッグします。
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image22.png" style="width:6.72277in;height:3.97098in" />
+
 - 基本情報の設定画面で例えば次のように入力し **次 &gt;** をクリックします。
 
 | **フィールド**                           | **入力値**                               |
