@@ -417,9 +417,6 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image33.png" alt="C:\Users\ANISHIKA\AppData\Local\Microsoft\Windows\INetCache\Content.Word\スクリーンショット 2018-06-12 19.13.08.png" style="width:6.89583in;height:4.3099in" />
 
 - モニタリング画面から統合の成功を確認します。OICのホーム画面に移動し、下方にスクロールすると、OIC全体のモニタリング結果を確認できます。
-
-> <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image34.png" style="width:3.71287in;height:1.23762in" />
-
 - **Monitoring** ボタンをクリックして、詳細を確認します。
 
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image35.png"/>
