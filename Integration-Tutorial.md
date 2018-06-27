@@ -437,6 +437,7 @@ REST-ProxyからRetrieveMetadataにリクエストデータを受け渡すとき
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image34.png" style="width:3.71287in;height:1.23762in" />
 
 - **Monitoring** ボタンをクリックして、詳細を確認します。
+
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image35.png"/>
 
 - 先ほどテストで実行したメッセージの結果を確認するには、メニューで **トラッキング** をクリックします。
