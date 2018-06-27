@@ -32,7 +32,6 @@ Integration Tutorial / REST Integration
 --------
 
 本ハンズオンでは、既存のREST APIに対して、OICで新たなRESTエンドポイントを構成・公開するために、REST to RESTの連携フローを実装します。
-
 このハンズオンを通じて以下のポイントを理解することができます。
 
 - Source側RESTの実装: REST/JSONでエンドポイントを構成して公開する方法
@@ -56,9 +55,8 @@ Integration Tutorial / REST Integration
 前提
 ----
 
--   本ハンズオンでは、OICの統合のメタデータを取得するAPIを使用します。
-
--   本ハンズオンを実施する前に、アクティブな統合を用意する必要があります。
+- 本ハンズオンでは、OICの統合のメタデータを取得するAPIを使用します。
+- 本ハンズオンを実施する前に、アクティブな統合を用意する必要があります。
 
 OICの運用・管理用APIについて
 ---------------------------------
@@ -74,28 +72,21 @@ OICでは運用・管理を目的としたREST APIを提供しています。OIC
 テスト・ツールの用意
 --------------------
 
-動作確認を簡単にするため、REST APIを呼び出すためのツール（REST
-APIテストクライアント）を用意してください。
+動作確認を簡単にするため、REST APIを呼び出すためのツール（REST APIテストクライアント）を用意してください。
+本ハンズオンでは、以下のツールを使用した手順を掲載していますが、既にREST APIテストクライアントをお持ちであれば、特にインストールする必要はありません。
 
-本ハンズオンでは、以下のツールを使用した手順を掲載していますが、既にREST
-APIテストクライアントをお持ちであれば、特にインストールする必要はありません。
-
-ツール名：Advanced REST client
+ツール名： **Advanced REST client**
 
 <span class="underline">インストール方法</span>
 
 1.  Google Chromeを開き、以下のURLへアクセスします。
 > [<span
 > class="underline">https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo</span>](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
-2. **［Chromeに追加］**をクリックします。
+2. **Chromeに追加** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image4.png" style="width:6.72917in;height:2.72594in" />
-3.  Google Chromeの右上にある［**アプリ］**をクリックします。
-
+3.  Google Chromeの右上にある **アプリ** をクリックします。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image5.png" style="width:1.85372in;height:1.19792in" />
-
-1.  **ARC**のアイコンをすると、Advanced REST
-    Clientアプリを起動できます。
-
+4.  **ARC**のアイコンをすると、Advanced REST Clientアプリを起動できます。
 > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-Tutorial/image6.png" style="width:1.1364in;height:1.41584in" />
 
 REST接続の作成
