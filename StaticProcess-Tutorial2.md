@@ -241,7 +241,8 @@ https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-e
 
     > デフォルト・シーケンスフローは、矢印の根元に斜線があります（条件シーケンスフローには斜線は入りません）。このフローは、条件分岐で設定された条件を全て満たさなかった場合に進むシーケンスフローを意味しています。
     > 条件シーケンスフローとデフォルト・シーケンスフローとの切り替えは、シーケンスフローをクリックして鉛筆アイコンをクリックし、プロパティ画面で、条件フローのチェックをON/OFFします。チェックを外すと、デフォルト・シーケンスフローとして取り扱います。
-    > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image39.png" style="width:75%;height:75%"/>
+    >
+    > <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image39.png"/>
 
 11. **購買発注アクティビティ** と終了イベント“完了”間をシーケンスフローで接続します。
 
