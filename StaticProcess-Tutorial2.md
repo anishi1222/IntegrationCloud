@@ -1,182 +1,125 @@
-Oracle Integration Cloud - Process
+# Purchase Requisition Composer Lab 2
 
-Purchase Requisition Composer Lab 2
+- [はじめに](#はじめに)
+- [目的](#目的)
+- [最終構成](#最終構成)
+- [アプリケーションの更新](#アプリケーションの更新)
+  - [PurchaseRequisition Web Formの更新](#purchaserequisition-web-formの更新)
+  - [ビジネスルールの作成](#ビジネスルールの作成)
+  - [プロセスのアップデート](#プロセスのアップデート)
+  - [デシジョン・アクティビティの実装](#デシジョンアクティビティの実装)
+  - [リクエストの承認アクティビティの実装](#リクエストの承認アクティビティの実装)
+  - [再送信タスクアクティビティの実装](#再送信タスクアクティビティの実装)
+  - [経理部門の承認アクティビティの実装](#経理部門の承認アクティビティの実装)
+  - [購買発注アクティビティの実装](#購買発注アクティビティの実装)
+  - [経理部門の承認が必要か？ゲートウェイの実装](#経理部門の承認が必要かゲートウェイの実装)
+  - [経理部門が承認したか？ ゲートウェイの実装](#経理部門が承認したか-ゲートウェイの実装)
+  - [プレーヤを使った動作確認](#プレーヤを使った動作確認)
+  - [アプリケーションのアクティブ化](#アプリケーションのアクティブ化)
 
-目次
-====
-
-[<span class="underline">はじめに</span> 1](#はじめに)
-
-[<span class="underline">目的</span> 1](#目的)
-
-[<span class="underline">最終構成</span> 2](#最終構成)
-
-[<span class="underline">アプリケーションの更新</span>
-3](#アプリケーションの更新)
-
-[<span class="underline">1.</span> <span
-class="underline">PurchaseRequisition Web Formの更新</span>
-3](#purchaserequisition-web-formの更新)
-
-[<span class="underline">2.</span> <span
-class="underline">ビジネスルールの作成</span> 7](#ビジネスルールの作成)
-
-[<span class="underline">3.</span> <span
-class="underline">プロセスのアップデート</span>
-14](#プロセスのアップデート)
-
-[<span class="underline">4.</span> <span
-class="underline">デシジョン・アクティビティの実装</span>
-21](#デシジョンアクティビティの実装)
-
-[<span class="underline">5.</span> <span
-class="underline">リクエストの承認アクティビティの実装</span>
-23](#リクエストの承認アクティビティの実装)
-
-[<span class="underline">6.</span> <span
-class="underline">再送信タスクアクティビティの実装</span>
-24](#再送信タスクアクティビティの実装)
-
-[<span class="underline">7.</span> <span
-class="underline">経理部門の承認アクティビティの実装</span>
-25](#経理部門の承認アクティビティの実装)
-
-[<span class="underline">8.</span> <span
-class="underline">購買発注アクティビティの実装</span>
-28](#購買発注アクティビティの実装)
-
-[<span class="underline">9.</span> <span
-class="underline">経理部門の承認が必要か？ゲートウェイの実装</span>
-30](#経理部門の承認が必要かゲートウェイの実装)
-
-[<span class="underline">10.</span> <span
-class="underline">経理部門が承認したか？ ゲートウェイの実装</span>
-31](#経理部門が承認したか-ゲートウェイの実装)
-
-[<span class="underline">11.</span> <span
-class="underline">プレーヤを使った動作確認</span>
-32](#プレーヤを使った動作確認)
-
-[<span class="underline">12.</span> <span
-class="underline">アプリケーションのアクティブ化</span>
-34](#アプリケーションのアクティブ化)
-
-はじめに
-========
+## はじめに
 
 このWorkshopは18.2.3で動作確認しています。
 
 また、ハンズオンのLab 1を実施していることを前提とします。
 
-目的
-====
+## 目的
 
-このパートでは、Lab
-1で作成したアプリケーションの変更を通じて、以下の機能を利用するための操作を学習します。
+このパートでは、Lab 1で作成したアプリケーションの変更を通じて、以下の機能を利用するための操作を学習します。
 
--   ビジネス・オブジェクトの作成と利用
+- ビジネス・オブジェクトの作成と利用
+- フォームおよびプレゼンテーションの作成
+- ビジネスルールの作成
+- 承認タスクの実装
+- プレーヤを使った動作確認
 
--   フォームおよびプレゼンテーションの作成
+## 最終構成
 
--   ビジネスルールの作成
+このハンズオンでは、Lab 1にて作成したプロセスを基に、ビジネスルールの追加などを実施していきます。最終的に、以下のプロセスを作成します。
 
--   承認タスクの実装
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image1.png" style="width:5.94399in;height:3.87952in" />
 
--   プレーヤを使った動作確認
+## アプリケーションの更新
 
-1.  
+### PurchaseRequisition Web Formの更新
 
-最終構成
-========
+現在のフォームでは、プロセスに関わるユーザー全てが追加・変更可能ですが、これを起票者以外が変更できないようにします。
 
-このハンズオンでは、Lab
-1にて作成したプロセスを基に、ビジネスルールの追加などを実施していきます。最終的に、以下のプロセスを作成します。
+1. PurchaseRequisitionをクリックします。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image1.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.50.42.pn" style="width:5.94399in;height:3.87952in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image2.png" style="width:3.97078in;height:2.12359in" />
 
-アプリケーションの更新
-======================
+2. フォーム＞PurchaseRequisitionUIをクリックします。
 
-PurchaseRequisition Web Formの更新
-----------------------------------
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image3.png" style="width:5.21348in;height:3.1206in" />
 
-　現在のフォームでは、プロセスに関わるユーザー全てが追加・変更可能ですが、これを起票者以外が変更できないようにします。
+3. 左側のプロパティ＞プレゼンテーションで＋をクリックします。
 
-1.  PurchaseRequisitionをクリックします。
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image4.png" style="width:4.25843in;height:2.77891in" />
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image2.png" style="width:3.97078in;height:2.12359in" />
+4. ダイアログで、名前に「読み取り専用」、そして基準は「メイン」を選択し、［作成］をクリックします。これにより、現在利用しているフォームを元に新しい画面を作成することができます。
 
-2.  フォーム＞PurchaseRequisitionUIをクリックします。
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image5.png" style="width:2.11469in;height:2.8427in" />
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image3.png" style="width:5.21348in;height:3.1206in" />
+5. ［作成］をクリックすると、フォーム自体は元のものと変わりませんが、操作対象が［読み取り専用］に変わっていることがわかります。
 
-3.  左側のプロパティ＞プレゼンテーションで＋をクリックします。
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image6.png" style="width:3.16854in;height:1.70896in" />
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image4.png" style="width:4.25843in;height:2.77891in" />
+6. 各コンポーネントのプロパティで、読取り専用のチェックをONにします。設定変更の対象は、以下の赤枠で囲んだコンポーネントです。
 
-4.  ダイアログで、名前に「読み取り専用」、そして基準は「メイン」を選択し、［作成］をクリックします。これにより、現在利用しているフォームを元に新しい画面を作成することができます。
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image7.png" style="width:5.87817in;height:6.23013in" />
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image5.png" style="width:2.11469in;height:2.8427in" />
+7. 表では、データの追加・削除ができないように、［ユーザーは行を追加/削除できます］のチェックを外しておきます。
 
-5.  ［作成］をクリックすると、フォーム自体は元のものと変わりませんが、操作対象が［読み取り専用］に変わっていることがわかります。
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image8.png" style="width:3.57303in;height:1.31873in" />
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image6.png" style="width:3.16854in;height:1.70896in" />
+8. 設定変更が終了したら、保存しておきましょう。
 
-6.  各コンポーネントのプロパティで、読取り専用のチェックをONにします。設定変更の対象は、以下の赤枠で囲んだコンポーネントです。
+9. プロセス＞PurchaseRequisitionプロセスを開きます。
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image7.png" alt="../../../../Desktop/スクリーンショット%202017-09-17%2014.13.01.pn" style="width:5.87817in;height:6.23013in" />
-
-7.  表では、データの追加・削除ができないように、［ユーザーは行を追加/削除できます］のチェックを外しておきます。
-
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image8.png" style="width:3.57303in;height:1.31873in" />
-
-8.  設定変更が終了したら、保存しておきましょう。
-
-9.  プロセス＞PurchaseRequisitionプロセスを開きます。
-
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image9.png" style="width:5.34397in;height:2.65169in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image9.png" style="width:5.34397in;height:2.65169in" />
 
 10. リクエストの承認アクティビティのフォームを先ほど作成した読み取り専用フォームに変更します。アクティビティをクリックして、［プロパティを開く］を選択します。
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image10.png" style="width:2.85393in;height:1.55746in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image10.png" style="width:2.85393in;height:1.55746in" />
 
 11. ［プレゼンテーション］をメインから読み取り専用に切り替えます。フォームの表示内容自体に変更はないため、データ・アソシエーションの変更は必要ありません。
 
-    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image11.png" style="width:4.41573in;height:3.32993in" />
+<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image11.png" style="width:4.41573in;height:3.32993in" />
 
 12. ［保存］しておきましょう。
 
-ビジネスルールの作成
---------------------
+------
 
-　金額の大小でもう一段経理部門でチェックをするか、それとも購買部門にそのまま流すかを決定するビジネスルールを定義します。作成する前に、スイムレーンを追加します。
+### ビジネスルールの作成
 
-1.  Deputy
-    Managerスイムレーンの下にある＋をクリックし、スイムレーンを追加します。
+金額の大小でもう一段経理部門でチェックをするか、それとも購買部門にそのまま流すかを決定するビジネスルールを定義します。作成する前に、スイムレーンを追加します。
+
+1. Deputy Managerスイムレーンの下にある＋をクリックし、スイムレーンを追加します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image12.png" alt="../../../../Desktop/スクリーンショット%202017-09-17%2014.31.18.pn" style="width:1.03236in;height:0.65486in" />
 
 <!-- -->
 
-1.  スイムレーンの名前はFinanceとします。もう一つスイムレーンを追加し、そちらはPurchasingという名前にします。
+1. スイムレーンの名前はFinanceとします。もう一つスイムレーンを追加し、そちらはPurchasingという名前にします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image13.png" style="width:5.83729in;height:4.50562in" />
 
 続いて、デシジョンテーブルを作成します。
 
-1.  アプリケーションを閉じ、右上の［作成］を再度クリックします。このとき、\[新規デシジョン・モデル\]を選択します。
+1. アプリケーションを閉じ、右上の［作成］を再度クリックします。このとき、\[新規デシジョン・モデル\]を選択します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image14.png" style="width:6.19101in;height:2.14524in" />
 
-2.  名前をFinancialApprovalとして、［作成］をクリックします。
+2. 名前をFinancialApprovalとして、［作成］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image15.png" style="width:2.92243in;height:3.25843in" />
 
-3.  DMN作成画面が表示されます。もし表示されない場合は、リロードしてください。
+3. DMN作成画面が表示されます。もし表示されない場合は、リロードしてください。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image16.png" style="width:5.77528in;height:3.24103in" />
 
-4.  上図右上の＋をクリックして、Decisionを追加します。名前はrequiresFinancialApprovalとします。Output
+4. 上図右上の＋をクリックして、Decisionを追加します。名前はrequiresFinancialApprovalとします。Output
     Typeはbooleanを選択し、ロジックはIf-then-elseを選択して、［Create］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image17.png" style="width:4.52809in;height:2.83819in" />
@@ -185,12 +128,12 @@ PurchaseRequisition Web Formの更新
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image18.png" style="width:5.33328in;height:3.67416in" />
 
-5.  上図の右側、INPUT DATAをクリックして展開し、Input
+5. 上図の右側、INPUT DATAをクリックして展開し、Input
     Dataの＋をクリックして入力データを追加します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image19.png" alt="../../../../Desktop/スクリーンショット%202017-09-18%2016.38.31.pn" style="width:1.88363in;height:0.56056in" />
 
-6.  以下のデータを追加し、［OK］をクリックします。
+6. 以下のデータを追加し、［OK］をクリックします。
 
 | Name  | Data Types |
 |-------|------------|
@@ -198,7 +141,7 @@ PurchaseRequisition Web Formの更新
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image20.png" style="width:3.65169in;height:1.48772in" />
 
-1.  入力データを作成後、判定条件を作成します。以下のように設定します。
+1. 入力データを作成後、判定条件を作成します。以下のように設定します。
 
 |      |                   |
 |------|-------------------|
@@ -208,11 +151,11 @@ PurchaseRequisition Web Formの更新
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image21.png" style="width:3.32529in;height:3.62921in" />
 
-1.  作成したルールを外部から呼び出せるようにします。画面左側のSERVICESをクリックして展開し、＋をクリックしてサービスを追加します。名前はCheckFinancialApprovalServiceとし、OKをクリックします。
+1. 作成したルールを外部から呼び出せるようにします。画面左側のSERVICESをクリックして展開し、＋をクリックしてサービスを追加します。名前はCheckFinancialApprovalServiceとし、OKをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image22.png" style="width:5.64267in;height:2.98876in" />
 
-2.  Output Decisions、Input
+2. Output Decisions、Input
     Dataに対し、それぞれrequresFinancialApproval、totalをマッピングします。以下のように、Drag
     & Dropしてください。
 
@@ -222,13 +165,13 @@ PurchaseRequisition Web Formの更新
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image24.png" style="width:3.15265in;height:3.55056in" />
 
-3.  \[保存\]します。
+3. \[保存\]します。
 
-4.  外部からルールを呼び出せるよう、アクティブ化を実施します。画面右上の［アクティブ化］をクリックします。
+4. 外部からルールを呼び出せるよう、アクティブ化を実施します。画面右上の［アクティブ化］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image25.png" style="width:1.94444in;height:0.63889in" />
 
-5.  スナップショット名を指定し、バージョンを設定の上、アクティブ化します。今回は初期設定のままでかまいません。［上書き］のチェックボックスはONにし、［アクティブ化］をクリックします。
+5. スナップショット名を指定し、バージョンを設定の上、アクティブ化します。今回は初期設定のままでかまいません。［上書き］のチェックボックスはONにし、［アクティブ化］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image26.png" style="width:3.13483in;height:3.25122in" />
 
@@ -239,57 +182,57 @@ PurchaseRequisition Web Formの更新
 
 各部品の詳細については、以下ガイドを参照してください。
 
-Oracle Integration Cloud : [<span
-class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html\#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB</span>](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB)
+Oracle Integration Cloud : [
+https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html\#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB)
 
-Autonomous Integration Cloud : [<span
-class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-elements.html\#GUID-93DCE0C6-9C2A-4F07-B33D-ABD8357954BB</span>](https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-elements.html#GUID-93DCE0C6-9C2A-4F07-B33D-ABD8357954BB)
+Autonomous Integration Cloud : [
+https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-elements.html\#GUID-93DCE0C6-9C2A-4F07-B33D-ABD8357954BB](https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-elements.html#GUID-93DCE0C6-9C2A-4F07-B33D-ABD8357954BB)
 
-1.  アプリケーション・ホーム＞プロセスでPurchaseRequisitionをクリックします。
+1. アプリケーション・ホーム＞プロセスでPurchaseRequisitionをクリックします。
 
 <!-- -->
 
-1.  履行アクティビティをクリックし、上部のメニューの［タイプの変更］をクリックして、赤枠で囲んだデシジョン・アクティビティを選択します。
+1. 履行アクティビティをクリックし、上部のメニューの［タイプの変更］をクリックして、赤枠で囲んだデシジョン・アクティビティを選択します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image27.png" style="width:5.28973in;height:3.21348in" />
 
-2.  ラベル名を「経理部門の承認要否」に変更します。
+2. ラベル名を「経理部門の承認要否」に変更します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image28.png" alt="../../../../Desktop/スクリーンショット%202017-09-18%2017.53.30.pn" style="width:0.88545in;height:0.59206in" />
 
-3.  アクティビティのプロパティを開き、以下の操作を実行します。
+3. アクティビティのプロパティを開き、以下の操作を実行します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image29.png" alt="../../../../Desktop/スクリーンショット%202017-09-18%2017.54.20.pn" style="width:2.13363in;height:0.97738in" />
 
-    1.  ドラフト状態の解除
+    1. ドラフト状態の解除
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image30.png" style="width:3.77528in;height:0.98327in" />
 
-    2.  デシジョン・モデルの＋をクリックし、FinancialApprovalを選択し、［使用］をクリック
+    2. デシジョン・モデルの＋をクリックし、FinancialApprovalを選択し、［使用］をクリック
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image31.png" style="width:3.20756in;height:3.40449in" />
 
-4.  「経理部門の承認要否」アクティビティの後に、排他ゲートウェイを配置し、名前を「経理部門の承認が必要か？」とします。
+4. 「経理部門の承認要否」アクティビティの後に、排他ゲートウェイを配置し、名前を「経理部門の承認が必要か？」とします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image32.png" style="width:4.73034in;height:2.43122in" />
 
-5.  スイムレーンFinanceに承認アクティビティを配置します。アクティビティの名前を「経理部門の承認」とします。
+5. スイムレーンFinanceに承認アクティビティを配置します。アクティビティの名前を「経理部門の承認」とします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image33.png" style="width:6.13712in;height:3.2809in" />
 
-6.  「経理部門の承認が必要か？」ゲートウェイを選択し、シーケンスフロー（矢印）を経理部門の承認アクティビティへつなぎます。
+6. 「経理部門の承認が必要か？」ゲートウェイを選択し、シーケンスフロー（矢印）を経理部門の承認アクティビティへつなぎます。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image34.png" style="width:2.45889in;height:2.69663in" />
 
-7.  「経理部門の承認要否」アクティビティ、「経理部門の承認が必要か？」ゲートウェイをスイムレーンFinanceに移動します。
+7. 「経理部門の承認要否」アクティビティ、「経理部門の承認が必要か？」ゲートウェイをスイムレーンFinanceに移動します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image35.png" style="width:5.4155in;height:1.61798in" />
 
-8.  スイムレーンPurchasingに送信アクティビティを配置し、名前を「購買発注」とします。
+8. スイムレーンPurchasingに送信アクティビティを配置し、名前を「購買発注」とします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image36.png" alt="../../../../Desktop/スクリーンショット%202017-09-18%2018.11.20.pn" style="width:1.72912in;height:1.03254in" />
 
-9.  「経理部門の承認が必要か？」ゲートウェイから終了イベント“完了”へのデフォルト・シーケンスフローを削除し、改めて「経理部門の承認が必要か？」ゲートウェイから「購買発注」アクティビティに対してデフォルト・シーケンスフローを接続します。
+9. 「経理部門の承認が必要か？」ゲートウェイから終了イベント“完了”へのデフォルト・シーケンスフローを削除し、改めて「経理部門の承認が必要か？」ゲートウェイから「購買発注」アクティビティに対してデフォルト・シーケンスフローを接続します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image37.png" style="width:3.1573in;height:2.62735in" /><img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image38.png" style="width:3.46067in;height:2.38962in" />
 
@@ -318,13 +261,13 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
 スクリーンショットの流れに従って、ルールによる判断の実装を追加します。
 
-1.  経理部門による承認が必要か？アクティビティをクリックして、［データ・アソシエーションを開く］選択します。
+1. 経理部門による承認が必要か？アクティビティをクリックして、［データ・アソシエーションを開く］選択します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image44.png" alt="../../../../Desktop/スクリーンショット%202017-09-18%2018.41.12.pn" style="width:1.96696in;height:0.8506in" />
 
 <!-- -->
 
-1.  入力側、出力側で以下のようにデータ・アソシエーションを設定します。
+1. 入力側、出力側で以下のようにデータ・アソシエーションを設定します。
 
     ［入力側］
 
@@ -339,19 +282,19 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
     データ・オブジェクトを作成し、そのオブジェクトにルールの判定結果を格納します。
 
-    1.  画面右側の［データ・オブジェクト］の枠にある、PurchaseRequisition
+    1. 画面右側の［データ・オブジェクト］の枠にある、PurchaseRequisition
         Data ＞ Data Objectを展開
 
-    2.  ＋をクリックできるようになるので、これをクリックしてデータ・オブジェクトを追加
+    2. ＋をクリックできるようになるので、これをクリックしてデータ・オブジェクトを追加
 
-    3.  名前はisFinancialApprovalRequired、データ型はシンプル＞ブールを選択
+    3. 名前はisFinancialApprovalRequired、データ型はシンプル＞ブールを選択
 
         　
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image46.png" style="width:2.51685in;height:2.30383in" />
 
         <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image47.png" style="width:2.86517in;height:2.35008in" />
 
-    4.  データ・オブジェクトを作成後、以下のようにデータ・アソシエーションを設定する。設定が完了したら、［適用］を忘れずにクリックする。
+    4. データ・オブジェクトを作成後、以下のようにデータ・アソシエーションを設定する。設定が完了したら、［適用］を忘れずにクリックする。
 
         左：bodyOutput &gt; interpretation
 
@@ -363,11 +306,11 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 リクエストの承認アクティビティの実装
 ------------------------------------
 
-1.  リクエストの承認アクティビティをクリック＞［プロパティを開く］をクリックし、タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
+1. リクエストの承認アクティビティをクリック＞［プロパティを開く］をクリックし、タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image49.png" style="width:4.01532in;height:1.62921in" />
 
-2.  式エディタで、  
+2. 式エディタで、  
     "プロジェクト購買申請のチェックおよび承認（" +  
     まで入力した後、PurchaseRequisitionUIを展開して、projectNameを選択し、［式に挿入］をクリックします。続けて、　+”）”を入力します。すると、下図のような状態になっているはずです。
 
@@ -375,20 +318,20 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image50.png" style="width:3.51685in;height:4.27511in" />
 
-3.  プレゼンテーションはすでに読み取り専用を選択しているはずです。もし選択されていない場合には、この段階でメインではなく、読み取り専用を選択しておいてください。
+3. プレゼンテーションはすでに読み取り専用を選択しているはずです。もし選択されていない場合には、この段階でメインではなく、読み取り専用を選択しておいてください。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image51.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%208.46.05.pn" style="width:2.46236in;height:0.44415in" />
 
 再送信タスクアクティビティの実装
 --------------------------------
 
-1.  再送信アクティビティをクリック＞［プロパティを開く］をクリックし、タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
+1. 再送信アクティビティをクリック＞［プロパティを開く］をクリックし、タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image49.png" style="width:3.95994in;height:1.60674in" />
 
 <!-- -->
 
-1.  式エディタで、  
+1. 式エディタで、  
     "購買申請の修正（" +  
     まで入力した後、PurchaseRequisitionUIを展開して、projectNameを選択し、［式に挿入］をクリックします。続けて、　+”）”を入力します。すると、下図のような状態になっているはずです。
 
@@ -396,26 +339,26 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image52.png" style="width:4.03371in;height:4.87234in" />
 
-2.  データ・アソシエーション、およびフォームの定義はすでに設定済み（もしくは自動設定済み）なので、手を入れる必要はありません。
+2. データ・アソシエーション、およびフォームの定義はすでに設定済み（もしくは自動設定済み）なので、手を入れる必要はありません。
 
 経理部門の承認アクティビティの実装
 ----------------------------------
 
 「経理部門の承認」アクティビティを実装します。
 
-1.  「経理部門の承認」アクティビティをクリック＞［プロパティを開く］をクリックします。
+1. 「経理部門の承認」アクティビティをクリック＞［プロパティを開く］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image53.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%208.26.21.pn" style="width:1.55809in;height:0.86534in" />
 
-2.  フォームの右側にある虫眼鏡アイコンをクリックし、PurchaseRequisitionUIを選択し、OKをクリックします。プレゼンテーションは、読み取り専用を選択します。
+2. フォームの右側にある虫眼鏡アイコンをクリックし、PurchaseRequisitionUIを選択し、OKをクリックします。プレゼンテーションは、読み取り専用を選択します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image54.png" style="width:3.10854in;height:0.97753in" />
 
-3.  タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
+3. タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image55.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%208.29.55.pn" style="width:2.89143in;height:1.11785in" />
 
-4.  式エディタで、  
+4. 式エディタで、  
     "経理部門でのチェックおよび承認（" +  
     まで入力した後、PurchaseRequisitionUIを展開して、projectNameを選択し、［式に挿入］をクリックします。続けて、　+”）”を入力します。すると、下図のような状態になっているはずです。
 
@@ -423,7 +366,7 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image56.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%208.55.09.pn" style="width:2.72476in;height:4.04827in" />
 
-5.  「経理部門の承認」アクティビティへのデータ・アソシエーションは自動的に設定されていますので、確認してください。
+5. 「経理部門の承認」アクティビティへのデータ・アソシエーションは自動的に設定されていますので、確認してください。
 
     ［入力側］
 
@@ -436,21 +379,21 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 購買発注アクティビティの実装
 ----------------------------
 
-1.  購買発注アクティビティをクリック＞［プロパティを開く］をクリックします。
+1. 購買発注アクティビティをクリック＞［プロパティを開く］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image59.png" style="width:1.6875in;height:0.85732in" />
 
-2.  フォームの虫眼鏡アイコンをクリック、PurchaseRequisitionUIを選択してOKをクリックします。プレゼンテーションは読み取り専用を選択します。
+2. フォームの虫眼鏡アイコンをクリック、PurchaseRequisitionUIを選択してOKをクリックします。プレゼンテーションは読み取り専用を選択します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image60.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%208.28.47.pn" style="width:2.64143in;height:0.85233in" />
 
 <!-- -->
 
-1.  タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
+1. タイトルフィールドの右にあるドロップダウンボックスをプレーン・テキストから式エディタに変更します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image55.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%208.29.55.pn" style="width:2.89143in;height:1.11785in" />
 
-2.  式エディタで、  
+2. 式エディタで、  
     "購買発注（" +  
     まで入力した後、PurchaseRequisitionUIを展開して、projectNameを選択し、［式に挿入］をクリックします。続けて、　+"）"を入力します。すると、下図のような状態になっているはずです。
 
@@ -458,22 +401,22 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image61.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.06.49.pn" style="width:3.47732in;height:4.15986in" />
 
-3.  購買発注アクティビティアクティビティへのデータ・アソシエーションは、経理部門の承認アクティビティと同様、自動的に設定されています。
+3. 購買発注アクティビティアクティビティへのデータ・アソシエーションは、経理部門の承認アクティビティと同様、自動的に設定されています。
 
 経理部門の承認が必要か？ゲートウェイの実装
 ------------------------------------------
 
 ビジネスルールの結果で条件分岐するゲートウェイを実装します。
 
-1.  経理部門の承認が必要か？ゲートウェイから、経理部門の承認アクティビティへと繋がる条件シーケンスフローをクリックし、鉛筆アイコンをクリックします。
+1. 経理部門の承認が必要か？ゲートウェイから、経理部門の承認アクティビティへと繋がる条件シーケンスフローをクリックし、鉛筆アイコンをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image62.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.11.06.pn" style="width:1.47476in;height:0.81324in" />
 
-2.  条件の右側にある鉛筆アイコンをクリックします。
+2. 条件の右側にある鉛筆アイコンをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image63.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.12.51.pn" style="width:2.64143in;height:0.79378in" />
 
-3.  式エディタで、PurchaseRequisitionを展開し、isFinancialApprovalRequiredを選択して、［式に挿入］をクリックし、続けて、==
+3. 式エディタで、PurchaseRequisitionを展開し、isFinancialApprovalRequiredを選択して、［式に挿入］をクリックし、続けて、==
     trueを入力します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image64.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.14.47.pn" style="width:2.73574in;height:4.22733in" />
@@ -485,13 +428,13 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
 経理部門の承認アクティビティの結果で条件分岐するゲートウェイ（経理部門が承認したか？）を実装します。
 
-1.  経理部門が承認したか？ゲートウェイから購買発注アクティビティへと繋がる条件シーケンスフローをクリックして鉛筆アイコンをクリックします。
+1. 経理部門が承認したか？ゲートウェイから購買発注アクティビティへと繋がる条件シーケンスフローをクリックして鉛筆アイコンをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image65.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.21.18.pn" style="width:0.99739in;height:1.03043in" />
 
 <!-- -->
 
-1.  条件の右側にある鉛筆アイコンをクリックし、式エディタで、  
+1. 条件の右側にある鉛筆アイコンをクリックし、式エディタで、  
     TaskOutcomeDataObject== "APPROVE"  
     とし、［検証］をクリックして式に問題がないことを確認した上で、［OK］をクリックします。
 
@@ -502,43 +445,43 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 
 再生機能を使い、作成したプロセスの動作を確認します。
 
-1.  ［テスト］をクリックします。
+1. ［テスト］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image67.png" style="width:4.13483in;height:0.59051in" />
 
 <!-- -->
 
-1.  ［アクティブ化］をクリックし、テストモードでのアクティブ化を実行します。
+1. ［アクティブ化］をクリックし、テストモードでのアクティブ化を実行します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image68.png" style="width:5.46067in;height:2.12148in" />
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image69.png" style="width:3.88764in;height:1.77043in" />
 
-2.  今回は再生機能を使ってプロセスの流れを確認するため、［再生］をクリックします。
+2. 今回は再生機能を使ってプロセスの流れを確認するため、［再生］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image70.png" style="width:5.29436in;height:0.92135in" />
 
-3.  ［アプリケーション・プレーヤ］の画面で、左上のPurchaeRequisitionをクリックします。
+3. ［アプリケーション・プレーヤ］の画面で、左上のPurchaeRequisitionをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image71.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.28.45.pn" style="width:1.47343in;height:1.34902in" />
 
-4.  購買申請開始イベント中にある開始ボタンをクリックします。
+4. 購買申請開始イベント中にある開始ボタンをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image72.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.29.29.pn" style="width:0.64143in;height:0.55111in" />
 
-5.  ユーザーを選択し、［実行］をクリックします。
+5. ユーザーを選択し、［実行］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image73.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.30.16.pn" style="width:2.16692in;height:1.87003in" />
 
-6.  画面フォームに入力し、［送信］をクリックします。
+6. 画面フォームに入力し、［送信］をクリックします。
 
-7.  引き続き、［リクエストの承認］でユーザーを選択し、［実行］をクリックし、［フォームの起動］をクリックします。
+7. 引き続き、［リクエストの承認］でユーザーを選択し、［実行］をクリックし、［フォームの起動］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image74.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.48.31.pn" style="width:0.78606in;height:0.60676in" />
 
-8.  画面上の値が前回の入力値を引き継いでいること、読み取り専用フォームを開いていることを確認し、APPROVEをクリックします。
+8. 画面上の値が前回の入力値を引き継いでいること、読み取り専用フォームを開いていることを確認し、APPROVEをクリックします。
 
-9.  同様の流れでプロセスが完了するまで続けます。途中でREJECTして再送信タスクに遷移するかどうかも確認してください。
+9. 同様の流れでプロセスが完了するまで続けます。途中でREJECTして再送信タスクに遷移するかどうかも確認してください。
 
 10. プロセスが終了するまで実行します。下図は実行例です。
 
@@ -547,9 +490,9 @@ class="underline">https://docs.oracle.com/en/cloud/paas/integration-cloud/user-p
 アプリケーションのアクティブ化
 ------------------------------
 
-1.  手順はLab 1のアクティブ化と同様です。  
+1. 手順はLab 1のアクティブ化と同様です。  
     ［公開］をクリックしてコメントを追加後、［公開］をクリックします。
 
-2.  続いて、［アクティブ化］をクリックし、ウィザードに従ってアクティブ化します。以前アクティブ化したものを上書きする場合には、リビジョンは前回と同じものを使い、［オーバーライド］にチェックを入れた上で、［アクティブ化］をクリックします。
+2. 続いて、［アクティブ化］をクリックし、ウィザードに従ってアクティブ化します。以前アクティブ化したものを上書きする場合には、リビジョンは前回と同じものを使い、［オーバーライド］にチェックを入れた上で、［アクティブ化］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image76.png" alt="../../../../Desktop/スクリーンショット%202017-09-19%209.54.11.pn" style="width:3.36136in;height:3.55919in" />
