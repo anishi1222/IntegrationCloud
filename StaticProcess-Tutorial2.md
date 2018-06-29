@@ -215,6 +215,8 @@ https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-e
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image32.png" style="width:4.73034in;height:2.43122in" />
 
+    > ゲートウェイの配置場所が狭い場合には、画面をクリックしたまま、左にスワイプすると、領域を広げることができます。
+
 6. スイムレーンFinanceに承認アクティビティを配置します。アクティビティの名前を**経理部門の承認**とします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image33.png" style="width:6.13712in;height:3.2809in" />
