@@ -1,4 +1,4 @@
-# Purchase Requisition Composer Lab 2
+# Static Process Tutorial [2/3]
 
 - [はじめに](#はじめに)
 - [目的](#目的)
@@ -19,7 +19,7 @@
 
 ## はじめに
 
-このWorkshopは18.2.3で動作確認しています。
+このTutorialは18.2.3で動作確認しています。
 
 また、ハンズオンのLab 1を実施していることを前提とします。
 
@@ -47,23 +47,23 @@
 
 1. PurchaseRequisitionをクリックします。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image2.png" style="width:3.97078in;height:2.12359in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image2.png" style="width:3.97078in;height:2.12359in" />
 
 2. フォーム＞PurchaseRequisitionUIをクリックします。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image3.png" style="width:5.21348in;height:3.1206in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image3.png" style="width:5.21348in;height:3.1206in" />
 
 3. 左側のプロパティ＞プレゼンテーションで＋をクリックします。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image4.png" style="width:4.25843in;height:2.77891in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image4.png" style="width:4.25843in;height:2.77891in" />
 
 4. ダイアログで、名前に「読み取り専用」、そして基準は「メイン」を選択し、［作成］をクリックします。これにより、現在利用しているフォームを元に新しい画面を作成することができます。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image5.png" style="width:2.11469in;height:2.8427in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image5.png" style="width:2.11469in;height:2.8427in" />
 
 5. ［作成］をクリックすると、フォーム自体は元のものと変わりませんが、操作対象が［読み取り専用］に変わっていることがわかります。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image6.png" style="width:3.16854in;height:1.70896in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image6.png" style="width:3.16854in;height:1.70896in" />
 
 6. 各コンポーネントのプロパティで、読取り専用のチェックをONにします。設定変更の対象は、以下の赤枠で囲んだコンポーネントです。
 
@@ -71,21 +71,21 @@
 
 7. 表では、データの追加・削除ができないように、［ユーザーは行を追加/削除できます］のチェックを外しておきます。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image8.png" style="width:3.57303in;height:1.31873in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image8.png" style="width:3.57303in;height:1.31873in" />
 
 8. 設定変更が終了したら、保存しておきましょう。
 
 9. プロセス＞PurchaseRequisitionプロセスを開きます。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image9.png" style="width:5.34397in;height:2.65169in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image9.png" style="width:5.34397in;height:2.65169in" />
 
 10. リクエストの承認アクティビティのフォームを先ほど作成した読み取り専用フォームに変更します。アクティビティをクリックして、［プロパティを開く］を選択します。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image10.png" style="width:2.85393in;height:1.55746in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image10.png" style="width:2.85393in;height:1.55746in" />
 
 11. ［プレゼンテーション］をメインから読み取り専用に切り替えます。フォームの表示内容自体に変更はないため、データ・アソシエーションの変更は必要ありません。
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image11.png" style="width:4.41573in;height:3.32993in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image11.png" style="width:4.41573in;height:3.32993in" />
 
 12. ［保存］しておきましょう。
 
