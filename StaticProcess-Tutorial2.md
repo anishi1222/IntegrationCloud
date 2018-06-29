@@ -135,29 +135,27 @@
 
 6. 以下のデータを追加し、［OK］をクリックします。
 
-| Name  | Data Types |
-|-------|------------|
-| total | number     |
+    | Name  | Data Types |
+    |-------|------------|
+    | total | number     |
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image20.png" style="width:3.65169in;height:1.48772in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image20.png" style="width:3.65169in;height:1.48772in" />
 
-1. 入力データを作成後、判定条件を作成します。以下のように設定します。
+7. 入力データを作成後、判定条件を作成します。以下のように設定します。
 
-|      |                   |
-|------|-------------------|
-| If   | total &gt;= 50000 |
-| Then | true              |
-| else | false             |
+    |      |                   |
+    |------|-------------------|
+    | If   | total &gt;= 50000 |
+    | Then | true              |
+    | else | false             |
 
-<img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image21.png" style="width:3.32529in;height:3.62921in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image21.png" style="width:3.32529in;height:3.62921in" />
 
-1. 作成したルールを外部から呼び出せるようにします。画面左側のSERVICESをクリックして展開し、＋をクリックしてサービスを追加します。名前はCheckFinancialApprovalServiceとし、OKをクリックします。
+8. 作成したルールを外部から呼び出せるようにします。画面左側のSERVICESをクリックして展開し、＋をクリックしてサービスを追加します。名前はCheckFinancialApprovalServiceとし、OKをクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image22.png" style="width:5.64267in;height:2.98876in" />
 
-2. Output Decisions、Input
-    Dataに対し、それぞれrequresFinancialApproval、totalをマッピングします。以下のように、Drag
-    & Dropしてください。
+9. Output Decisions、Input Dataに対し、それぞれrequresFinancialApproval、totalをマッピングします。以下のように、Drag & Dropしてください。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image23.png" style="width:6.0729in;height:3.24719in" />
 
@@ -165,27 +163,28 @@
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image24.png" style="width:3.15265in;height:3.55056in" />
 
-3. \[保存\]します。
+10. **保存**します。
 
-4. 外部からルールを呼び出せるよう、アクティブ化を実施します。画面右上の［アクティブ化］をクリックします。
+11. 外部からルールを呼び出せるよう、アクティブ化を実施します。画面右上の［アクティブ化］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image25.png" style="width:1.94444in;height:0.63889in" />
 
-5. スナップショット名を指定し、バージョンを設定の上、アクティブ化します。今回は初期設定のままでかまいません。［上書き］のチェックボックスはONにし、［アクティブ化］をクリックします。
+12. スナップショット名を指定し、バージョンを設定の上、アクティブ化します。今回は初期設定のままでかまいません。［上書き］のチェックボックスはONにし、［アクティブ化］をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image26.png" style="width:3.13483in;height:3.25122in" />
 
-プロセスのアップデート
-----------------------
+------
+
+### プロセスのアップデート
 
 先ほど作成したルールを追加します。さらに、判定の結果経理部門のチェックを実施するため、承認アクティビティを追加します。
 
 各部品の詳細については、以下ガイドを参照してください。
 
-Oracle Integration Cloud : [
+> Oracle Integration Cloud : [
 https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html\#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB](https://docs.oracle.com/en/cloud/paas/integration-cloud-um/user-processes-um/controlling-process-flow-using-gateways.html#GUID-9E5FAFE6-01D2-45A4-9505-2A885DD18BDB)
 
-Autonomous Integration Cloud : [
+> Autonomous Integration Cloud : [
 https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-elements.html\#GUID-93DCE0C6-9C2A-4F07-B33D-ABD8357954BB](https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-elements.html#GUID-93DCE0C6-9C2A-4F07-B33D-ABD8357954BB)
 
 1. アプリケーション・ホーム＞プロセスでPurchaseRequisitionをクリックします。
