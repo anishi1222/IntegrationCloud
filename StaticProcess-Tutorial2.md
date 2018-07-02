@@ -233,7 +233,7 @@ https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-e
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image36.png" style="width:1.72912in;height:1.03254in" />
 
-10. **経理部門の承認が必要か？** ゲートウェイから終了イベント“完了”へのデフォルト・シーケンスフローを削除し、改めて **経理部門の承認が必要か？** ゲートウェイから **購買発注** アクティビティに対してデフォルト・シーケンスフローを接続します。
+10. **経理部門の承認が必要か？** ゲートウェイから終了イベント"完了"へのデフォルト・シーケンスフローを削除し、改めて **経理部門の承認が必要か？** ゲートウェイから **購買発注** アクティビティに対してデフォルト・シーケンスフローを接続します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image37.png" style="width:50%;height:50%" />
     
@@ -244,7 +244,7 @@ https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-e
     >
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image39.png"/>
 
-11. **購買発注アクティビティ** と終了イベント“完了”間をシーケンスフローで接続します。
+11. **購買発注アクティビティ** と終了イベント"完了"間をシーケンスフローで接続します。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/StaticProcess-Tutorial2/image40.png" style="width:1.55933in;height:2.74157in" />
 
@@ -320,7 +320,7 @@ https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-e
     ```
     まで入力した後、PurchaseRequisitionUIを展開して、projectNameを選択し、**式に挿入**をクリックします。続けて、
     ```
-     +”）”
+     +"）"
     ```
     を入力します。すると、下図のような状態になっているはずです。
 
@@ -349,7 +349,7 @@ https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-e
     まで入力した後、PurchaseRequisitionUIを展開して、projectNameを選択し、**式に挿入**をクリックします。続けて、
 
     ```
-    +”）”
+    +"）"
     ```
     を入力します。すると、下図のような状態になっているはずです。
 
@@ -386,7 +386,7 @@ https://docs.oracle.com/en/cloud/paas/integration-cloud/user-processes/working-e
     まで入力した後、PurchaseRequisitionUIを展開して、projectNameを選択し、**式に挿入**をクリックします。続けて、
 
     ```
-     +”）”
+     +"）"
     ```
     を入力します。すると、下図のような状態になっているはずです。
 
