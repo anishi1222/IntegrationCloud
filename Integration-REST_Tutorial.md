@@ -1,4 +1,4 @@
-# Integration Tutorial
+# Integration Tutorial (REST)
 
 - [はじめに](#はじめに)
   - [目的](#目的)
