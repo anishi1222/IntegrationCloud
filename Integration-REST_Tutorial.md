@@ -40,7 +40,7 @@
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-REST_Tutorial/image3.png" style="width:7.05941in;height:1.37985in" />
 
-完成版をエクスポートしたものは[こちら](Integration-Tutorial.solution.iar)にあります。
+完成版をエクスポートしたものは[こちら](Integration-REST_Tutorial.solution.iar)にあります。
 
 ------
 ### 前提
