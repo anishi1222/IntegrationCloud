@@ -29,18 +29,18 @@ SOAP UI を使用する場合は、以下の作業を完了しておいてくだ
 
 **SOAP UIのインストール**
 
-SOAP UI クライアントを以下からインストールしてください:
+SOAP UI クライアントを以下からインストールしてください。
 
 [http://www.soapui.org/downloads/soapui/open-source.html](http://www.soapui.org/downloads/soapui/open-source.html)
 
 OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避するため、TLS1.1 をサポートしています。
 
-以下の手順で SOAP UI クライアントを更新してください:
+以下の手順で SOAP UI クライアントを更新してください。
 > (1) soapui インストール・ディレクトリの下の bin へ移動します (例: C:\\program files (x86)\\SmartBear\\SoapUI-\*\\bin)
 >
 > (2) ファイル SoapUI-\*.vmoptions を開きます
 >
-> (3) 次の行を最後に追記してください:
+> (3) 次の行を最後に追記してください。
 > ```bash
 > -Dsoapui.https.protocols=SSLv3,TLSv1.1
 > ```
@@ -80,7 +80,7 @@ OICのホームでハンバーガーメニューをクリックし、左側に�
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image5.png" style="width:3.64213in;height:3.40669in" />
 
-次の情報を入力して、**作成**をクリックします:
+次の情報を入力して、**作成**をクリックします。
 
 <table>
 <thead>
@@ -97,7 +97,7 @@ OICのホームでハンバーガーメニューをクリックし、左側に�
 <tr class="even">
 <td>識別子</td>
 <td><p><em>入力不要</em></p>
-<p>Connection Nameから自動で導出されます: CALC_<USER NAME></p></td>
+<p>Connection Nameから自動で導出されます。 CALC_<USER NAME></p></td>
 </tr>
 <tr class="odd">
 <td>接続ロール</td>
@@ -150,7 +150,7 @@ http://www.dneonline.com/calculator.asmx?WSDL
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image11.png" style="width:3.67165in;height:3.96496in" />
 
-次の情報を入力して、**作成**をクリックします:
+次の情報を入力して、**作成**をクリックします。
 
 <table>
 <thead>
@@ -167,12 +167,12 @@ http://www.dneonline.com/calculator.asmx?WSDL
 <tr class="even">
 <td>識別子</td>
 <td><p><em>入力不要</em></p>
-<p>Integration Name から自動的に導出されます: CALC_<USER NAME></p></td>
+<p>Integration Name から自動的に導出されます。 CALC_<USER NAME></p></td>
 </tr>
 <tr class="odd">
 <td>バージョン</td>
 <td><p><em>入力不要</em></p>
-<p>デフォルト値を使用します: 01.00.0000</p></td>
+<p>デフォルト値を使用します。 01.00.0000</p></td>
 </tr>
 <tr class="even">
 <td>パッケージ</td>
@@ -181,7 +181,7 @@ http://www.dneonline.com/calculator.asmx?WSDL
 </tbody>
 </table>
 
-接続一覧から **Calc** の接続アイコンを **トリガーのドラッグ・アンド・ドロップ** へドラッグします:
+接続一覧から **Calc** の接続アイコンを **トリガーのドラッグ・アンド・ドロップ** へドラッグします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image12.png" style="width:6.76378in;height:4.22795in" />
 
@@ -389,7 +389,7 @@ SOAPメッセージの送信できるアプリケーションでテストして�
 
 ### 新バージョンの統合へエンリッチメントの追加
 
-統合の名称をクリックして編集を開始します。連携フローに、レスポンス方向のエンリッチメントを追加していきます。構成済の接続一覧が表示されていない場合、画面右にある、**パレットを表示**アイコンをクリックします:
+統合の名称をクリックして編集を開始します。連携フローに、レスポンス方向のエンリッチメントを追加していきます。構成済の接続一覧が表示されていない場合、画面右にある、**パレットを表示**アイコンをクリックします。
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image39.png" style="width:1.8689in;height:1.03465in" />
 
@@ -448,7 +448,7 @@ SOAPメッセージの送信できるアプリケーションでテストして�
 
 <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image46.png" style="width:4.03504in;height:2.22047in" />
 
-次のソース・フィールドとターゲット・フィールドをマッピングします:
+次のソース・フィールドとターゲット・フィールドをマッピングします。
 
 | **ソース・フィールド**                                                         | **ターゲット・フィールド** |
 |--------------------------------------------------------------------------------|----------------------------|
