@@ -97,7 +97,7 @@ OICのホームでハンバーガーメニューをクリックし、左側に�
 <tr class="even">
 <td>識別子</td>
 <td><p><em>入力不要</em></p>
-<p>Connection Nameから自動で導出されます。 CALC_<USER NAME></p></td>
+<p>Connection Nameから自動で導出されます。 CALC_&lt;USER NAME&gt;</p></td>
 </tr>
 <tr class="odd">
 <td>接続ロール</td>
@@ -167,7 +167,7 @@ http://www.dneonline.com/calculator.asmx?WSDL
 <tr class="even">
 <td>識別子</td>
 <td><p><em>入力不要</em></p>
-<p>Integration Name から自動的に導出されます。 CALC_<USER NAME></p></td>
+<p>Integration Name から自動的に導出されます。 CALC_&lt;USER NAME&gt;</p></td>
 </tr>
 <tr class="odd">
 <td>バージョン</td>
