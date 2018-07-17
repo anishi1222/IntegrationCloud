@@ -6,7 +6,8 @@ Oracle Integration Cloudの日本語のチュートリアルやサンプルを�
 
 Integrationの基本を理解するための、RESTサービスを呼び出すチュートリアルです。
 
-- [Integration (REST integration) Tutorial](Integration-Tutorial.md)
+- [Integration (REST integration) Tutorial](Integration-REST_Tutorial.md)
+- [Integration (SOAP integration) Tutorial](Integration-SOAP_Tutorial.md)
 
 ## Process
 
