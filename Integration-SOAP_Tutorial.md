@@ -92,7 +92,7 @@ OICのホームでハンバーガーメニューをクリックし、左側に�
 <tbody>
 <tr class="odd">
 <td>名前</td>
-<td>Calc <User Name></td>
+<td>Calc &lt;User Name&gt;</td>
 </tr>
 <tr class="even">
 <td>識別子</td>
@@ -162,7 +162,7 @@ http://www.dneonline.com/calculator.asmx?WSDL
 <tbody>
 <tr class="odd">
 <td>統合名</td>
-<td>Calc <User Name></td>
+<td>Calc &lt;User Name&gt;</td>
 </tr>
 <tr class="even">
 <td>識別子</td>
