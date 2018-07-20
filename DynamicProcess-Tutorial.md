@@ -495,7 +495,7 @@ Actions: <b>Update</b></td>
 
 1. **処置**アクティビティのプロパティを開きます。
 2. Generalタブに移動し、MarkersのRepeatable（反復可能）にチェックを入れます。
-3. Repeatable（反復可能）の右側にある鉛筆アイコンをクリックし、Data Driven（データ・ドリブン）の右にある **＋** をクリックし、継続条件を追加します。今回は、フォームの退院判定プレゼンテーションの[退院可]チェックボックスの値で判定させるために、 **formArg.isTreatmentCompleted** が **false** であることを継続条件とします。
+3. Repeatable（反復可能）の右側にある鉛筆アイコンをクリックし、Data Driven（データ・ドリブン）の右にある **＋** をクリックし、継続条件を追加します。今回は、フォームの退院判定プレゼンテーションの[退院可]チェックボックスの値で判定させるために、 **formArg.isTreatmentCompleted** が **false** であることを継続条件とします。設定完了後、Save（保存）をクリックします。
 
     <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/DynamicProcess-Tutorial/image43-1.png"/>
 
