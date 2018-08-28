@@ -26,9 +26,8 @@ Process Builderの基本を理解するためのチュートリアルです。
 動的プロセスの基本を理解するためのチュートリアルです。
 
 - [Dynamic Process Tutorial](DynamicProcess-Tutorial.md)
+<!-- ## Visual Builder -->
 
-## Visual Builder
+<!-- Processと組み合わせ、Processで標準提供するUIよりもリッチなUIを使ったワークフローを作成するチュートリアルです。 -->
 
-Processと組み合わせ、Processで標準提供するUIよりもリッチなUIを使ったワークフローを作成するチュートリアルです。
-
-- [Visual Builder-Process 1（基礎編）]()
+<!-- - Visual Builder-Process 1（基礎編）() -->
