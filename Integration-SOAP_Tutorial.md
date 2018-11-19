@@ -60,19 +60,19 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. OICのホームでハンバーガーメニューをクリックし、左側に現れるメニューから統合をクリックします。
 
-    <img src="./media/image3.png" style="width:6.76378in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image3.png" style="width:6.76378in" />
 
 1. 左側のメニューで**接続**のリンクをクリックします。
 
-    <img src="./media/image4.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image4.png" style="width:6.76389in" />
 
 1. 連携元との接続を作成するため、画面右上の**作成**をクリックします。
 
-    <img src="./media/image5.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image5.png" style="width:6.76389in" />
 
 1. **SOAP**アダプターを選択します。検索画面でSOAPと入力して探し出すこともできます。
 
-    <img src="./media/image6.png" style="width:3.64213in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image6.png" style="width:3.64213in" />
 
 1. 次の情報を入力して、**作成**をクリックします。
 
@@ -115,37 +115,37 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     **接続プロパティ**の**OK**をクリックします。  
 
-    <img src="./media/image7.png" style="width:5.91406in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image7.png" style="width:5.91406in" />
 
 1. **セキュリティの構成**をクリックし、セキュリティ・ポリシーを**セキュリティ・ポリシーなし**に変更します。**資格証明**の**OK**をクリックします。
 
-    <img src="./media/image8.png" style="width:6.4252in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image8.png" style="width:6.4252in" />
 
 1. 接続できることを検証するため、**テスト**ボタンをクリックします。クリックするとダイアログが現れますが、ここでは**検証とテスト**を選択します。
 
-    <img src="./media/image9.png" style="width:3.125in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image9.png" style="width:3.125in" />
 
     その後、“正常にテストされました” のメッセージが表示されるはずです。
 
-    <img src="./media/image11.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image11.png" style="width:6.76389in" />
 
 1. **右上のインジケータ**が100%になっており、接続の構成が完了していることを確認した上で、接続を保存し、**閉じる**をクリックします。
 
-    <img src="./media/image12.png" style="width:2.07638in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image12.png" style="width:2.07638in" />
 
 ### 統合の作成
 
 1. 画面左側のメニューから、**統合**のリンクをクリックします。左側のメニューが表示されていない場合は、赤枠で囲んだハンバーガーメニューをクリックしてください。
 
-    <img src="./media/image13.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image13.png" style="width:6.76389in" />
 
 1. 右側上部にある**作成**をクリックします。
 
-    <img src="./media/image14.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image14.png" style="width:6.76389in" />
 
 1. ダイアログで**基本ルーティング**を選択します。
 
-    <img src="./media/image15.png" style="width:3.67165in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image15.png" style="width:3.67165in" />
 
 1. 次の情報を入力して、**作成**をクリックします。
 
@@ -180,7 +180,7 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. 接続一覧からCalcの接続アイコンを**トリガーのドラッグ・アンド・ドロップへドラッグします。**
 
-    <img src="./media/image16.png" style="width:6.76378in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image16.png" style="width:6.76378in" />
 
 1. 設定ウィザードに従い、以下の内容を設定します。
 
@@ -194,11 +194,11 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. サマリーの画面は次のようになっているはずです。**完了**をクリックします。
 
-    <img src="./media/image17.png" style="width:4.84921in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image17.png" style="width:4.84921in" />
 
 1. 呼び出し側にも同様に、**Calc**の接続アイコンを**呼出しのドラッグ・アンド・ドロップ**へドラッグします。
 
-    <img src="./media/image18.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image18.png" style="width:6.76389in" />
 
 1. 設定ウィザードに従い、以下の内容を設定します。
 
@@ -216,7 +216,7 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. **リクエスト・マッピング**のアイコンをクリックし、**＋**アイコンを押してデータ・マッパーを起動します
 
-    <img src="./media/image19.png" style="width:5.30827in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image19.png" style="width:5.30827in" />
 
 1. 次のソース・フィールドを対応するターゲット・フィールドへマッピングします。
 
@@ -227,13 +227,13 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     ソース・フィールドのテキストをドラッグして、ターゲット・フィールドのテキストと重なるように調整します。マッピングが完了すると、画面が次のようになります。
 
-    <img src="./media/image20.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image20.png" style="width:6.76389in" />
 
 1. 右上の**検証**をクリックして問題ないことを確認し、**閉じる**をクリックします。
 
 1. **レスポンス・マッピング**のアイコンをクリックし、**＋**アイコンを押してデータ・マッパーを起動します。
 
-    <img src="./media/image21.png" style="width:5.20709in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image21.png" style="width:5.20709in" />
 
 1. 次のソース・フィールドとターゲット・フィールドをマッピングします。
 
@@ -243,7 +243,7 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     ドラッグして、ソース・フィールドのテキストがターゲット・フィールドのテキストと重なるように調整します。マッピングが完了すると、画面が次のようになります。
 
-    <img src="./media/image22.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image22.png" style="width:6.76389in" />
 
 1. 右上の**検証**をクリックして問題ないことを確認し、**閉じる**をクリックします。
 
@@ -253,37 +253,37 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     画面右上のメニューから**トラッキング**を選択します。
 
-    <img src="./media/image23.png" style="width:2.3374in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image23.png" style="width:2.3374in" />
 
 1. 画面左にリクエスト・ペイロードのフィールドが並んでいます。この中から任意のフィールドをキーにしてトラッキングすることができます。ここではintAとintBを**トラッキング・フィールド**へドラッグ・ドロップします。設定が完了したら**終了**をクリックします。これで統合の設定が完了です。
 
-    <img src="./media/image24.png" style="width:6.59055in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image24.png" style="width:6.59055in" />
 
 1. **右上のインジケータ**が100%になっており、統合の設定が完了していることを確認します:
 
-    <img src="./media/image25.png" style="width:0.72913in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image25.png" style="width:0.72913in" />
 
 1. **保存**アイコンを押して編集を保存し、**閉じる**をクリックします。
 
 1. 統合の設定が100%完了すると、統合をアクティブにするためのトグル・ボタンが表示されます。**トグル・ボタン**をクリックし、統合をアクティブ化します。
 
-    <img src="./media/image26.png" style="width:5.14134in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image26.png" style="width:5.14134in" />
 
 1. 確認のダイアログではそのまま、**アクティブ化**を選択します。
 
-    <img src="./media/image27.png" style="width:3.3815in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image27.png" style="width:3.3815in" />
 
 1. 統合がアクティブ化されました。
 
-    <img src="./media/image28.png" style="width:5.14291in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image28.png" style="width:5.14291in" />
 
 ### 統合のテストとモニタリング
 
 1. **インフォメーション・アイコン** **(ｉ)**をクリックすると、この統合のエンドポイントに対するWSDLが確認できます。このWSDLに対してSOAPメッセージを送信することでテストを実施します。**WSDLのURLをコピー**します（下図の赤枠で囲んである部分）
 
-    <img src="./media/image29.png" style="width:5.46811in" /><br/>
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image29.png" style="width:5.46811in" /><br/>
 
-    <img src="./media/image30.png" style="width:5.38819in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image30.png" style="width:5.38819in" />
 
     **注意** 統合をアクティブ化すると以下のような通知が表示されます。この通知にあるエンドポイントURLに埋め込まれたハイパーリング（赤線部）は表示上のWSDLのURLとは異なるためクリックすると統合トップ画面に遷移します。
 
@@ -295,39 +295,39 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     \[オプション手順\] エンドポイントURLのWSDLの取得に失敗することがあります。SOAP UIのProxy設定が必要になる場合があるのでハンズオン環境のネットワークに応じてProxyを設定してください。下図はAutomaticに設定した例です。
 
-    <img src="./media/image32.png" style="width:5.37014in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image32.png" style="width:5.37014in" />
 
     作成されたプロジェクトを展開してRequest1を開き、リクエストの構成画面を開きます:
 
-    <img src="./media/image34.png" style="width:4.65669in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image34.png" style="width:4.65669in" />
 
     Step2: ペイロード編集画面の左下にある**Auth**タブでベーシック認証を追加します。OICのログイン・ユーザー/パスを追加ください。
 
-    <img src="./media/image35.png" style="width:4.77874in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image35.png" style="width:4.77874in" />
 
     Step3: ペイロードの**&lt;tem:intA&gt;?&lt;/tem:intA&gt;**と**&lt;tem:intB&gt;?&lt;/tem:intB&gt;**の「❓」に半角で整数値を入れます。以下の例では1と2を入れています。
 
-    <img src="./media/image36.png" style="width:2.2752in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image36.png" style="width:2.2752in" />
 
     Step4: ペイロード上で右クリックして、メニューから「**Add WSS Username Token**」と「**Add WS-Timestamp**」の両方をそれぞれ選択し、Headerを構成します。いずれも設定はデフォルトのままでかまいません。
 
-    <img src="./media/image37.png" style="width:1.7586in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image37.png" style="width:1.7586in" />
 
     Step5: 左上の**Submit**ボタンを押してテスト・メッセージを送信します。ここまでの設定がうまくいっていれば、AddResultには足し算の結果が入っているはずです。以下の例では、3が返っています。
 
-    <img src="./media/image38.png" style="width:3.87008in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image38.png" style="width:3.87008in" />
 
 1. モニタリング画面からメッセージの成功を確認します。先ほどWSDLを取得したダイアログに現れた**インスタンスのトラッキング**のリンクをクリックします。
 
-    <img src="./media/image39.png" style="width:5.46811in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image39.png" style="width:5.46811in" />
 
 1. メッセージが正常に完了していることを確認します。この時、メッセージ・トラッキングとして設定したフィールドの値が表示されている事を確認します。
 
-    <img src="./media/image40.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image40.png" style="width:6.76389in" />
 
 1. フィールドの値がリンクになっているのでこれをクリックすると、連携の実行結果を確認できます。エラーが発生した場合には、発生個所の特定に利用します。
 
-    <img src="./media/image41.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image41.png" style="width:6.76389in" />
 
 --------------------
 
@@ -364,21 +364,21 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. 画面左上のハンバーガーメニューをクリックしてメニューを開き、**＜**をクリックします。
 
-    <img src="./media/image42.png" style="width:2.10591in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image42.png" style="width:2.10591in" />
 
 1. **デザイナ**をクリックし、**統合**をクリックします。
 
-    <img src="./media/image43.png" style="width:1.34567in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image43.png" style="width:1.34567in" />
 
-    <img src="./media/image44.png" style="width:1.35118in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image44.png" style="width:1.35118in" />
 
 1. 統合の右端にある**アクション・メニュー**のアイコンを開き、**バージョンの作成**を選択します。
 
-    <img src="./media/image45.png" style="width:1.47244in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image45.png" style="width:1.47244in" />
 
     バージョン番号に**1.01.0000**入力し、**バージョンの作成**をクリックします。
 
-    <img src="./media/image46.png" style="width:4.4315in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image46.png" style="width:4.4315in" />
 
     **補足** バージョン番号の最初の桁がメジャー・バージョンにあたり、メジャー・バージョンが重複する統合のうち、両方を同時にアクティブ化することはできません。どちらかがアクティブ化された状態でもう一方をアクティベーションすると、アクティブ化されていた方は非アクティブ化され切り替わります。
 
@@ -386,11 +386,11 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. 統合の名称 **Calc XXXX (1.1.0)**をクリックして編集を開始します。連携フローに、レスポンス方向のエンリッチメントを追加していきます。構成済の接続一覧が表示されていない場合、画面右にある、**パレットを表示**アイコンをクリックします。
 
-    <img src="./media/image47.png" style="width:1.8689in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image47.png" style="width:1.8689in" />
 
 1. 接続一覧からCalcの接続アイコンをレスポンスの矢印上へドラッグします。
 
-    <img src="./media/image48.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image48.png" style="width:6.76389in" />
 
 1. 設定ウィザードに従って、以下の内容を設定していきます。終了したら**完了**をクリックします。
 
@@ -404,11 +404,11 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     サマリー画面は以下のようになっています。
 
-    <img src="./media/image49.png" style="width:4.85in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image49.png" style="width:4.85in" />
 
 1. 警告ダイアログが表示されますが、**\[更新\]**をクリックします。
 
-    <img src="./media/image50.png" style="width:2.8878in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image50.png" style="width:2.8878in" />
 
     これは既に設定されているレスポンス・データのマッピングが、新たに加えられたエンリッチメントのレスポンス・ペイロードによって影響を受ける可能性があることを示しています。
 
@@ -418,7 +418,7 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     **＋**アイコンを押してデータ・マッパーを起動します。
 
-    <img src="./media/image51.png" style="width:5.4685in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image51.png" style="width:5.4685in" />
 
 1. 次のソース・フィールドとターゲット・フィールドをマッピングします。
 
@@ -429,17 +429,17 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     ドラッグして、ソース・フィールドのテキストがターゲット・フィールドのテキストと重なるように調整します。マッピングが完了すると、画面が次のようになっています。
 
-    <img src="./media/image52.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image52.png" style="width:6.76389in" />
 
 1. **検証**して問題がないことを確認後、**閉じる**をクリックします。
 
 1. エンリッチメントで得られるペイロードを利用したいので、マッピングを再定義します。レスポンス・マッピングのアイコンをクリックし、編集アイコンをクリックします。
 
-    <img src="./media/image53.png" style="width:5.4689in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image53.png" style="width:5.4689in" />
 
 1. 既にマッピングされているものを削除し、新たなマッピングを構成します。ターゲット・フィールドの「AddResponse &gt; AddResult」のフィールド名を右クリックして、**マッピングの削除**を選択します。確認ダイアログが現れますので、**削除**を選択します。
 
-    <img src="./media/image54.png" style="width:4.03504in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image54.png" style="width:4.03504in" />
 
 1. 次のソース・フィールドとターゲット・フィールドをマッピングします。
 
@@ -453,11 +453,11 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. 新規バージョンの統合（1.1.0）の**トグル・ボタン**をクリックしてアクティベーションします。
 
-    <img src="./media/image55.png" style="width:5.24606in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image55.png" style="width:5.24606in" />
 
 1. 確認ダイアログで、**アクティブ化**をクリックします。
 
-    <img src="./media/image56.png" style="width:4.4315in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image56.png" style="width:4.4315in" />
 
 1. 新規バージョンがアクティブ化されました。
 
@@ -465,7 +465,7 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
     新規バージョンがアクティブ化されると同時に、以前のバージョンは非アクティブ化されます。OICではバージョン番号の最初の桁だけがメジャー・バージョンとして扱われ、メジャー・バージョンが重複している統合を同時にアクティブ化することはできません。
 
-    <img src="./media/image57.png" style="width:5.14016in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image57.png" style="width:5.14016in" />
 
 ### 新規バージョンのテストとモニタリング
 
@@ -494,29 +494,29 @@ OIC では、セキュリティ脆弱性 SSL poodleによる攻撃を回避す�
 
 1. モニタリング画面で状況を確認します。画面左上のハンバーガーメニューをクリックしてメニューを開き、**＜**をクリックします。
 
-    <img src="./media/image58.png" style="width:1.33504in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image58.png" style="width:1.33504in" />
 
 1. **モニタリング**を開きます。
 
-    <img src="./media/image59.png" style="width:1.34055in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image59.png" style="width:1.34055in" />
 
 1. **ダッシュボード**を開きます。
 
-    <img src="./media/image60.png" style="width:1.35118in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image60.png" style="width:1.35118in" />
 
 1. トレースを有効化している場合、画面右の**アクティビティ・ストリーム**をクリックすると、トレースを確認できるとともに、トレース情報をダウンロードできます（なお、デフォルトではトレースは無効化されています）。このファイルはトレース情報を含んだサーバー・ログで、このログから統合による処理プロセスやペイロードの情報を確認できます。またアクティビティ・ストリームや診断ログは、サポートへ問い合わせをする際の状況確認にも利用します。
 
-    <img src="./media/image61.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image61.png" style="width:6.76389in" />
 
 1. 画面左メニューから**トラッキング**を開きます。
 
 1. メッセージが正常に完了していることを確認します。この時、メッセージ・トラッキングとして設定したフィールドの値が表示されている事を確認します。またバージョンが**1.1.0**であることを確認します。
 
-    <img src="./media/image62.png" style="width:5.13976in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image62.png" style="width:5.13976in" />
 
 1. フィールドの値がリンクになっているのでこれをクリックし、連携の実行結果を確認します。
 
-    <img src="./media/image63.png" style="width:6.76389in" />
+    <img src="https://raw.githubusercontent.com/anishi1222/IntegrationCloud/images/Integration-SOAP_Tutorial/image63.png" style="width:6.76389in" />
 
 ### まとめ
 
